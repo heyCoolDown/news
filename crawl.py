@@ -36,6 +36,22 @@ def _load_dotenv():
 
 _load_dotenv()
 
+# ── 번역 ───────────────────────────────────────────────────
+try:
+    from deep_translator import GoogleTranslator
+    _translator = GoogleTranslator(source='auto', target='ko')
+    TRANSLATION_AVAILABLE = True
+except ImportError:
+    TRANSLATION_AVAILABLE = False
+
+def translate(text):
+    if not TRANSLATION_AVAILABLE or not text:
+        return text
+    try:
+        return _translator.translate(text[:4500]) or text
+    except Exception:
+        return text
+
 # ── 설정 ──────────────────────────────────────────────────
 NAVER_CLIENT_ID     = os.environ.get("NAVER_CLIENT_ID", "")
 NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "")
@@ -61,11 +77,23 @@ RSS_FEEDS = [
     {"name": "AI타임스",    "url": "https://www.aitimes.com/rss/allArticle.xml",       "category": "IT"},
     # 국내 과학
     {"name": "헬로디디",    "url": "https://www.hellodd.com/rss/allArticle.xml",       "category": "과학"},
+    # 국내 의료
+    {"name": "코메디닷컴",  "url": "https://kormedi.com/feed/",                        "category": "의료"},
     # 해외 IT/과학 (영문)
-    {"name": "Hacker News",    "url": "https://hnrss.org/frontpage",                   "category": "IT"},
-    {"name": "MIT Tech Review", "url": "https://www.technologyreview.com/feed/",       "category": "IT"},
-    {"name": "Nature News",     "url": "https://www.nature.com/nature.rss",            "category": "과학"},
-    {"name": "ScienceDaily",    "url": "https://www.sciencedaily.com/rss/all.xml",     "category": "과학"},
+    {"name": "Hacker News",    "url": "https://hnrss.org/frontpage",                   "category": "IT",   "lang": "en"},
+    {"name": "MIT Tech Review", "url": "https://www.technologyreview.com/feed/",       "category": "IT",   "lang": "en"},
+    {"name": "Nature News",     "url": "https://www.nature.com/nature.rss",            "category": "과학", "lang": "en"},
+    {"name": "ScienceDaily",    "url": "https://www.sciencedaily.com/rss/all.xml",     "category": "과학", "lang": "en"},
+    # 해외 의료 (영문)
+    {"name": "Medical Xpress", "url": "https://medicalxpress.com/rss-feed/",           "category": "의료", "lang": "en"},
+    {"name": "BBC Health",     "url": "https://feeds.bbci.co.uk/news/health/rss.xml",  "category": "의료", "lang": "en"},
+    # 해외 기이한사건 (영문)
+    {"name": "Oddity Central", "url": "https://www.odditycentral.com/feed",            "category": "기이", "lang": "en"},
+    {"name": "Atlas Obscura",  "url": "https://www.atlasobscura.com/feeds/latest",     "category": "기이", "lang": "en"},
+    {"name": "Mysterious Univ","url": "https://mysteriousuniverse.org/feed/",          "category": "기이", "lang": "en"},
+    # 해외 흥미 (영문)
+    {"name": "Interesting Eng","url": "https://interestingengineering.com/feed",       "category": "흥미", "lang": "en"},
+    {"name": "Futurism",       "url": "https://futurism.com/feed",                     "category": "흥미", "lang": "en"},
 ]
 
 # ── HTML 태그 제거 ─────────────────────────────────────────
@@ -186,9 +214,14 @@ def parse_rss(feed_info, max_items=8):
             if is_politics(title, desc):
                 continue
 
+            summary = summarize(desc)
+            if feed_info.get("lang") == "en":
+                title   = translate(title)
+                summary = translate(summary)
+
             items.append({
                 "title":    title,
-                "summary":  summarize(desc),
+                "summary":  summary,
                 "url":      link.strip(),
                 "source":   feed_info["name"],
                 "category": feed_info["category"],
