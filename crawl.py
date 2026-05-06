@@ -18,23 +18,23 @@ from html.parser import HTMLParser
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-# ── 번역 ───────────────────────────────────────────────────
-try:
-    from deep_translator import GoogleTranslator
-    _translator = GoogleTranslator(source='auto', target='ko')
-    TRANSLATION_AVAILABLE = True
-    print("[번역] deep-translator 로드 성공")
-except ImportError:
-    TRANSLATION_AVAILABLE = False
-    print("[번역] deep-translator 없음 - 번역 생략")
+# ── .env 로드 (로컬 실행용) ────────────────────────────────
+def _load_dotenv():
+    env_path = os.path.join(os.path.dirname(__file__), ".env")
+    if not os.path.exists(env_path):
+        return
+    with open(env_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, val = line.partition("=")
+            key = key.strip()
+            val = val.strip().strip('"').strip("'")
+            if key and key not in os.environ:
+                os.environ[key] = val
 
-def translate(text):
-    if not TRANSLATION_AVAILABLE or not text:
-        return text
-    try:
-        return _translator.translate(text[:4500]) or text
-    except Exception:
-        return text
+_load_dotenv()
 
 # ── 설정 ──────────────────────────────────────────────────
 NAVER_CLIENT_ID     = os.environ.get("NAVER_CLIENT_ID", "")
@@ -52,42 +52,20 @@ POLITICS_BLACKLIST = [
     "보수", "진보", "좌파", "우파", "집권", "야권", "여권",
 ]
 
-# RSS 피드 목록 (IT/과학/의료/기이)
+# RSS 피드 목록 (IT/과학/생명공학)
 RSS_FEEDS = [
     # 국내 IT
     {"name": "전자신문",    "url": "https://www.etnews.com/rss/allnews.xml",           "category": "IT"},
-    {"name": "ZDNet Korea", "url": "https://feeds.feedburner.com/zdkorea",              "category": "IT"},
-    {"name": "IT조선",      "url": "https://it.chosun.com/rss/allArticle.xml",          "category": "IT"},
-    {"name": "디지털데일리", "url": "http://www.ddaily.co.kr/rss/allArticle.xml",       "category": "IT"},
-    {"name": "AI타임스",    "url": "https://www.aitimes.com/rss/allArticle.xml",        "category": "IT"},
+    {"name": "ZDNet Korea", "url": "https://feeds.feedburner.com/zdkorea",             "category": "IT"},
+    {"name": "디지털데일리", "url": "http://www.ddaily.co.kr/rss/allArticle.xml",      "category": "IT"},
+    {"name": "AI타임스",    "url": "https://www.aitimes.com/rss/allArticle.xml",       "category": "IT"},
     # 국내 과학
-    {"name": "헬로디디",    "url": "https://www.hellodd.com/rss/allArticle.xml",        "category": "과학"},
-    # 국내 의료/생명과학
-    {"name": "코메디닷컴",  "url": "https://kormedi.com/feed/",                         "category": "의료"},
-    {"name": "헬스조선",    "url": "https://health.chosun.com/rss/allArticle.xml",      "category": "의료"},
-    # 해외 IT (영문)
-    {"name": "MIT Tech Review", "url": "https://www.technologyreview.com/feed/",       "category": "IT",   "lang": "en"},
-    {"name": "Ars Technica",   "url": "https://feeds.arstechnica.com/arstechnica/index", "category": "IT", "lang": "en"},
-    {"name": "The Verge",      "url": "https://www.theverge.com/rss/index.xml",        "category": "IT",   "lang": "en"},
-    {"name": "WIRED",          "url": "https://www.wired.com/feed/rss",                "category": "IT",   "lang": "en"},
-    # 해외 과학 (영문)
-    {"name": "ScienceDaily",   "url": "https://www.sciencedaily.com/rss/all.xml",      "category": "과학", "lang": "en"},
-    {"name": "New Scientist",  "url": "https://www.newscientist.com/feed/home/",       "category": "과학", "lang": "en"},
-    {"name": "Live Science",   "url": "https://www.livescience.com/feeds/all",         "category": "과학", "lang": "en"},
-    {"name": "NASA News",      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss","category": "과학", "lang": "en"},
-    # 해외 의료/생명과학 (영문 - 일반 독자용)
-    {"name": "Medical Xpress", "url": "https://medicalxpress.com/rss-feed/",           "category": "의료", "lang": "en"},
-    {"name": "WebMD Health",   "url": "https://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RS_RSSFEEDS_ALLNEWS", "category": "의료", "lang": "en"},
-    {"name": "BBC Health",     "url": "https://feeds.bbci.co.uk/news/health/rss.xml",  "category": "의료", "lang": "en"},
-    {"name": "Healthline",     "url": "https://www.healthline.com/rss/news",           "category": "의료", "lang": "en"},
-    # 해외 기이한사건 (영문)
-    {"name": "Oddity Central", "url": "https://www.odditycentral.com/feed",            "category": "기이", "lang": "en"},
-    {"name": "Boing Boing",    "url": "https://boingboing.net/feed",                   "category": "기이", "lang": "en"},
-    {"name": "Atlas Obscura",  "url": "https://www.atlasobscura.com/feeds/latest",     "category": "기이", "lang": "en"},
-    {"name": "Mysterious Univ","url": "https://mysteriousuniverse.org/feed/",          "category": "기이", "lang": "en"},
-    # 해외 흥미 (영문)
-    {"name": "Interesting Eng","url": "https://interestingengineering.com/feed",        "category": "흥미", "lang": "en"},
-    {"name": "Futurism",       "url": "https://futurism.com/feed",                     "category": "흥미", "lang": "en"},
+    {"name": "헬로디디",    "url": "https://www.hellodd.com/rss/allArticle.xml",       "category": "과학"},
+    # 해외 IT/과학 (영문)
+    {"name": "Hacker News",    "url": "https://hnrss.org/frontpage",                   "category": "IT"},
+    {"name": "MIT Tech Review", "url": "https://www.technologyreview.com/feed/",       "category": "IT"},
+    {"name": "Nature News",     "url": "https://www.nature.com/nature.rss",            "category": "과학"},
+    {"name": "ScienceDaily",    "url": "https://www.sciencedaily.com/rss/all.xml",     "category": "과학"},
 ]
 
 # ── HTML 태그 제거 ─────────────────────────────────────────
@@ -208,14 +186,9 @@ def parse_rss(feed_info, max_items=8):
             if is_politics(title, desc):
                 continue
 
-            summary = summarize(desc)
-            if feed_info.get("lang") == "en":
-                title   = translate(title)
-                summary = translate(summary)
-
             items.append({
                 "title":    title,
-                "summary":  summary,
+                "summary":  summarize(desc),
                 "url":      link.strip(),
                 "source":   feed_info["name"],
                 "category": feed_info["category"],
@@ -286,7 +259,7 @@ def main():
     all_news["tech"] = deduplicate(all_news["tech"])
     # 최신순 정렬
     all_news["tech"].sort(key=lambda x: x["date"], reverse=True)
-    all_news["tech"] = all_news["tech"][:100]  # 최대 100건만 유지
+    all_news["tech"] = all_news["tech"][:50]  # 최대 50건만 유지
     print(f"[IT/과학 뉴스] {len(all_news['tech'])}건 수집")
 
     # 3. JSON 저장
