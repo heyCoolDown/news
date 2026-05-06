@@ -365,6 +365,7 @@
     <div class="stat-item">과학 <span id="stat-sci">0</span>건</div>
     <div class="stat-item">의료 <span id="stat-med">0</span>건</div>
     <div class="stat-item">기이 <span id="stat-weird">0</span>건</div>
+    <div class="stat-item">흥미 <span id="stat-fun">0</span>건</div>
     <div class="stat-item">총 <span id="stat-total">0</span>건</div>
   </div>
 
@@ -415,11 +416,13 @@ function updateStats() {
   const sci   = tech.filter(n => n.category === '과학');
   const med   = tech.filter(n => n.category === '의료');
   const weird = tech.filter(n => n.category === '기이');
+  const fun   = tech.filter(n => n.category === '흥미');
   document.getElementById('stat-holdings').textContent = holdings.length;
   document.getElementById('stat-it').textContent       = it.length;
   document.getElementById('stat-sci').textContent      = sci.length;
   document.getElementById('stat-med').textContent      = med.length;
   document.getElementById('stat-weird').textContent    = weird.length;
+  document.getElementById('stat-fun').textContent      = fun.length;
   document.getElementById('stat-total').textContent    = holdings.length + tech.length;
 }
 
