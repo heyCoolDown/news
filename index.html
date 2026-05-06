@@ -187,9 +187,12 @@
     height: 2px;
   }
 
-  .news-card.cat-IT::before     { background: var(--blue); }
-  .news-card.cat-과학::before   { background: var(--green); }
+  .news-card.cat-IT::before      { background: var(--blue); }
+  .news-card.cat-과학::before    { background: var(--green); }
   .news-card.cat-보유종목::before { background: var(--yellow); }
+  .news-card.cat-의료::before    { background: #f97316; }
+  .news-card.cat-기이::before    { background: #e879f9; }
+  .news-card.cat-흥미::before    { background: #14b8a6; }
 
   .news-card:hover {
     border-color: var(--border2);
@@ -214,9 +217,12 @@
     letter-spacing: 0.5px;
   }
 
-  .cat-badge.IT       { background: rgba(56,189,248,0.15); color: var(--blue); }
-  .cat-badge.과학     { background: rgba(0,232,122,0.15);  color: var(--green); }
-  .cat-badge.보유종목 { background: rgba(251,191,36,0.15); color: var(--yellow); }
+  .cat-badge.IT       { background: rgba(56,189,248,0.15);  color: var(--blue); }
+  .cat-badge.과학     { background: rgba(0,232,122,0.15);   color: var(--green); }
+  .cat-badge.보유종목 { background: rgba(251,191,36,0.15);  color: var(--yellow); }
+  .cat-badge.의료     { background: rgba(249,115,22,0.15);  color: #f97316; }
+  .cat-badge.기이     { background: rgba(232,121,249,0.15); color: #e879f9; }
+  .cat-badge.흥미     { background: rgba(20,184,166,0.15);  color: #14b8a6; }
 
   .stock-tag {
     font-family: var(--mono);
@@ -349,7 +355,7 @@
   <div class="tabs">
     <button class="tab active" onclick="switchTab('all')">전체</button>
     <button class="tab" onclick="switchTab('holdings')">📈 보유종목</button>
-    <button class="tab" onclick="switchTab('tech')">💻 IT / 과학</button>
+    <button class="tab" onclick="switchTab('tech')">💻 테크 · 과학 · 의료 · 기이</button>
   </div>
 
   <!-- 통계 바 -->
@@ -357,6 +363,8 @@
     <div class="stat-item">보유종목 <span id="stat-holdings">0</span>건</div>
     <div class="stat-item">IT <span id="stat-it">0</span>건</div>
     <div class="stat-item">과학 <span id="stat-sci">0</span>건</div>
+    <div class="stat-item">의료 <span id="stat-med">0</span>건</div>
+    <div class="stat-item">기이 <span id="stat-weird">0</span>건</div>
     <div class="stat-item">총 <span id="stat-total">0</span>건</div>
   </div>
 
@@ -365,6 +373,8 @@
     <button class="filter-btn active" onclick="setFilter('all')">전체</button>
     <button class="filter-btn" onclick="setFilter('IT')">IT</button>
     <button class="filter-btn" onclick="setFilter('과학')">과학</button>
+    <button class="filter-btn" onclick="setFilter('의료')">의료</button>
+    <button class="filter-btn" onclick="setFilter('기이')">기이한사건</button>
     <button class="filter-btn" onclick="setFilter('흥미')">흥미</button>
   </div>
 
@@ -401,11 +411,15 @@ function updateStats() {
   if (!allData) return;
   const holdings = allData.holdings || [];
   const tech     = allData.tech || [];
-  const it  = tech.filter(n => n.category === 'IT');
-  const sci = tech.filter(n => n.category === '과학');
+  const it    = tech.filter(n => n.category === 'IT');
+  const sci   = tech.filter(n => n.category === '과학');
+  const med   = tech.filter(n => n.category === '의료');
+  const weird = tech.filter(n => n.category === '기이');
   document.getElementById('stat-holdings').textContent = holdings.length;
   document.getElementById('stat-it').textContent       = it.length;
   document.getElementById('stat-sci').textContent      = sci.length;
+  document.getElementById('stat-med').textContent      = med.length;
+  document.getElementById('stat-weird').textContent    = weird.length;
   document.getElementById('stat-total').textContent    = holdings.length + tech.length;
 }
 

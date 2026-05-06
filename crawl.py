@@ -34,32 +34,42 @@ POLITICS_BLACKLIST = [
     "보수", "진보", "좌파", "우파", "집권", "야권", "여권",
 ]
 
-# RSS 피드 목록 (IT/과학/생명공학)
+# RSS 피드 목록 (IT/과학/의료/기이)
 RSS_FEEDS = [
     # 국내 IT
     {"name": "전자신문",    "url": "https://www.etnews.com/rss/allnews.xml",           "category": "IT"},
     {"name": "ZDNet Korea", "url": "https://feeds.feedburner.com/zdkorea",              "category": "IT"},
     {"name": "IT조선",      "url": "https://it.chosun.com/rss/allArticle.xml",          "category": "IT"},
     {"name": "디지털데일리", "url": "http://www.ddaily.co.kr/rss/allArticle.xml",       "category": "IT"},
+    {"name": "AI타임스",    "url": "https://www.aitimes.com/rss/allArticle.xml",        "category": "IT"},
     # 국내 과학
-    {"name": "AI타임스",      "url": "https://www.aitimes.com/rss/allArticle.xml",    "category": "IT"},
-    {"name": "헬로디디",      "url": "https://www.hellodd.com/rss/allArticle.xml",     "category": "과학"},
+    {"name": "헬로디디",    "url": "https://www.hellodd.com/rss/allArticle.xml",        "category": "과학"},
+    # 국내 의료/생명과학
+    {"name": "코메디닷컴",  "url": "https://kormedi.com/feed/",                         "category": "의료"},
+    {"name": "헬스조선",    "url": "https://health.chosun.com/rss/allArticle.xml",      "category": "의료"},
     # 해외 IT (영문)
-    {"name": "Hacker News",    "url": "https://hnrss.org/frontpage",                   "category": "IT"},
     {"name": "MIT Tech Review", "url": "https://www.technologyreview.com/feed/",       "category": "IT"},
     {"name": "Ars Technica",   "url": "https://feeds.arstechnica.com/arstechnica/index", "category": "IT"},
     {"name": "The Verge",      "url": "https://www.theverge.com/rss/index.xml",        "category": "IT"},
+    {"name": "WIRED",          "url": "https://www.wired.com/feed/rss",                "category": "IT"},
     # 해외 과학 (영문)
-    {"name": "Nature News",    "url": "https://www.nature.com/nature.rss",             "category": "과학"},
     {"name": "ScienceDaily",   "url": "https://www.sciencedaily.com/rss/all.xml",      "category": "과학"},
-    {"name": "Science Mag",    "url": "https://www.science.org/rss/news_current.xml",  "category": "과학"},
     {"name": "New Scientist",  "url": "https://www.newscientist.com/feed/home/",       "category": "과학"},
-    {"name": "NASA News",      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss","category": "과학"},
     {"name": "Live Science",   "url": "https://www.livescience.com/feeds/all",         "category": "과학"},
+    {"name": "NASA News",      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss","category": "과학"},
+    # 해외 의료/생명과학 (영문 - 일반 독자용)
+    {"name": "Medical Xpress", "url": "https://medicalxpress.com/rss-feed/",           "category": "의료"},
+    {"name": "WebMD Health",   "url": "https://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RS_RSSFEEDS_ALLNEWS", "category": "의료"},
+    {"name": "BBC Health",     "url": "https://feeds.bbci.co.uk/news/health/rss.xml",  "category": "의료"},
+    {"name": "Healthline",     "url": "https://www.healthline.com/rss/news",           "category": "의료"},
+    # 해외 기이한사건 (영문)
+    {"name": "Oddity Central", "url": "https://www.odditycentral.com/feed",            "category": "기이"},
+    {"name": "Boing Boing",    "url": "https://boingboing.net/feed",                   "category": "기이"},
+    {"name": "Atlas Obscura",  "url": "https://www.atlasobscura.com/feeds/latest",     "category": "기이"},
+    {"name": "Mysterious Univ","url": "https://mysteriousuniverse.org/feed/",          "category": "기이"},
     # 해외 흥미 (영문)
     {"name": "Interesting Eng","url": "https://interestingengineering.com/feed",        "category": "흥미"},
     {"name": "Futurism",       "url": "https://futurism.com/feed",                     "category": "흥미"},
-    {"name": "Atlas Obscura",  "url": "https://www.atlasobscura.com/feeds/latest",     "category": "흥미"},
 ]
 
 # ── HTML 태그 제거 ─────────────────────────────────────────
