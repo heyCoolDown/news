@@ -336,76 +336,12 @@
   ],
   "tech": [
     {
-      "title": "아모데이 \"미소스 유효 기간은 6~12개월...중국이 곧 따라잡을 것\"",
-      "summary": "다리오 아모데이 앤트로픽 CEO가 AI가 촉발한 사이버 보안 위협에 대해 “대응할 수 있는 시간이 제한적”이라며 경고를 내놨다. 최신 AI 모델이 대규모 소프트웨어 취약점을 찾아내면서, 전 세계 기업과 정부가 이를...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210157",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-06 23:54"
-    },
-    {
-      "title": "앤트로픽 정책 총괄 다음주 방한...과기부와 '미소스' 논의",
-      "summary": "6일 업계에 따르면, 마이클 셀리토 앤트로픽 글로벌 정책 총괄이 다음 주 방한해 과학기술정보통신부와 '미소스' 관련 논의를 진행한다.셀리토 총괄은 국가인공지능전략위원회와 먼저 면담을 가진 뒤 과기정통부 관계자를...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210156",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-06 23:54"
-    },
-    {
-      "title": "앤트로픽, 구글 5GW 컴퓨팅 용량 확보 위해 291조 투입",
-      "summary": "지난달 구글과 앤트로픽이 체결한 5기가와트(GW) 규모의 컴퓨팅 인프라 공급 계약의 구체적인 금액이 드러났다. 5일(현지시간) 로이터에 따르면, 이 계약은 내년부터 시행되며 앤트로픽은 앞으로 5년간 구글에 약...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210145",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-06 23:54"
-    },
-    {
-      "title": "오픈AI 'GPT-5.5 파티' 신청자 8000명에 '코덱스' 사용량 10배 제공...앤트로픽도 맞불",
-      "summary": "글로벌 AI 업계의 양대 축인 오픈AI와 앤트로픽의 개발자 생태계를 둘러싼 경쟁이 격화되고 있다. 무료 혜택부터 초청 행사까지 전방위 전략이 동원되며, 양사의 경쟁 구도가 단순 기술력을 넘어 ‘개발자 확보...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210139",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-06 23:54"
-    },
-    {
-      "title": "RAG 시대 끝나나...'1200만 토큰' 컨텍스트 창 제공하는 모델 출시",
-      "summary": "입력 길이에 따라 연산량이 기하급수적으로 증가하는 기존 트랜스포머의 구조적 한계를 벗어나, 연산량이 선형적으로 증가하는 새로운 아키텍처가 등장했다. 이를 통해 구현한 컨텍스트 창의 크기는 무려 1200만 토큰에...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210137",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-06 23:54"
-    },
-    {
-      "title": "구글·메타, '오픈클로'와 비슷한 개인용 에이전트 '해치·레미' 개발 중",
-      "summary": "메타와 구글이 '오픈클로(OpenClaw)'와 유사한 개인형 자율 AI 에이전트를 개발 중인 것으로 알려졌다.5일(현지시간) 디 인포메이션에 따르면, 메타는 ‘해치(Hatch)’라는 코드명의 AI 에이전트를 개발...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210123",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-06 23:54"
-    },
-    {
-      "title": "구글에 첫 'AI 노조' 등장하나...딥마인드, 미 국방부 계약에 반발해 노조 결성",
-      "summary": "영국의 구글 딥마인드 직원들이 회사의 군사 협력 확대에 반발하며 노조 결성에 나섰다. 이번 시도가 성공할 경우, 첨단 AI 연구소 가운데 최초의 노조 설립 사례가 될 전망이다.비즈니스 인사이더에 따르면, 딥마인드...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210155",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-06 23:54"
-    },
-    {
-      "title": "[게시판] 카카오모빌리티, AI 주니어랩 6기 모집 등 단신",
-      "summary": "■ 카카오모빌리티(대표 류긍선)는 미래 인재들의 AI 역량 성장을 지원하는 사회공헌 프로그램 ‘AI 주니어랩(AI Junior Lab) 6기’ 참가자 모집을 시작한다고 밝혔다. 이번 6기부터는 프로그램 명칭을 기존...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210154",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-06 23:54"
-    },
-    {
       "title": "보톡스 부작용 '제로' 도전···피부과 전문의들 의기투합<br>이증훈 스킨메드 대표 \"삶의 질 개선할 치료제 만들 것\"",
       "summary": "피부 환자들에게 연고를 처방하는 것 말고, 피부의 근본적인 고통을 덜어줄 해결책은 없을까.이 물음에 답하기 위해 전국 5개 대학병원 피부과 전문의들이 의기투합했다. 대전 문지동에서 18년째 '피부 생명 과학'이라는...",
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111672",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "딥테크 투자 A to Z 코스 개설<br>MYSC·대덕넷 \"AI·로봇·반도체 투자 안목 키운다\"",
@@ -413,7 +349,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111665",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "대덕 딥테크 육성사업 본격 착수···특구재단, 올해 326억원 사업화 지원",
@@ -421,7 +357,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111674",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "KAIST 총장 선임, 또다시 분기점···6배수 후보 면접 돌입",
@@ -429,7 +365,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111667",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "\"부품 옮겨줘\" 말하면 척척···전기연, '알아듣고 행동하는 AI' 개발",
@@ -437,7 +373,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111673",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "\"공공 의사결정도 AI 시대\" ETRI, 정책지능 국제표준 최종 승인",
@@ -445,7 +381,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111675",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "\"뼈 재생 촉진 규명\" 5월 과학기술인상에 이윤실 서울대 교수",
@@ -453,7 +389,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111669",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "인신협, 제1회 '인터넷신문  이달의 기자상' 시상식",
@@ -461,7 +397,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111668",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "자연",
@@ -469,7 +405,7 @@
       "url": "http://feeds.nature.com/nature/rss/current",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "작성자 수정: 천막상막 상의세포종의 이질성에 대한 다차원적 프로파일링",
@@ -477,7 +413,7 @@
       "url": "https://www.nature.com/articles/s41586-026-10602-8",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "원산지 이야기",
@@ -485,7 +421,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01077-8",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "클릭하기만 하면 되는 25년 간의 화학",
@@ -493,7 +429,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01155-x",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "나는 지쳐서 학계를 떠난다. 박사 학위를 어떻게 마치나요?",
@@ -501,7 +437,7 @@
       "url": "https://www.nature.com/articles/d41586-026-00797-1",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "온난화 세계에서 탄력적인 식품 시스템 엔지니어링",
@@ -509,7 +445,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01250-z",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "미생물이 오염 정화의 미래인가?",
@@ -517,7 +453,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01420-z",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
     },
     {
       "title": "'대안 COP'는 기후 행동에 있어 실질적이고 협력적인 변화를 이끌어야 합니다.",
@@ -525,7 +461,71 @@
       "url": "https://www.nature.com/articles/d41586-026-01423-w",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-06 23:54"
+      "date": "2026-05-06 23:58"
+    },
+    {
+      "title": "아모데이 \"미소스 유효 기간은 6~12개월...중국이 곧 따라잡을 것\"",
+      "summary": "다리오 아모데이 앤트로픽 CEO가 AI가 촉발한 사이버 보안 위협에 대해 “대응할 수 있는 시간이 제한적”이라며 경고를 내놨다. 최신 AI 모델이 대규모 소프트웨어 취약점을 찾아내면서, 전 세계 기업과 정부가 이를...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210157",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-06 23:57"
+    },
+    {
+      "title": "앤트로픽 정책 총괄 다음주 방한...과기부와 '미소스' 논의",
+      "summary": "6일 업계에 따르면, 마이클 셀리토 앤트로픽 글로벌 정책 총괄이 다음 주 방한해 과학기술정보통신부와 '미소스' 관련 논의를 진행한다.셀리토 총괄은 국가인공지능전략위원회와 먼저 면담을 가진 뒤 과기정통부 관계자를...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210156",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-06 23:57"
+    },
+    {
+      "title": "앤트로픽, 구글 5GW 컴퓨팅 용량 확보 위해 291조 투입",
+      "summary": "지난달 구글과 앤트로픽이 체결한 5기가와트(GW) 규모의 컴퓨팅 인프라 공급 계약의 구체적인 금액이 드러났다. 5일(현지시간) 로이터에 따르면, 이 계약은 내년부터 시행되며 앤트로픽은 앞으로 5년간 구글에 약...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210145",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-06 23:57"
+    },
+    {
+      "title": "오픈AI 'GPT-5.5 파티' 신청자 8000명에 '코덱스' 사용량 10배 제공...앤트로픽도 맞불",
+      "summary": "글로벌 AI 업계의 양대 축인 오픈AI와 앤트로픽의 개발자 생태계를 둘러싼 경쟁이 격화되고 있다. 무료 혜택부터 초청 행사까지 전방위 전략이 동원되며, 양사의 경쟁 구도가 단순 기술력을 넘어 ‘개발자 확보...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210139",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-06 23:57"
+    },
+    {
+      "title": "RAG 시대 끝나나...'1200만 토큰' 컨텍스트 창 제공하는 모델 출시",
+      "summary": "입력 길이에 따라 연산량이 기하급수적으로 증가하는 기존 트랜스포머의 구조적 한계를 벗어나, 연산량이 선형적으로 증가하는 새로운 아키텍처가 등장했다. 이를 통해 구현한 컨텍스트 창의 크기는 무려 1200만 토큰에...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210137",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-06 23:57"
+    },
+    {
+      "title": "구글·메타, '오픈클로'와 비슷한 개인용 에이전트 '해치·레미' 개발 중",
+      "summary": "메타와 구글이 '오픈클로(OpenClaw)'와 유사한 개인형 자율 AI 에이전트를 개발 중인 것으로 알려졌다.5일(현지시간) 디 인포메이션에 따르면, 메타는 ‘해치(Hatch)’라는 코드명의 AI 에이전트를 개발...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210123",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-06 23:57"
+    },
+    {
+      "title": "구글에 첫 'AI 노조' 등장하나...딥마인드, 미 국방부 계약에 반발해 노조 결성",
+      "summary": "영국의 구글 딥마인드 직원들이 회사의 군사 협력 확대에 반발하며 노조 결성에 나섰다. 이번 시도가 성공할 경우, 첨단 AI 연구소 가운데 최초의 노조 설립 사례가 될 전망이다.비즈니스 인사이더에 따르면, 딥마인드...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210155",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-06 23:57"
+    },
+    {
+      "title": "[게시판] 카카오모빌리티, AI 주니어랩 6기 모집 등 단신",
+      "summary": "■ 카카오모빌리티(대표 류긍선)는 미래 인재들의 AI 역량 성장을 지원하는 사회공헌 프로그램 ‘AI 주니어랩(AI Junior Lab) 6기’ 참가자 모집을 시작한다고 밝혔다. 이번 6기부터는 프로그램 명칭을 기존...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210154",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-06 23:57"
     },
     {
       "title": "미 해군, Montford Point를 군함 재무장을 위한 최초의 해상 플랫폼으로 전환",
@@ -560,6 +560,14 @@
       "date": "2026-05-06 23:20"
     },
     {
+      "title": "ZDNet Korea",
+      "summary": "IT 세상을 바꾸는 힘 - 지디넷코리아",
+      "url": "http://zdnet.co.kr/news/?lstcode=0000",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-05-06 23:14"
+    },
+    {
       "title": "코메디닷컴",
       "summary": "음식에 곰팡이가 조금 생기면 '이 부분만 떼어내면 괜찮겠지'라고 생각하는 사람이 있다. 하지만 이는 매우 위험한 생각이다. 곰팡이는 눈에… The post 빵에 핀 곰팡이, 제거하고 먹어도 될까? ‘이 음식’은...",
       "url": "https://kormedi.com/",
@@ -590,6 +598,14 @@
       "source": "Futurism",
       "category": "흥미",
       "date": "2026-05-06 22:55"
+    },
+    {
+      "title": "지역혁신선도기업 육성 306개 R&D과제 선정...2800억 지원",
+      "summary": "[지디넷코리아]중소벤처기업부(중기부)는 비수도권 중소기업의 경쟁력 강화를 위해 ‘지역혁신선도기업육성(R&D)’ 신규과제 306개를 최종 선정하고, 2년간 총 2800억 원을 투입한다고 6일 밝혔다.이번 사업은 지역...",
+      "url": "https://zdnet.co.kr/view/?no=20260506231434",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-05-06 22:47"
     },
     {
       "title": "수술이 아직도 옛날 소년클럽처럼 보이는 이유",
@@ -718,23 +734,7 @@
       "source": "코메디닷컴",
       "category": "의료",
       "date": "2026-05-06 21:06"
-    },
-    {
-      "title": "Cat(YC S22), AI 기반 성장 툴킷 구축을 위해 부분 엔지니어 모집",
-      "summary": "기사 URL: https://www.coveragecat.com/careers/engineering/fractional-growth-engineer 댓글 URL:...",
-      "url": "https://www.coveragecat.com/careers/engineering/fractional-growth-engineer",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-05-06 21:00"
-    },
-    {
-      "title": "BBC 뉴스",
-      "summary": "일부 승객에게서 안데스 바이러스 계통이 확인되었으며, 이는 사람 간 전염이 거의 발생하지 않습니다.",
-      "url": "https://www.bbc.co.uk/news/health",
-      "source": "BBC Health",
-      "category": "의료",
-      "date": "2026-05-06 20:59"
     }
   ],
-  "updated": "2026-05-06 23:53:42"
+  "updated": "2026-05-06 23:57:34"
 }
