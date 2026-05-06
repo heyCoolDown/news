@@ -19,8 +19,8 @@ from html.parser import HTMLParser
 sys.stdout.reconfigure(encoding='utf-8')
 
 # ── 설정 ──────────────────────────────────────────────────
-NAVER_CLIENT_ID     = os.environ.get("NAVER_CLIENT_ID", "sibEtt7IjSAASINsTaBw")
-NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "wTPPRyRlS0")
+NAVER_CLIENT_ID     = os.environ.get("NAVER_CLIENT_ID", "")
+NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "")
 
 HOLDINGS_API_URL = "http://168.107.56.144:5000/api/data"
 
