@@ -18,6 +18,24 @@ from html.parser import HTMLParser
 
 sys.stdout.reconfigure(encoding='utf-8')
 
+# ── 번역 ───────────────────────────────────────────────────
+try:
+    from deep_translator import GoogleTranslator
+    _translator = GoogleTranslator(source='auto', target='ko')
+    TRANSLATION_AVAILABLE = True
+    print("[번역] deep-translator 로드 성공")
+except ImportError:
+    TRANSLATION_AVAILABLE = False
+    print("[번역] deep-translator 없음 - 번역 생략")
+
+def translate(text):
+    if not TRANSLATION_AVAILABLE or not text:
+        return text
+    try:
+        return _translator.translate(text[:4500]) or text
+    except Exception:
+        return text
+
 # ── 설정 ──────────────────────────────────────────────────
 NAVER_CLIENT_ID     = os.environ.get("NAVER_CLIENT_ID", "")
 NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "")
@@ -48,28 +66,28 @@ RSS_FEEDS = [
     {"name": "코메디닷컴",  "url": "https://kormedi.com/feed/",                         "category": "의료"},
     {"name": "헬스조선",    "url": "https://health.chosun.com/rss/allArticle.xml",      "category": "의료"},
     # 해외 IT (영문)
-    {"name": "MIT Tech Review", "url": "https://www.technologyreview.com/feed/",       "category": "IT"},
-    {"name": "Ars Technica",   "url": "https://feeds.arstechnica.com/arstechnica/index", "category": "IT"},
-    {"name": "The Verge",      "url": "https://www.theverge.com/rss/index.xml",        "category": "IT"},
-    {"name": "WIRED",          "url": "https://www.wired.com/feed/rss",                "category": "IT"},
+    {"name": "MIT Tech Review", "url": "https://www.technologyreview.com/feed/",       "category": "IT",   "lang": "en"},
+    {"name": "Ars Technica",   "url": "https://feeds.arstechnica.com/arstechnica/index", "category": "IT", "lang": "en"},
+    {"name": "The Verge",      "url": "https://www.theverge.com/rss/index.xml",        "category": "IT",   "lang": "en"},
+    {"name": "WIRED",          "url": "https://www.wired.com/feed/rss",                "category": "IT",   "lang": "en"},
     # 해외 과학 (영문)
-    {"name": "ScienceDaily",   "url": "https://www.sciencedaily.com/rss/all.xml",      "category": "과학"},
-    {"name": "New Scientist",  "url": "https://www.newscientist.com/feed/home/",       "category": "과학"},
-    {"name": "Live Science",   "url": "https://www.livescience.com/feeds/all",         "category": "과학"},
-    {"name": "NASA News",      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss","category": "과학"},
+    {"name": "ScienceDaily",   "url": "https://www.sciencedaily.com/rss/all.xml",      "category": "과학", "lang": "en"},
+    {"name": "New Scientist",  "url": "https://www.newscientist.com/feed/home/",       "category": "과학", "lang": "en"},
+    {"name": "Live Science",   "url": "https://www.livescience.com/feeds/all",         "category": "과학", "lang": "en"},
+    {"name": "NASA News",      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss","category": "과학", "lang": "en"},
     # 해외 의료/생명과학 (영문 - 일반 독자용)
-    {"name": "Medical Xpress", "url": "https://medicalxpress.com/rss-feed/",           "category": "의료"},
-    {"name": "WebMD Health",   "url": "https://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RS_RSSFEEDS_ALLNEWS", "category": "의료"},
-    {"name": "BBC Health",     "url": "https://feeds.bbci.co.uk/news/health/rss.xml",  "category": "의료"},
-    {"name": "Healthline",     "url": "https://www.healthline.com/rss/news",           "category": "의료"},
+    {"name": "Medical Xpress", "url": "https://medicalxpress.com/rss-feed/",           "category": "의료", "lang": "en"},
+    {"name": "WebMD Health",   "url": "https://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RS_RSSFEEDS_ALLNEWS", "category": "의료", "lang": "en"},
+    {"name": "BBC Health",     "url": "https://feeds.bbci.co.uk/news/health/rss.xml",  "category": "의료", "lang": "en"},
+    {"name": "Healthline",     "url": "https://www.healthline.com/rss/news",           "category": "의료", "lang": "en"},
     # 해외 기이한사건 (영문)
-    {"name": "Oddity Central", "url": "https://www.odditycentral.com/feed",            "category": "기이"},
-    {"name": "Boing Boing",    "url": "https://boingboing.net/feed",                   "category": "기이"},
-    {"name": "Atlas Obscura",  "url": "https://www.atlasobscura.com/feeds/latest",     "category": "기이"},
-    {"name": "Mysterious Univ","url": "https://mysteriousuniverse.org/feed/",          "category": "기이"},
+    {"name": "Oddity Central", "url": "https://www.odditycentral.com/feed",            "category": "기이", "lang": "en"},
+    {"name": "Boing Boing",    "url": "https://boingboing.net/feed",                   "category": "기이", "lang": "en"},
+    {"name": "Atlas Obscura",  "url": "https://www.atlasobscura.com/feeds/latest",     "category": "기이", "lang": "en"},
+    {"name": "Mysterious Univ","url": "https://mysteriousuniverse.org/feed/",          "category": "기이", "lang": "en"},
     # 해외 흥미 (영문)
-    {"name": "Interesting Eng","url": "https://interestingengineering.com/feed",        "category": "흥미"},
-    {"name": "Futurism",       "url": "https://futurism.com/feed",                     "category": "흥미"},
+    {"name": "Interesting Eng","url": "https://interestingengineering.com/feed",        "category": "흥미", "lang": "en"},
+    {"name": "Futurism",       "url": "https://futurism.com/feed",                     "category": "흥미", "lang": "en"},
 ]
 
 # ── HTML 태그 제거 ─────────────────────────────────────────
@@ -190,9 +208,14 @@ def parse_rss(feed_info, max_items=8):
             if is_politics(title, desc):
                 continue
 
+            summary = summarize(desc)
+            if feed_info.get("lang") == "en":
+                title   = translate(title)
+                summary = translate(summary)
+
             items.append({
                 "title":    title,
-                "summary":  summarize(desc),
+                "summary":  summary,
                 "url":      link.strip(),
                 "source":   feed_info["name"],
                 "category": feed_info["category"],
