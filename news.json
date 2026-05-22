@@ -1,58 +1,175 @@
 {
   "holdings": [
     {
-      "title": "日 마쓰다, 中 공세 속 플래그십 SUV ‘CX-5’ 출시… 전기차 줄이고 하...",
-      "summary": "디젤 엔진 라인업을 완전히 배제했다. 대신 가솔린 엔진과 더불어 독자적인 ‘마일드 하이브리드(MHEV)... 마쓰다는 지난주 전기차를 포함한 전동화 투자 총액을 기존 1조 5,000억 엔에서 1조 2,000억...",
-      "url": "https://www.g-enews.com/view.php?ud=2026052117441545660c8c1c064d_1",
+      "title": "LG, 3500억원 규모 자사주 전량 소각…“주주환원·밸류업 속도 낸다”",
+      "summary": "㈜LG가 남은 자사주를 전량 소각하며 주주가치 제고와 기업가치 프로그램(밸류업) 이행에 박차를 가한다. ㈜LG는 배당가능이익 범위 내에서 취득한 자기주식 보통주 302만 9,581주를 모두 소각하기로 결정했다고...",
+      "url": "https://www.mediapen.com/news/view/1100589",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "LG",
+      "date": "2026-05-22 18:56"
+    },
+    {
+      "title": "LG, 잔여 자사주 3500억원 전량 소각…주주환원 강화",
+      "summary": "서울 여의도 LG 본사. [LG] LG가 약 3500억원 규모의 잔여 자사주를 전량 소각한다. 지난해 기보유 자사주의 절반을 소각한 데 이어 남은 물량까지 없애며 기업가치 제고 정책 이행에 속도를 낸다. LG는...",
+      "url": "https://www.ziksir.com/news/articleView.html?idxno=134760",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "LG",
+      "date": "2026-05-22 18:56"
+    },
+    {
+      "title": "[포토Q] 키움 로젠버그 '전력으로 간다'",
+      "summary": "키움 히어로즈 케니 로젠버그가 22일 오후 서울 송파구 잠실야구장에서 진행된 2026 신한 SOL(쏠) 뱅크 KBO리그(프로야구) LG 트윈스와 경기에서 선발 등판해 투구를 하고 있다. [스포츠Q(큐) = 손힘찬...",
+      "url": "http://www.sportsq.co.kr/news/articleView.html?idxno=494650",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "LG",
+      "date": "2026-05-22 18:56"
+    },
+    {
+      "title": "크레오에스지, 삼성SDS와 20억 규모 공급 계약 체결",
+      "summary": "크레오에스지(040350)는 삼성에스디에스(018260)(삼성SDS)와 약 20억원 규모의 우리은행 중장기 IT인프라 최적화 관련 제품 및 하도급 계약을 체결했다고 22일 공시했다. 계약금액은 지난해 회사 매출액의...",
+      "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=04808486645451544",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "삼성에스디에스",
+      "date": "2026-05-22 16:31"
+    },
+    {
+      "title": "[거래소 기관] SK하이닉스 SK스퀘어 현대차 LG전자 현대모비스 '왕성한 ...",
+      "summary": "OCI홀딩스와 삼성에스디에스, 삼성중공업, 한화오션, LG씨엔에스까지 포함되며 에너지, IT서비스, 조선 업종 전반에서 기관 매수세가 확인됐다. 특히 SK하이닉스와 SK스퀘어를 중심으로 한 반도체 그룹과 현대차...",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=454806",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "삼성에스디에스",
+      "date": "2026-05-22 16:26"
+    },
+    {
+      "title": "\"삼성에스디에스, AI 인프라 선도 기업…AX 시장 성장의 수혜\"",
+      "summary": "삼성에스디에스는 AI 시대의 확실한 수혜주이다. 미래에셋증권은 22일 삼성에스디에스에 대해 투자의견 '매수', 목표주가 24만원(2027년 타겟 P/E 22배)으로 커버리지를 개시했다. 타겟 멀티플은 클라우드...",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=266738",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "삼성에스디에스",
+      "date": "2026-05-22 16:00"
+    },
+    {
+      "title": "\"한국금융지주, 해외 진출이나 증권업 외에 다른 비즈니스 찾아야\"",
+      "summary": "한국금융지주는 흠잡을 데 없는 펀더멘털을 보이고 있다. 키움증권은 22일 한국금융지주에 대해 투자의견 'BUY'와 목표주가 31만원을 유지했다. 직전거래일 21일 기준 주가는 24만9500원에 거래를 마쳤다....",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=266744",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "한국금융지주",
+      "date": "2026-05-22 17:36"
+    },
+    {
+      "title": "[더밸류 브리핑] 오늘의 증권사 소식…한국투자증권·키움증권·하나증...",
+      "summary": "◆ 한국투자증권, ‘제15회 뱅키스 대학생 모의투자대회’ 시상식 개최 한국금융지주 자회사 한국투자증권(사장 김성환)이 지난 21일 서울 여의도 본사에서 ‘제15회 뱅키스 대학생 모의투자대회’ 시상식을 진행했다....",
+      "url": "http://www.thevaluenews.co.kr/news/view.php?idx=198958",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "한국금융지주",
+      "date": "2026-05-22 17:04"
+    },
+    {
+      "title": "[코스피 지수선물 옵션] 선물시장 돈 몰린 곳 따로 있었다…삼성전자 대...",
+      "summary": "KB금융과 신한지주, 우리금융지주, 기업은행, 삼성생명, 삼성화재, 메리츠금융, 한국금융지주, NH투자증권, 삼성증권 선물이 고르게 거래되며 금리와 배당 기대감이 반영됐다. IT와 플랫폼 업종에서는 NAVER와...",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=454825",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "한국금융지주",
+      "date": "2026-05-22 17:02"
+    },
+    {
+      "title": "[이슈] 하나금융, 계열사 IB 역량 결집…'One-IB'로 생산적 금융 확대",
+      "summary": "최근 GS건설 등과 '생산적 금융 대전환' 업무협약을 맺고 AI 데이터센터 사업 협력에 나섰다. 투자와 펀드 조성, 공동 사업 개발 등 사업 전 단계에 참여하는 구조다. 특히 인공지능(AI) 데이터센터 밸류체인을...",
+      "url": "http://www.paxetv.com/news/articleView.html?idxno=272842",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "GS",
+      "date": "2026-05-22 18:44"
+    },
+    {
+      "title": "대표지수 리밸런싱…코스피200 OCI·DB하이텍 편입, 코스닥 '로봇주' 약...",
+      "summary": "반면 GS건설, 세방전지, GKL, 녹십자홀딩스는 지수에서 제외된다. ■ 코스닥150, 로봇·바이오 대거 진입…기존 주도주 16곳 탈락 코스닥 시장의 핵심 기술주를 대변하는 코스닥150 지수에서는 로봇과 바이오 등...",
+      "url": "http://www.joseilbo.com/news/news_read.php?uid=568826&class=53&grp=",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "GS",
+      "date": "2026-05-22 18:37"
+    },
+    {
+      "title": "홈쇼핑, TV 한계 넘는다..'AI·오픈이노베이션'으로 승부수",
+      "summary": "GS샵 역시 AI 추천 알고리즘을 고도화해 모바일 앱 환경을 개인화 큐레이션 플랫폼으로 재편하는 데 전력을 다하고 있다. 특히 TV 방송 콘텐츠를 1분 미만의 숏폼 형태로 자동 편집·노출하는 시스템을 강화하며,...",
+      "url": "http://www.4th.kr/news/articleView.html?idxno=2112139",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "GS",
+      "date": "2026-05-22 18:32"
+    },
+    {
+      "title": "K-우주산업, ‘뉴 스페이스 시대’ 쏘아올리다 [창간기획]",
+      "summary": "한화에어로스페이스의 발사체 단조립장 및 엔진 생산 거점인 전남 순천·경남 창원과 KAI의 본진인 경남 사천을 하나로 잇는 거대한 '우주항공 클러스터' 조성이 가속화되고 있다. 두 앵커 기업을 중심으로 첨단 연구...",
+      "url": "https://www.ekn.kr/web/view.php?key=20260522029074982",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "한화엔진",
-      "date": "2026-05-22 05:26"
+      "date": "2026-05-22 18:00"
     },
     {
-      "title": "\"친환경 파도 타고 LNG 급부상\" 선박 메인엔진 국산화 가능해진다",
-      "summary": "HD현대중공업, 한화오션, 삼성중공업 등 한국의 주요 조선사와 산하 엔진 제조사들은 대형 엔진 원천 설계 기술이 없기에 유럽 2사로부터 라이선스를 획득해 도면을 받아오는 ‘기술 협업(라이선시, Licensee)’의...",
-      "url": "https://www.bizhankook.com/bk/article/32321",
+      "title": "[ABC 오프닝벨] \"이제 부르는 게 값\"… 조선주 장기 사이클 진입 속 '한...",
+      "summary": "이어 이 대표는 \"최근 정보 탐색의 축이 기존 검색 엔진에서 AI 플랫폼으로 이동하면서 네이버의 검색... 김세아 아나운서.[사진=ABC] 이날 한화오션 주가가 7% 이상 상승하며 강세를 보인 가운데 이 대표는...",
+      "url": "https://www.ajunews.com/view/20260522144737324",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "한화엔진",
-      "date": "2026-05-21 18:06"
+      "date": "2026-05-22 17:04"
     },
     {
-      "title": "연매출 320억 원인데 직원은 0명?…AI 1인 기업 '솔로프리너'가 뜬다",
-      "summary": "AI가 엔진을 교체하면서 글로벌 노동 흐름의 핵심 축으로 자리 잡았다. 솔로프리너는 자주 혼동되는... 첫째, 부가세·종합소득세·전자세금계산서·간편 결제·은행 업무·고객관계관리를 한 화면으로 묶는...",
-      "url": "https://www.mt.co.kr/world/2026/05/21/2026052114402677390",
+      "title": "\"메리츠금융지주, 국내 주가 상승 랠리에서 상대적으로 소외…1분기 실...",
+      "summary": "메리츠금융지주의 추가 하방 리스크는 제한적이다. 키움증권은 22일 메리츠금융지주에 대해 투자의견 BUY와 목표주가 17만원을 유지했다. 직전거래일 21일 기준 주가는 10만8900원에 거래를 마쳤다. 일찍이...",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=266745",
       "source": "네이버뉴스",
       "category": "보유종목",
-      "stock": "한화엔진",
-      "date": "2026-05-21 18:01"
+      "stock": "메리츠금융지주",
+      "date": "2026-05-22 17:54"
     },
     {
-      "title": "한국타이어, 中가흥공장 '친환경 국제인증 ISCC PLUS' 획득",
-      "summary": "한국타이어앤테크놀로지(이하 한국타이어)는 중국 저장성 자싱시에 위치한 가흥공장이 글로벌 친환경 소재 국제인증 제도인 'ISCC PLUS' 인증을 획득했다고 22일 밝혔다. ISCC PLUS란, 생산 전 과정에서...",
-      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2432057",
+      "title": "[금융지주 주주환원율 50% 시대①] 4대 금융 사상 첫 5조 순익…주주환...",
+      "summary": "메리츠증권 조아해 연구원은 \"양호한 이익 체력과 자본비율을 기반으로 자사주 매입 등 적극적인 주주환원이 이어질 것\"이라며 \"환원 방식의 다양화가 금융지주 간 차별화 요인으로 작용할 것\"이라고 설명했다. 즉...",
+      "url": "https://www.econovill.com/news/articleView.html?idxno=739420",
       "source": "네이버뉴스",
       "category": "보유종목",
-      "stock": "한국타이어앤테크놀로지",
-      "date": "2026-05-22 08:46"
+      "stock": "메리츠금융지주",
+      "date": "2026-05-22 15:32"
     },
     {
-      "title": "한국타이어, 중국 가흥공장 'ISCC PLUS' 인증 획득…글로벌 친환경 공급...",
-      "summary": "한국타이어앤테크놀로지(한국타이어)가 중국 저장성 자싱시에 위치한 가흥공장이 글로벌 친환경 소재 인증인 'ISCC PLUS'를 획득했다고 22일 밝혔다. ISCC PLUS는 바이오 기반 및 재활용 원료의 지속가능성과...",
-      "url": "https://www.gpkorea.com/news/articleView.html?idxno=143048",
-      "source": "네이버뉴스",
-      "category": "보유종목",
-      "stock": "한국타이어앤테크놀로지",
-      "date": "2026-05-22 08:40"
-    },
-    {
-      "title": "[車산업 이모저모] MIK, 오네레이싱, 한국타이어 등",
-      "summary": "한국앤컴퍼니그룹의 글로벌 선도 타이어 기업 한국타이어앤테크놀로지(이하 한국타이어)는 서울 강서구 코엑스 마곡에서 열린 '제61회 발명의 날' 기념식에서 에어리스 타이어 기술 개발과 독보적인 특허 연구 성과를...",
-      "url": "http://www.bizwnews.com/news/articleView.html?idxno=137166",
+      "title": "85주년 한국앤컴퍼니그룹, ‘원 컴퍼니’ 조직문화 강화",
+      "summary": "프로액티브 콘서트는 2013년 한국타이어앤테크놀로지에서 시작된 이후 꾸준히 운영돼 왔다. 지난해부터는 한국앤컴퍼니를 비롯해 한온시스템, 한국네트웍스, 한국엔지니어링웍스, 모델솔루션 등 주요 계열사까지 확대되며...",
+      "url": "https://www.donga.com/news/Economy/article/all/20260522/133978395/2",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "한국타이어앤테크놀로지",
-      "date": "2026-05-22 07:24"
+      "date": "2026-05-22 18:57"
+    },
+    {
+      "title": "한국타이어 중국 가흥공장, 글로벌 친환경 소재 인증 'ISCC +' 획득",
+      "summary": "한국타이어앤테크놀로지(이하 한국타이어)의 중국 저장성 자싱시에 위치한 '가흥공장'이 글로벌 친환경 소재 국제인증 제도인 'ISCC +' 인증을 획득했다. 이 인증은 바이오 기반 및 재활용 원료의 지속가능성과...",
+      "url": "https://www.starnewskorea.com/business-life/2026/05/22/2026052218061363311",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "한국타이어앤테크놀로지",
+      "date": "2026-05-22 18:15"
+    },
+    {
+      "title": "한국앤컴퍼니그룹, 창립 85주년 맞아 '원 컴퍼니' 조직문화 속도",
+      "summary": "프로액티브 콘서트는 2013년 한국타이어앤테크놀로지(한국타이어)에서 시작된 이래 정기적으로 운영돼 왔다. 지난해부터는 지주사인 한국앤컴퍼니를 비롯해 한온시스템, 한국네트웍스, 한국엔지니어링웍스...",
+      "url": "https://www.goodkyung.com/news/articleView.html?idxno=287309",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "한국타이어앤테크놀로지",
+      "date": "2026-05-22 17:38"
     },
     {
       "title": "[코스피 지수선물 옵션] 반도체 선물 광란 랠리…개미들 \"지금 안 타면 ...",
@@ -64,67 +181,49 @@
       "date": "2026-05-21 16:50"
     },
     {
-      "title": "항공주 일제히 강세…트럼프 '종전 최종단계' 발언에 유가↓",
-      "summary": "대한항공은 1600원(6.45%) 오른 2만6400원, 한진칼은 4200원(3.85%) 오른 11만3400원이다. 진에어·제주항공은 3%대, 아시아나항공·에어부산은 2%대 강세에 진입했다. 항공주는 유가 민감성이...",
-      "url": "https://www.mt.co.kr/stock/2026/05/21/2026052109172294515",
-      "source": "네이버뉴스",
-      "category": "보유종목",
-      "stock": "한진칼",
-      "date": "2026-05-21 09:18"
-    },
-    {
-      "title": "[모닝 리포트] 현대오토에버, '피지컬 AI' 역할 확대…NH證, 목표주가 7...",
-      "summary": "현대오토에버가 현대차그룹의 자율주행·로보틱스 신사업 가시성이 커지면서 '피지컬 AI' 전환의 핵심 플랫폼으로 부각되고 있다. NH투자증권은 본업 성장에 더해 그룹 신사업에서의 역할 확대를 반영해 목표주가를 대폭...",
-      "url": "https://www.newspim.com/news/view/20260522000130",
+      "title": "“현장 투입 머지 않았다” 기대감에 들썩…피지컬 AI로 묶인 현대차·L...",
+      "summary": "현대차 주가는 21.07% 급등했고 로봇의 관절인 액추에이터 및 모빌리티 핵심 계열사인 현대모비스(012330)(41.51%)와 현대오토에버(307950)(41.96%) 역시 40%가 넘는 급등세를 보였다....",
+      "url": "https://www.sedaily.com/article/20047472?ref=naver",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "현대오토에버",
-      "date": "2026-05-22 08:49"
+      "date": "2026-05-22 17:54"
     },
     {
-      "title": "오픈AI IPO 임박…기업가치 1280조 도전",
-      "summary": "이 프로젝트는 현대차그룹이 AWS·현대오토에버와 개발한 사내 AI 에이전트 ‘에이미(AIMI)’의 업무 범위를 확장하는 형태로 추진된다. 가상공간 속 AI가 제품을 사용하고 후기를 남기는 행동은 제품 개발의...",
-      "url": "https://www.sedaily.com/article/20047131?ref=naver",
+      "title": "‘삼전닉스’ 반도체서 로봇으로…현대차 품은 ETF 경쟁 본격화",
+      "summary": "글로벌 생산 인프라를 통해 확보한 제조 데이터에 현대모비스의 부품 경쟁력, 현대오토에버의 소프트웨어 역량이 결합되면서 제조·물류·AI를 아우르는 수직계열화 구조가 로봇 사업 경쟁력으로 이어질 수 있다는...",
+      "url": "https://economist.co.kr/article/view/ecn202605220035",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "현대오토에버",
-      "date": "2026-05-22 07:51"
+      "date": "2026-05-22 17:19"
     },
     {
-      "title": "현대차, AI로 신차 기획 혁신",
-      "summary": "관계자가 한 방향으로 움직였기에 정식 과제로 안착할 수 있었다”고 말했다. 현대차그룹은 ICT 본부와 현대오토에버 등 유관 조직과 보안 거버넌스 체계도 초기 단계부터 구축하며 AI 서비스 안정성을 강화하고 있다.",
-      "url": "https://www.mk.co.kr/article/12054800",
-      "source": "네이버뉴스",
-      "category": "보유종목",
-      "stock": "현대오토에버",
-      "date": "2026-05-21 18:46"
-    },
-    {
-      "title": "대형주, 프리마켓서 혼조세…다우 최고치·엔비디아 하락 여파[특징주]",
-      "summary": "반면 SK하이닉스(0.88%), 현대차(0.30%), LG에너지솔루션(2.12%), 삼성전기(5.65%), HD현대중공업(1.49%), 두산에너빌리티(5.63%) 등은 상승세를 보이고 있다. 이는 간밤 뉴욕증시의...",
-      "url": "https://www.newsway.co.kr/news/view?ud=2026052208510004436",
+      "title": "\"배 대신 원자로 찍는다\"··· HD현대, '원전판 TSMC' 노린다",
+      "summary": "22일 조선업계에 따르면 최근 HD현대중공업이 테라파워와 나트륨(Natrium) 원자로 핵심 주기기 공급 프레임워크 계약을 체결했다. 우선 협상 대상 제조사로 선정된 것도 이 흐름을 보여준다. 빌 게이츠가 설립한...",
+      "url": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=306741",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "HD현대중공업",
-      "date": "2026-05-22 08:54"
+      "date": "2026-05-22 18:44"
     },
     {
-      "title": "강훈식, 다음달 초 캐나다행 검토…'60조 잠수함 수주' 막판 총력전",
-      "summary": "한국 한화오션·HD현대중공업 컨소시엄은 3천600t급 '장보고-Ⅲ 배치-Ⅱ'를 제안했고 독일 티센크루프마린시스템(TKMS)과 최종 결선에서 경쟁 중인 가운데, 6월 말쯤 최종 사업자가 발표될 전망됩니다.",
-      "url": "https://biz.sbs.co.kr/article_hub/20000312068?division=NAVER",
+      "title": "‘AI 전력난 풀 치트키’…빌 게이츠가 韓 조선 택한 이유",
+      "summary": "22일 업계에 따르면 HD현대중공업은 전날 테라파워와 미국 와이오밍주 케머러(Kemmerer) 1호기 실증 단지에 들어갈 원자로 주기기 핵심 설비 공급과 관련한 기본합의(FA)를 체결했다고 밝혔다. 이번 합의는...",
+      "url": "https://www.kukinews.com/article/view/kuk202605220118",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "HD현대중공업",
-      "date": "2026-05-22 08:51"
+      "date": "2026-05-22 18:04"
     },
     {
-      "title": "[프리마켓 포커스] 뉴욕증시 이어 국내 프리마켓도 '빨간불'…삼전·하...",
-      "summary": "같은 시간 시가총액 상위 10개 종목 중에서는 두산에너빌리티(5.07%), 삼성전기(3.90%), LG에너지솔루션(1.25%), HD현대중공업(1.19%), SK하이닉스(0.57%), 삼성전자(0.33%),...",
-      "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=721173",
+      "title": "[더벨][상장 2년 HD현대마린솔루션] 2300억 지분투자 지연, '쌓아 놓은' ...",
+      "summary": "HD현대마린솔루션은 기업공개(IPO) 당시 사업 경쟁력 강화를 위한 다양한 청사진을 제시했지만, 투자계획은 2년이 되도록 좀처럼 진척을 내지 못하고 있다. 대규모 공모자금을 효율적으로 활용하지 못하고 묵혀두고...",
+      "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605201436431520102857",
       "source": "네이버뉴스",
       "category": "보유종목",
-      "stock": "HD현대중공업",
-      "date": "2026-05-22 08:50"
+      "stock": "HD현대마린솔루션",
+      "date": "2026-05-22 11:02"
     },
     {
       "title": "60조 잠수함 수주+에너지 협력…강훈식, 캐나다 또 간다",
@@ -152,7 +251,15 @@
       "url": "http://feeds.nature.com/nature/rss/current",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-22 09:00"
+      "date": "2026-05-22 18:58"
+    },
+    {
+      "title": "화성에서 사라지는 언어와 생명체: 간략한 책",
+      "summary": "",
+      "url": "https://www.nature.com/articles/d41586-026-01655-w",
+      "source": "Nature News",
+      "category": "과학",
+      "date": "2026-05-22 18:58"
     },
     {
       "title": "GPCR을 표적으로 하는 미니단백질의 새로운 설계",
@@ -160,7 +267,7 @@
       "url": "https://www.nature.com/articles/s41586-026-10656-8",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-22 09:00"
+      "date": "2026-05-22 18:58"
     },
     {
       "title": "한 소년의 생명을 구한 유전자 치료가 뇌종양을 일으켰나요?",
@@ -168,7 +275,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01593-7",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-22 09:00"
+      "date": "2026-05-22 18:58"
     },
     {
       "title": "690광년 떨어진 이 행성 주변에서 구름이 흐르고 사라지는 것을 보세요.",
@@ -176,7 +283,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01608-3",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-22 09:00"
+      "date": "2026-05-22 18:58"
     },
     {
       "title": "은하계를 가로지르는 악당이 된 별",
@@ -184,7 +291,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01591-9",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-22 09:00"
+      "date": "2026-05-22 18:58"
     },
     {
       "title": "통제 불능의 에볼라 발병: 어떻게 시작되었을까요?",
@@ -192,7 +299,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01645-y",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-22 09:00"
+      "date": "2026-05-22 18:58"
     },
     {
       "title": "개를 키워야 하나? 과학자로서 애완동물 소유에 관해 알아야 할 사항",
@@ -200,79 +307,79 @@
       "url": "https://www.nature.com/articles/d41586-026-00198-4",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-05-22 09:00"
+      "date": "2026-05-22 18:58"
     },
     {
-      "title": "이번 에볼라 발병은 사상 최대 규모가 될까요?",
-      "summary": "",
-      "url": "https://www.nature.com/articles/d41586-026-01646-x",
-      "source": "Nature News",
+      "title": "주요 AI 기업, 전 세계 컴퓨팅 절반 장악...구글이 25%로 1위",
+      "summary": "글로벌 AI 컴퓨팅 시장의 주도권이 소수 프론티어 모델 기업으로 급격히 쏠리고 있다는 분석이 나왔다. 예상과 달리 현재는 이들의 점유율이 절반 미만이지만, 공격적인 확장세가 이어지면서 앞으로 성패는 실질적인...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210854",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-22 18:57"
+    },
+    {
+      "title": "코히어, H100 2장으로 구동하는 에이전트용 모델 '커맨드 A+' 오픈 출시",
+      "summary": "코히어가 기업용 AI 에이전트 업무에 특화된 오픈소스 대형언어모델(LLM) ‘커맨드 A+(Command A+)’를 공개했다. 적은 연산 자원으로도 고성능 추론과 멀티모달 작업을 수행할 수 있도록 설계된 것이...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210841",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-22 18:57"
+    },
+    {
+      "title": "한컴·LG AI연구원, '챗엑사원' 앞세워 공공시장 공략 나선다",
+      "summary": "한컴(대표 김연수)은 LG AI연구원과 전략적 사업 얼라이언스 협약을 체결하고, 자체 AI 에이전트를 생성형 AI 플랫폼 '챗엑사원(ChatEXAONE)'에 공급한다고 22일 밝혔다. 한컴의 AI 에이전트가 외부...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210847",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-22 18:57"
+    },
+    {
+      "title": "[게시판] 위버스브레인, SK ‘K-AI 얼라이언스’ 합류 등 단신",
+      "summary": "■ AI 교육 전문 위버스브레인(대표 조세원, 이용국)은 SK그룹이 주도하는 국내 AI 기업 연합체 ‘K-AI 얼라이언스’에 합류했다고 밝혔다. 위버스브레인은 대화형 AI 기술력과 발화 데이터 기반 역량을 연합체...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210857",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-22 18:57"
+    },
+    {
+      "title": "베어로보틱스, 협업형 AI 서빙로봇 ‘서비 큐’ 공개",
+      "summary": "피지컬 AI 전문 베어로보틱스(대표 하정우)는 지난 16~19일 미국 시카고에서 열린 ‘NRA 2026’에서 협업형 AI 서빙로봇 신제품 ‘서비 큐(Servi Q)’를 공개했다고 밝혔다.NRA는 전 세계 외식업...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210855",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-22 18:57"
+    },
+    {
+      "title": "티디지-스패로우, 개발부터 운영까지 ‘엔드투엔드 보안 체계’ 구축 협력",
+      "summary": "AI 클라우드 전문 티디지(사장 이문형)는 애플리케이션 보안 전문 스패로우(대표 장일수)와 ‘소프트웨어 공급망 보안 강화’ 계약을 체결했다고 22일 밝혔다.양사는 이번 계약에 따라 소프트웨어 구성요소의 투명성을...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210853",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-22 18:57"
+    },
+    {
+      "title": "미국 정부, IBM 등 양자컴퓨팅 기업에 3조 투자 예정...\"보조금 넘어 지분까지\"",
+      "summary": "트럼프 행정부가 양자컴퓨팅 산업 육성을 위해 20억달러(약 3조원) 규모의 지원에 나선다. 정부가 직접 기업 지분까지 확보하는 방식으로 투자에 참여하면서 차세대 전략 산업 주도권 확보에 속도를 내는 모습이다.미국...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210838",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-22 18:57"
+    },
+    {
+      "title": "캘리포니아 주지사, AI 해고 노동자 보호 위한 행정명령 서명",
+      "summary": "개빈 뉴섬 미국 캘리포니아 주지사가 AI가 노동시장에 미치는 영향을 분석하고, AI로 일자리를 잃는 노동자들을 지원하기 위한 행정명령에 서명했다. AI 확대로 대규모 구조조정 우려가 커지는 가운데, 미국 지방정부...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=210836",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-05-22 18:57"
+    },
+    {
+      "title": "[조간브리핑]알리바바의 ‘에이전트’ 올인과 위고비 식욕 억제 비밀 규명··· 뇌를 지배하는 AI와 바이오 기술들",
+      "summary": "[중앙일보]“장이 뇌에 이중 명령”··· 위고비 식욕억제 비밀, 국내서 첫 규명 [팩플]비만 치료제 위고비는 어떻게 덜 먹고 싶게 만드는 걸까. 그 비밀은 장(腸)과 뇌(腦) 사이 신호에 있다. 국내 연구진이 몸속...",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=111876",
+      "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-22 09:00"
-    },
-    {
-      "title": "[5월21일] 구글은 왜 ‘제미나이 3.5 프로’ 출시를 미뤘나…핵심은 ‘데이터 플라이휠’",
-      "summary": "19일(현지시간) 열린 구글의 'I/O'에서는 굵직한 소식이 여럿 등장했습니다. 일부는 이미 유출됐던 내용이었는데, 여기에는 '제미나이 3.5 플래시'와 '제미나이 스파크', '제미나이 옴니' 등이 포함됩니다.이번...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210788",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-22 08:59"
-    },
-    {
-      "title": "무엇이든 해냅니다…구글의 진정한 멀티모델 ‘제미나이 옴니’",
-      "summary": "AI타임스 조예주 기자 joyejuoffice@aitimes.com",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210808",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-22 08:59"
-    },
-    {
-      "title": "오픈AI, 추론 모델로 80년 된 기하학 난제 해결...\"수학계 검증 거쳐\"",
-      "summary": "오픈AI가 80여년간 미해결 상태였던 유명 기하학 난제에 대한 반례를 AI가 찾아냈다고 주장했다. 이번 성과가 “AI가 수학 분야의 핵심 공개 난제를 자율적으로 해결한 첫 사례”라고 강조했다.오픈AI는...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210785",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-22 08:59"
-    },
-    {
-      "title": "앤트로픽, 2분기 16조 매출에 '첫 흑자'... 수익성으론 오픈AI 추월",
-      "summary": "앤트로픽이 올해 2분기 매출이 109억달러(약 16조원)에 달할 것으로 전망했다. 특히, 사상 첫 분기 흑자 달성을 눈앞에 두고 있다. 20일(현지시간) 월스트리트저널(WSJ)에 따르면, 앤트로픽은 최근 진행 중인...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210792",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-22 08:59"
-    },
-    {
-      "title": "알리바바, 학습·추론 통합 '젠우 M890' 칩으로 앤비디아에 도전장",
-      "summary": "알리바바가 엔비디아를 겨냥한 차세대 AI 칩을 공개하며 수익화에 속도를 내고 있다. 알리바바는 20일 중국 항저우에서 열린 ‘알리바바 클라우드 서밋’에서 차세대 AI 가속기 ‘젠우(Zhenwu) M890’을...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210789",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-22 08:59"
-    },
-    {
-      "title": "950억 투자 위로보틱스, 차별점은 '인간 데이터'로 휴머노이드 고도화",
-      "summary": "최근 시리즈 B 라운드에서 무려 950억원 규모 투자 유치를 이끌어낸 위로보틱스(대표 이연백, 김용재)가 그 비결을 밝혔다. 무엇보다, 기업 투자가 위축된 분위기 속에서 이 정도 규모의 투자 유치는 이례적이다....",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210807",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-22 08:59"
-    },
-    {
-      "title": "포티투닷, 차량용 음성 AI 에이전트 ‘글레오 AI’ 공개",
-      "summary": "포티투닷(대표 박민우)은 사람처럼 자연스러운 대화가 가능한 대형언어모델(LLM) 기반 차량용 음성 AI 에이전트 ‘글레오 AI(Gleo AI)’ 개발을 완료했다고 21일 밝혔다.글레오 AI는 현대자동차그룹의 글로벌...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210813",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-22 08:59"
-    },
-    {
-      "title": "[게시판] 한컴라이프케어, 샤크로보틱스와 무인소방로봇 사업 진출 등 단신",
-      "summary": "■ 한컴그룹 계열사인 한컴라이프케어(대표 김선영)는 프랑스 무인지상로봇(UGV) 전문 ‘샤크로보틱스’와 전략적 업무 협약을 체결했다고 밝혔다. 이번 파트너십으로 파리 노트르담 대성당 화재를 막은 ‘콜로서스’를...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210784",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-05-22 08:59"
+      "date": "2026-05-22 18:57"
     },
     {
       "title": "[현장]AI로 홍수 방지···건설연, 국민 체감 재난 대응 공개<br>\"장마철 도심홍수, 수초만에 맨홀 뚜껑 날아가\"",
@@ -280,7 +387,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111864",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-22 08:59"
+      "date": "2026-05-22 18:57"
     },
     {
       "title": "\"공공 R&D데이터 자산화, 부처 분절 허물어야\" 과기자문회의, 거버넌스 개편 제언",
@@ -288,7 +395,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111868",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-22 08:59"
+      "date": "2026-05-22 18:57"
     },
     {
       "title": "대전, '창업도시 프로젝트' 우선 지정···딥테크 창업 허브 도약",
@@ -296,7 +403,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111865",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-22 08:59"
+      "date": "2026-05-22 18:57"
     },
     {
       "title": "美·英·日 등 해외 석학들 \"대한민국 바이오 경쟁력 충분\"",
@@ -304,7 +411,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111874",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-22 08:59"
+      "date": "2026-05-22 18:57"
     },
     {
       "title": "[화보]'남극의 밤하늘 수놓은 은하수' 극지사진콘테스트 수상작 공개",
@@ -312,7 +419,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111872",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-22 08:59"
+      "date": "2026-05-22 18:57"
     },
     {
       "title": "\"대장암 항암 효과 7배\"···한의학연, 기존 약물로 면역 치료 새 길",
@@ -320,7 +427,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111866",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-22 08:59"
+      "date": "2026-05-22 18:57"
     },
     {
       "title": "\"암세포 생존 전략 알아냈다\" 기초지원연, 단백질 이동 조절 원리 확인",
@@ -328,87 +435,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=111873",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-05-22 08:59"
-    },
-    {
-      "title": "4대 과기원 연합 창업리그 개최···\"딥테크 스타트업 발굴\"",
-      "summary": "4대 과학기술원이 이공계 학생들의 기술 창업을 활성화하고 이들의 해외 시장 진출을 돕기 위해 힘을 모은다.KAIST(총장 이광형)는 GIST, DGIST, UNIST와 공동으로 첨단 기술 기반의 학생 창업팀을...",
-      "url": "http://www.hellodd.com/news/articleView.html?idxno=111867",
-      "source": "헬로디디",
-      "category": "과학",
-      "date": "2026-05-22 08:59"
-    },
-    {
-      "title": "피부와 같은 자율 컴퓨팅 패치는 99.6%의 정확도로 치명적인 심장 박동을 매핑합니다.",
-      "summary": "시카고 대학교 연구원들이 신축성 있는 컴퓨팅 패치를 개발했습니다.",
-      "url": "https://interestingengineering.com/ai-robotics/stretchable-computing-patch-heart-monitoring",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-05-22 08:41"
-    },
-    {
-      "title": "야외에서 운동하는 것이 겨울철 비타민 D 결핍을 퇴치하는 가장 좋은 방법이라는 연구 결과가 나왔습니다.",
-      "summary": "비타민 D는 신체가 제대로 기능하는 데 중요합니다. 비타민 D는 면역 체계의 균형을 유지하고 뼈를 건강하게 유지하는 데 도움이 됩니다.",
-      "url": "https://medicalxpress.com/news/2026-05-air-ally-combat-winter-vitamin.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-05-22 08:40"
-    },
-    {
-      "title": "알코올 관련 간 질환의 염증 뒤에 있는 분자 경로 지도 작성",
-      "summary": "Cedars-Sinai Health Sciences University 조사관은 염증을 유발하는 분자 메커니즘을 확인했습니다.",
-      "url": "https://medicalxpress.com/news/2026-05-molecular-pathways-inflammation-alcohol-liver.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-05-22 08:20"
-    },
-    {
-      "title": "BBC 뉴스",
-      "summary": "흑색종 피부암 발병 건수는 영국에서 처음으로 연간 20,000건을 넘어섰습니다.",
-      "url": "https://www.bbc.co.uk/news/health",
-      "source": "BBC Health",
-      "category": "의료",
-      "date": "2026-05-22 08:15"
-    },
-    {
-      "title": "영국의 젊은 세대는 이전 집단보다 생애 초기에 건강 상태가 좋지 않을 가능성이 높다는 연구 결과가 나왔습니다.",
-      "summary": "한 연구에 따르면 젊은 세대는 이전 세대보다 생애 초기에 건강 상태가 더 좋지 않은 것으로 보입니다.",
-      "url": "https://medicalxpress.com/news/2026-05-uk-younger-generations-likelier-poor.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-05-22 08:10"
-    },
-    {
-      "title": "코메디닷컴",
-      "summary": "\"임신 때 혈압 좀 높다고 했는데, 낳고 나면 괜찮아지는 거 아닌가요.\" 출산하면 해결된다며 잊고 지낸 여성들이 있다. 임신… The post 아이 낳으면 괜찮을 줄 알았는데… “혈압이 왜 이래” 무슨 일?...",
-      "url": "https://kormedi.com/",
-      "source": "코메디닷컴",
-      "category": "의료",
-      "date": "2026-05-22 08:06"
-    },
-    {
-      "title": "척추 자극 데이터를 통해 고주파 펄스가 주요 신경 경로를 놓칠 수 있는 이유가 밝혀졌습니다.",
-      "summary": "척수 손상 후와 같은 척수의 전기 자극은 최근 큰 발전을 이루었습니다.",
-      "url": "https://medicalxpress.com/news/2026-05-spinal-reveal-high-frequency-pulses.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-05-22 08:00"
-    },
-    {
-      "title": "정신 장애는 1990년 이후 거의 두 배로 증가하여 현재 전 세계적으로 12억 명의 사람들에게 영향을 미치고 있습니다.",
-      "summary": "전 세계적으로 약 12억 명의 사람들이 정신 장애를 안고 살고 있는데, 이는 1990년에 기록된 숫자의 거의 두 배입니다....",
-      "url": "https://medicalxpress.com/news/2026-05-mental-disorders-affecting-billion-people.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-05-22 07:30"
-    },
-    {
-      "title": "머신러닝은 웨어러블 기술의 도움으로 우울증 치료를 개인화합니다",
-      "summary": "미국 성인의 21% 이상이 우울증을 경험하고 있으며 이는 삶의 질에 큰 영향을 미칩니다. 많은 사람들이...",
-      "url": "https://medicalxpress.com/news/2026-05-machine-personalizes-depression-treatment-wearable.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-05-22 07:20"
+      "date": "2026-05-22 18:57"
     },
     {
       "title": "ZDNet Korea",
@@ -416,136 +443,208 @@
       "url": "http://zdnet.co.kr/news/?lstcode=0000",
       "source": "ZDNet Korea",
       "category": "IT",
-      "date": "2026-05-22 07:14"
+      "date": "2026-05-22 18:29"
     },
     {
-      "title": "가짜 OpenAI 광고가 지하철에 나타납니다: “예, 우리는 십대들에게 자살하라고 지시하는 기계를 만들었습니다… 그러나 숙제에도 도움이 될 수 있습니다”",
-      "summary": "치는. 지하철에 가짜 OpenAI 광고 게재: “그래, 우리는 십대들에게 자살하라고 지시하는 기계를 만들었습니다…",
-      "url": "https://futurism.com/artificial-intelligence/fake-openai-ads-subway-teenagers-suicide",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-05-22 07:11"
-    },
-    {
-      "title": "아이 낳으면 괜찮을 줄 알았는데… “혈압이 왜 이래” 무슨 일?",
-      "summary": "어린 시절 학대나 방임을 경험한 사람은 성인이 된 뒤 친밀한 관계에서 폭력 피해를 경험할 위험이 높아질 수 있다는… The post 어린 시절 학대도 힘든데… “자라서 폭력에 더 노출됐다”, 왜? appeared...",
-      "url": "https://kormedi.com/2817657/",
-      "source": "코메디닷컴",
-      "category": "의료",
-      "date": "2026-05-22 07:06"
-    },
-    {
-      "title": "중국의 새로운 리튬 배터리는 3분 충전, 700사이클로 451Wh/kg에 도달합니다.",
-      "summary": "중국과학원 연구원들이 고체 리튬 금속 배터리를 개발했다고 밝혔습니다.",
-      "url": "https://interestingengineering.com/energy/china-solid-state-battery-451whkg-fast-charging",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-05-22 07:04"
-    },
-    {
-      "title": "데이터 기반 생체 재료는 췌장암 유기체를 새로운 세포 상태로 조종합니다",
-      "summary": "암세포가 서로 다른 상태 사이에서 어떻게 전환하는지 이해하고 제어하는 ​​것은 여전히 ​​중요한 과제로 남아 있습니다...",
-      "url": "https://medicalxpress.com/news/2026-05-driven-biomaterials-pancreatic-cancer-organoids.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-05-22 07:00"
-    },
-    {
-      "title": "새로운 병용 요법으로 백혈병 재발률을 줄이고 골수 이식 기간을 연장할 수 있음",
-      "summary": "LKS 의과대학 임상의학부 의과대학 연구팀...",
-      "url": "https://medicalxpress.com/news/2026-05-combination-therapy-leukemia-relapse-window.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-05-22 06:40"
-    },
-    {
-      "title": "Meta, 십대 소셜 미디어 중독 혐의에 대한 주요 켄터키 학교 소송 해결",
-      "summary": "Meta Platforms는 다음과 같은 주장에 대한 재판을 위한 첫 번째 학군 소송을 해결했습니다.",
-      "url": "https://interestingengineering.com/culture/meta-settles-school-social-media-harm-lawsuit",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-05-22 06:21"
-    },
-    {
-      "title": "러시아 교회는 종교 행렬과 기도 예배를 통해 우크라이나 드론의 접근을 막으려고 노력하고 있습니다.",
-      "summary": "페름에 있는 러시아 정교회 신부들은 최근 종교 행렬을 열고 이콘을 들고 도시를 순회했습니다.",
-      "url": "https://www.odditycentral.com/news/russian-church-tries-to-keep-ukrainian-drones-at-bay-with-religious-procession-and-prayer-service.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=russian-church-tries-to-keep-ukrainian-drones-at-bay-with-religious-procession-and-prayer-service",
-      "source": "Oddity Central",
-      "category": "기이",
-      "date": "2026-05-22 06:11"
-    },
-    {
-      "title": "어린 시절 학대도 힘든데… “자라서 폭력에 더 노출됐다”, 왜?",
-      "summary": "손톱을 물어뜯는 습관 때문에 손가락 피부가 괴사되고 뼈 감염까지 일어난 사례가 저널에 공개됐다. 미국 켄터키주 파이크빌 메디컬센터 응급의학과… The post 손톱 물어뜯다가, 10세 여아 피부 괴사에 뼈...",
-      "url": "https://kormedi.com/2817831/",
-      "source": "코메디닷컴",
-      "category": "의료",
-      "date": "2026-05-22 06:09"
-    },
-    {
-      "title": "손톱 물어뜯다가, 10세 여아 피부 괴사에 뼈 감염까지… 무슨 일?",
-      "summary": "배우 신동욱이 밝은 모습으로 여행을 즐기는 모습을 공개했다. 최근 신동욱은 자신의 소셜미디어에 한층 건강해진 소식을 전했다. 사진 속… The post ‘16년 투병’ 신동욱, 3kg 찌고 밝아진 모습…근황...",
-      "url": "https://kormedi.com/2817781/",
-      "source": "코메디닷컴",
-      "category": "의료",
-      "date": "2026-05-22 06:03"
-    },
-    {
-      "title": "‘16년 투병’ 신동욱, 3kg 찌고 밝아진 모습…근황 살펴보니",
-      "summary": "“방심하다 확 찐다”…살 빼려면 가장 먼저 끊어야 할 음식 5가지 다이어트를 결심하면 닭가슴살이나 샐러드부터 떠올리기… The post “방심하다 확 찐다”…살 빼려면 끊어야 할 음식 5가지 / “예비 시어머니가...",
-      "url": "https://kormedi.com/2818075/",
-      "source": "코메디닷컴",
-      "category": "의료",
-      "date": "2026-05-22 06:00"
-    },
-    {
-      "title": "Uv는 환상적이지만 패키지 관리 UX가 엉망입니다.",
-      "summary": "기사 URL: https://www.loopwerk.io/articles/2026/uv-ux-mess/ 댓글 URL:...",
-      "url": "https://www.loopwerk.io/articles/2026/uv-ux-mess/",
-      "source": "Hacker News",
+      "title": "[동정]구혁채 1차관, 싱가포르 대사와 과학기술 협력 논의",
+      "summary": "[지디넷코리아]구혁채 과학기술정보통신부 제1차관은 22일 서울에서 웡 카이쥔(Wong Kai Jiun) 주한 싱가포르 대사와 면담했다. 이들은 아시아-태평양 지역 지속가능한 다자연구협력 및 양국 간 과학기술·디지털...",
+      "url": "https://zdnet.co.kr/view/?no=20260522182946",
+      "source": "ZDNet Korea",
       "category": "IT",
-      "date": "2026-05-22 05:56"
+      "date": "2026-05-22 18:26"
     },
     {
-      "title": "MIT 기술 검토",
-      "summary": "아래 세션을 듣거나 시청해 보세요. AI 기업은 외부 세계를 이해하고 극복하는 시스템을 구축하고 싶어합니다.",
+      "title": "'총파업 유보' 이재용 회장, 대만서 미디어텍과 협력 논의",
+      "summary": "[지디넷코리아]이재용 삼성전자 회장이 대만 팹리스 업체 미디어텍 경영진과 만나 반도체 협력 방안을 논의했다. 22일 대만 현지 언론 등에 따르면 이재용 회장은 지난 21일 삼성전자 고위 임원들과 미디어텍 대만...",
+      "url": "https://zdnet.co.kr/view/?no=20260522182618",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-05-22 18:21"
+    },
+    {
+      "title": "[인사]과학기술정보통신부",
+      "summary": "[지디넷코리아]◇과장급 전보▲감사담당관 유승후▲연구윤리권익보호과장 최부용",
+      "url": "https://zdnet.co.kr/view/?no=20260522182139",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-05-22 18:19"
+    },
+    {
+      "title": "KT알파, 지역사회 동반 ESG 환경 캠페인 행사 개최",
+      "summary": "[지디넷코리아]KT알파(대표 박정민)는 22일 ‘국제 생물다양성의 날’을 맞이해 기후위기에 따른 생물다양성 보전의 중요성을 알리는 환경 캠페인을 3년 연속 진행했다고 이날 밝혔다. 이날 행사는 서울보라매공원...",
+      "url": "https://zdnet.co.kr/view/?no=20260522181946",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-05-22 18:12"
+    },
+    {
+      "title": "미국에서 인기를 끌고 있는 일본식 두피 마사지에 대해 알아야 할 사항",
+      "summary": "두피나 얼굴 마사지를 받는 것은 종종 머리를 자르거나 얼굴 관리를 받는 것의 하이라이트입니다. 이제 헤드스파는..",
+      "url": "https://medicalxpress.com/news/2026-05-japanese-style-scalp-massages.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-05-22 18:10"
+    },
+    {
+      "title": "\"중소기업 보안 리스크는 곧 경영 리스크\"",
+      "summary": "[지디넷코리아]\"보안은 IT 부서의 일이 아니고, 회사의 대표가 직접 챙겨야 하는 경영적인 리스크가 됐습니다. 랜섬웨어(Ransomware) 등 공격에 더 취약한 중소기업의 경우 미리 대응할 수 있어야...",
+      "url": "https://zdnet.co.kr/view/?no=20260522173119",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-05-22 18:08"
+    },
+    {
+      "title": "코메디닷컴",
+      "summary": "배우 이영애(55)가 ‘나이는 숫자에 불과한’ 미모를 뽐냈다. 이영애는 지난 17일(한국시간) 미국 뉴욕 타임스스퀘어에서 열린 ‘구찌 크루즈 2027 패션쇼’에… The post “이 얼굴이 55세?”…이영애,...",
+      "url": "https://kormedi.com/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-05-22 18:05"
+    },
+    {
+      "title": "LG, 3500억원 자사주 전량 소각",
+      "summary": "[지디넷코리아]LG가 주주가치 제고 차원에서 배당가능이익 범위 내 취득한 자기주식 보통주 302만 9581주를 모두 소각한다고 22일 밝혔다.LG는 \"전체 발행 보통주의 1.96%에 해당하는 수량\"이라며 \"22일...",
+      "url": "https://zdnet.co.kr/view/?no=20260522180645",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-05-22 18:04"
+    },
+    {
+      "title": "케임브리지 팀은 중요한 희토류 금속 매장지를 찾는 데 도움이 되는 '새로운 지도책'을 만듭니다.",
+      "summary": "스마트폰, 전기 자동차, 그리고 지역 전력망에 전력을 공급하는 거대한 풍력 터빈...",
+      "url": "https://interestingengineering.com/energy/cambridge-deep-earth-structures-rare-earth",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-05-22 18:02"
+    },
+    {
+      "title": "“이 얼굴이 55세?”…이영애, 날렵한 턱선 비결 뭐길래?",
+      "summary": "일본의 60대 여성이 몇 주 동안에 걸쳐 어떤 자극이 있어도 반응이 느리고 실어증, 미묘한 오른쪽 몸 마비, 식욕… The post 말 잃고 오른쪽 몸 마비 60대女…기침·가래 전혀 없었는데 폐암, 왜?...",
+      "url": "https://kormedi.com/2817820/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-05-22 18:01"
+    },
+    {
+      "title": "MIT 기술 리뷰",
+      "summary": "이번 일요일, 42명의 선수로 구성된 그룹이 다소 특이한 스포츠 대회에 참가하기 위해 라스베거스에 모일 예정입니다....",
       "url": "https://www.technologyreview.com",
       "source": "MIT Tech Review",
       "category": "IT",
-      "date": "2026-05-22 05:41"
+      "date": "2026-05-22 18:00"
     },
     {
-      "title": "HN 표시: 문서 앱 구축을 위한 오픈 소스 .docx 편집기 라이브러리",
-      "summary": "우리는 브라우저에서 Word 문서를 편집해야 하는 앱을 위한 오픈 소스 .docx 편집기 라이브러리를 개발 중입니다. 우리는 단지...",
-      "url": "https://github.com/eigenpal/docx-editor",
-      "source": "Hacker News",
+      "title": "연구원들은 향상된 GLP-1 유발 체중 감소 방법을 확인했습니다",
+      "summary": "NIH(국립보건원) 연구진이 GLP-1 사건에 대한 새로운 세부 정보를 공개했습니다.",
+      "url": "https://medicalxpress.com/news/2026-05-avenue-glp-weight-loss.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-05-22 18:00"
+    },
+    {
+      "title": "연구자들은 코로나19 mRNA 백신과 면역 체계 강화제가 반복적인 추가 접종의 필요성을 줄일 수 있다고 말합니다.",
+      "summary": "Nature Immunology에 발표된 새로운 연구에서 Boston Children's Hospital의 연구자들은 다음과 같은 두 가지의 결합을 입증했습니다.",
+      "url": "https://medicalxpress.com/news/2026-05-covid-mrna-vaccine-immune-boosters.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-05-22 18:00"
+    },
+    {
+      "title": "시선 AI, 100조 규모 호흡기 치료 시장 임상 검증 나선다",
+      "summary": "[지디넷코리아]시선 AI가 스마트폰 카메라만으로 흡입기 사용 데이터를 분석하는 비전 인공지능(AI) 기술을 앞세워 호흡기 치료 플랫폼 개발에 돌입한다. 시선 AI는 보건복지부 '2026년도 제1차 보건의료기술...",
+      "url": "https://zdnet.co.kr/view/?no=20260522175819",
+      "source": "ZDNet Korea",
       "category": "IT",
-      "date": "2026-05-22 05:23"
+      "date": "2026-05-22 17:54"
     },
     {
-      "title": "미국, 미니트맨 III 미사일 발사; 시험으로 ICBM의 추진, 유도, 재진입 시스템 검증",
-      "summary": "미공군 지구타격사령부, 비무장 미니트맨 시험발사…",
-      "url": "https://interestingengineering.com/military/us-launches-minuteman-iii-missile",
+      "title": "치명적인 DR 콩고 에볼라 발병이 M23이 장악한 남부 키부 지역으로 확산",
+      "summary": "콩고민주공화국에서 에볼라 발병이 남부 키부주 동부 지역으로 확산됐습니다.",
+      "url": "https://medicalxpress.com/news/2026-05-deadly-dr-congo-ebola-outbreak.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-05-22 17:40"
+    },
+    {
+      "title": "논란이 되고 있는 'AI 기반 애완동물 번역기', 정확도 95% 자랑",
+      "summary": "중국의 한 스타트업은 최근 고양이 소리를 해석할 수 있다고 주장하는 AI 기반 애완동물 번역기를 발표했습니다.",
+      "url": "https://www.odditycentral.com/animals/controversial-ai-powered-pet-translator-boasts-a-95-accurracy-rate.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=controversial-ai-powered-pet-translator-boasts-a-95-accurracy-rate",
+      "source": "Oddity Central",
+      "category": "기이",
+      "date": "2026-05-22 17:32"
+    },
+    {
+      "title": "8개의 거대 기술 기업이 싱가포르의 대규모 공공 테스트 베드에 자율 차량을 배치했습니다.",
+      "summary": "싱가포르는 로봇과 자율주행차 등 '물리적 AI'의 글로벌 허브로 자리매김하고 있습니다.",
+      "url": "https://interestingengineering.com/ai-robotics/singapore-punggol-district-embodied-ai-robot-testbed",
       "source": "Interesting Eng",
       "category": "흥미",
-      "date": "2026-05-22 05:21"
+      "date": "2026-05-22 16:40"
     },
     {
-      "title": "텍사스 주 댈러스에 있는 화폐 박물관",
-      "summary": "",
-      "url": "https://www.atlasobscura.com/places/momoney-the-museum-of-money",
-      "source": "Atlas Obscura",
-      "category": "기이",
-      "date": "2026-05-22 05:00"
+      "title": "말 잃고 오른쪽 몸 마비 60대女…기침·가래 전혀 없었는데 폐암, 왜?",
+      "summary": "혈우병 치료에서 관절 손상을 얼마나 일찍 예측하고 관리하느냐는 환자의 삶의 질을 좌우하는 핵심 과제다. GC녹십자가 실제 진료 데이터와… The post GC녹십자, 혈우병 관절 손상 예측 AI 개발...",
+      "url": "https://kormedi.com/2818443/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-05-22 16:25"
     },
     {
-      "title": "과학자들이 다가오는 치명적인 엘니뇨의 원인이 되는 바다 밑의 거대한 구조물을 발견했습니다",
-      "summary": "\"우리가 조사한 몇 가지 측정에 따르면 1997년에 보았던 것과 비슷합니다.\" 포스트 과학자들이 지하에서 거대한 구조물을 발견했습니다.",
-      "url": "https://futurism.com/science-energy/scientists-structure-ocean-el-nino",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-05-22 04:58"
+      "title": "GC녹십자, 혈우병 관절 손상 예측 AI 개발",
+      "summary": "5월 22일로 세계보건기구(WHO) 사무총장 재직 중 쓰러져 순직한 한국인 의사 고(故) 이종욱 박사(1945~2006)의 20주기를 맞았다. 2003년 한국인 최초로 국제기구의 수장에 선임돼… The post...",
+      "url": "https://kormedi.com/2818606/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-05-22 16:17"
+    },
+    {
+      "title": "20주기 맞은 ‘글로벌 감염병 영웅’ 이종욱 박사를 기리고 예우하는 방법",
+      "summary": "암 치료는 암세포를 공격하지만 몸속 정상 조직에도 상처를 남긴다. 특히 장은 손상에 취약하다. 장 점막은 음식물과 소화액, 장내… The post 장 회복 신호 켠 아미노산의 정체 appeared first on...",
+      "url": "https://kormedi.com/2818434/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-05-22 16:11"
+    },
+    {
+      "title": "장 회복 신호 켠 아미노산의 정체",
+      "summary": "뇌 수술은 보통 두개골을 열고 뇌를 일부 이동시켜 병변에 접근하는 방식으로 진행된다. 영국에서 최근 이런 과정을 크게 줄인… The post “두개골 열지 않고 뇌 수술”…‘눈 구멍’ 통해 뇌동맥류 치료, 英 첫...",
+      "url": "https://kormedi.com/2818589/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-05-22 16:07"
+    },
+    {
+      "title": "최신 과학 뉴스 - ScienceDaily",
+      "summary": "더 많은 과학 뉴스를 보려면 ScienceDaily를 방문하세요.",
+      "url": "https://www.sciencedaily.com/news/",
+      "source": "ScienceDaily",
+      "category": "과학",
+      "date": "2026-05-22 15:58"
+    },
+    {
+      "title": "“두개골 열지 않고 뇌 수술”…‘눈 구멍’ 통해 뇌동맥류 치료, 英 첫 성공",
+      "summary": "손으로 쥐는 힘(악력)이 약할수록 우울증 발생 위험이 높아지는 것으로 나타났다. 브라질과 벨기에, 중국, 영국 등 국제 연구팀이 전… The post 손으로 쥐는 힘이 약해졌다면, ‘이것’ 위험 커진 것?...",
+      "url": "https://kormedi.com/2818169/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-05-22 15:53"
+    },
+    {
+      "title": "고대 소행성 분화구가 지구의 산소 생산 생명체를 촉발했을 수도 있습니다",
+      "summary": "한국의 숨겨진 분화구는 지구 역사상 가장 큰 전환점 중 하나인 화산 폭발에 대한 단서를 제공할 수 있습니다.",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260521072357.htm",
+      "source": "ScienceDaily",
+      "category": "과학",
+      "date": "2026-05-22 15:47"
+    },
+    {
+      "title": "손으로 쥐는 힘이 약해졌다면, ‘이것’ 위험 커진 것?",
+      "summary": "한양대류마티스병원은 성윤경 류마티스내과 교수가 지난 16일 ‘제46차 대한류마티스학회 춘계학술대회 및 제20차 국제 심포지엄’에서 대한류마티스학회 최고 권위 상인 대한류마티스학술상을… The post...",
+      "url": "https://kormedi.com/2818548/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-05-22 15:41"
     }
   ],
-  "updated": "2026-05-22 08:59:38"
+  "updated": "2026-05-22 18:57:39"
 }
