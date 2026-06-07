@@ -2,12 +2,140 @@
   "holdings": [],
   "tech": [
     {
+      "title": "김형준 스퀴즈비츠 대표 “AI 경량화 넘어 '피지컬 AI' 솔루션으로 확장”",
+      "summary": "“기존에 운영하던 AI 최적화 서비스와 기술을 바탕으로 피지컬 AI까지 영역을 넓혀 나가고 있습니다. AI가 더 많은 과업을 수행하게 될수록, 경량화 기술의 수요는 더 늘어날 것입니다.”AI 최적화 전문...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211415",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "EU, 반도체·AI ‘기술 주권’ 전략 공개...\"미국 빅테크 의존 줄인다\"",
+      "summary": "유럽연합(EU)이 미국과 아시아 기술 기업 의존도를 줄이기 위해 반도체와 AI, 클라우드 컴퓨팅 분야의 공급망 자립을 목표로 하는 대규모 '기술 주권(Tech Sovereignty)' 전략을 발표했다.EU...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211430",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "화웨이·선전 연구진 \"중국산 AI 칩으로 ‘딥시크 V4-프로’ 사후학습 성공\"",
+      "summary": "화웨이와 중국 연구 기관들이 1000개 이상의 화웨이 AI 가속기를 활용해 딥시크의 AI 모델 'V4-프로(V4-Pro)'에 대한 사후학습을 완료했다고 밝혔다. 중국산 AI 칩이 그동안 약점으로 지적됐던 학습...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211428",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "AI 음악 스타트업 수노, 저작권 분쟁 속  8조 가치로 투자 유치",
+      "summary": "AI 음악 플랫폼 수노가 4억달러(약 6200억원) 규모의 시리즈D 투자를 유치하며 기업 가치 54억달러(약 8조원)를 인정받았다. 저작권 침해 소송이 이어지는 가운데서도 불과 7개월 만에 몸값을 2배 이상...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211429",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "오픈AI, 프롬프트 인젝션 막는 ‘잠금 모드' 공개...\"외부  연결 제한\"",
+      "summary": "오픈AI가 프롬프트 인젝션(prompt injection) 공격으로 인한 민감 정보 유출 위험을 줄이기 위한 새로운 보안 기능 '잠금 모드(Lockdown Mode)'를 공개했다. 웹 브라우징과 딥 리서치(Deep...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211425",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "문샷 AI, 코딩 에이전트 '키미 코드 CLI' 공개…\"터미널서 병렬 작업 지원\"",
+      "summary": "문샷 AI가 터미널 환경에서 동작하는 오픈소스 코딩 에이전트를 공개했다. 문샷 AI는 6일(현지시간) 오픈소스 코딩 에이전트 '키미 코드 CLI(Kimi Code CLI)'를 공개했다. 개발자가 터미널 환경에서...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211424",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "손정의 \"차세대 AI, 인간 아닌 AI가 설계…2년 내 초지능 올 것\"",
+      "summary": "손정의 소프트뱅크 회장이 오픈AI의 차세대 모델이 다른 모델에 의해 설계되고 있다며, 이로 인해 AGI가 예상보다 빠르게 도달할 것이라고 강조했다.손정의 회장은 5일(현지시간) 공개된 CNBC와의 인터뷰에서 최근...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211431",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "목포어린이도서관, AI·코딩 결합 독서 프로그램 ‘디지털 수사대’ 진행",
+      "summary": "목포어린이도서관이 초등학생을 대상으로 독서와 AI·코딩을 결합한 교육 프로그램을 운영한다고 밝혔다.목포어린이도서관은 오는 7월1일부터 22일까지 초등학교 4~6학년을 대상으로 ‘2026년 이야기가 있는 코딩’...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211368",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "삼성·네이버 접고 출연연 行, 최연소 실장 '과학청년' <br>\"대형 철도 프로제트로, 생활 속 기술 만들고파\"",
+      "summary": "삼성과 네이버를 거쳐 정부출연연구기관(이하 출연연)에 온 연구자가 있다. 한국철도기술연구원의 유승민 철도AI융합연구실장이다. 철도연 내 최연소 실장이라는 타이틀을 단 유 실장은 실내 측위 기술과 디지털트윈, 철도...",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=111966",
+      "source": "헬로디디",
+      "category": "과학",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "[서평] 백 년 만의 격랑, ‘중국사정’에 밝아야 하는 이유",
+      "summary": "격변의 시대이다. 생성형 AI가 세상을 뒤흔드는가 하면, 로봇 기술이 일취월장하고, 양자 컴퓨터 등 새로운 차원의 과학기술 우주가 만들어지고 있다. 여기에 미·중 패권 경쟁이 가속화되며 글로벌 질서도 거칠게...",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=111963",
+      "source": "헬로디디",
+      "category": "과학",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "[과기원 리포트] 9 첨단 바이오·AI 융합으로 초학제 연구 시대 열다",
+      "summary": "신경퇴행성 질환 조기진단을 목표로 AI, 나노, 바이오 기술을 결합한 이노코어(InnoCORE) 연구단. 국내외 연구 인재와 글로벌 멘토가 함께 도전하며, 사회적 과제를 해결하고 ACE형 연구자를 키우는 혁신적...",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=111886",
+      "source": "헬로디디",
+      "category": "과학",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "\"국수 뽑듯 섬유로 만든 수소 전극\" UNIST, 연속 생산 기술 개발",
+      "summary": "물을 분해해 수소를 생산하는 수전해 전극을 섬유 형태로 연속 생산할 수 있는 제조 기술이 개발됐다. 기존처럼 완성된 전극에 촉매를 입히는 방식이 아니라, 촉매를 섬유 원료에 넣어 함께 뽑아내는 공정이다. 연구진은...",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=112006",
+      "source": "헬로디디",
+      "category": "과학",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "루트임팩트, 14년 만에 리더십 전환···김상우 신임 사무총장 체제 출범",
+      "summary": "국내 사회혁신 생태계를 이끌어온 루트임팩트가 창립 14년 만에 새로운 리더십 체제를 출범한다.루트임팩트는 오는 7월 1일 김상우 최고운영책임자(COO)가 제3대 사무총장(CEO)에 취임한다고 7일 밝혔다. 공동...",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=112004",
+      "source": "헬로디디",
+      "category": "과학",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "\"창업기업과 투자자 연결 본격\" 9일 대전창업포럼 개최",
+      "summary": "대전시가 지역 스타트업과 투자자를 연결하는 새로운 창업 플랫폼을 마련했다. K-콘텐츠와 첨단기술 융합을 주제로 한 '대전창업포럼'을 시작으로 우주·국방, 바이오, AI·로봇 등 전략산업 중심의 정기 포럼을 운영하며...",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=112002",
+      "source": "헬로디디",
+      "category": "과학",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "사족보행·웨어러블·배송로봇 총출동, '대전 첨단로봇 커넥트' 개막",
+      "summary": "대전시가 시민 체험형 행사에 머물렀던 로봇축제를 산업과 국방, 창업을 연결하는 비즈니스 플랫폼으로 확대한다.대전시는 9일부터 11일까지 3일간 대전컨벤션센터(DCC)에서 '2026 대전 첨단로봇 커넥트'를...",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=112001",
+      "source": "헬로디디",
+      "category": "과학",
+      "date": "2026-06-07 18:47"
+    },
+    {
+      "title": "\"기술지정학 시대 국제협력 해법 찾는다\" KAIST, 글로벌 과학기술협력 포럼",
+      "summary": "KAIST 과학기술과 글로벌발전연구센터(G-CODES)가 기술패권 경쟁과 글로벌 공급망 재편 시대를 맞아 과학기술 국제협력의 새로운 방향을 모색하는 '글로벌 과학기술협력 포럼'을 10일 오후 1시부터...",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=112007",
+      "source": "헬로디디",
+      "category": "과학",
+      "date": "2026-06-07 18:47"
+    },
+    {
       "title": "자연",
       "summary": "",
       "url": "http://feeds.nature.com/nature/rss/current",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-06-07 09:02"
+      "date": "2026-06-07 18:47"
     },
     {
       "title": "브리핑 채팅: 염분샘이 있는 스피노사우루스는 해양 환경에서 살았을 수도 있습니다.",
@@ -15,7 +143,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01831-y",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-06-07 09:02"
+      "date": "2026-06-07 18:47"
     },
     {
       "title": "인간 배아의 최초 정밀 게놈 편집으로 칭찬과 경각심을 불러일으킴",
@@ -23,7 +151,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01827-8",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-06-07 09:02"
+      "date": "2026-06-07 18:47"
     },
     {
       "title": "유럽은 미국 기술을 버리고 있습니다. 이는 연구자들에게 무엇을 의미합니까?",
@@ -31,7 +159,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01610-9",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-06-07 09:02"
+      "date": "2026-06-07 18:47"
     },
     {
       "title": "화성으로 향하는 헬리콥터와 은하수의 화려한 꽃 프레임을 감상하세요 — 5월 최고의 과학 이미지",
@@ -39,7 +167,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01609-2",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-06-07 09:02"
+      "date": "2026-06-07 18:47"
     },
     {
       "title": "전기 자동차는 중국의 오염을 줄이고 260,000명의 조기 사망을 예방합니다.",
@@ -47,7 +175,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01781-5",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-06-07 09:02"
+      "date": "2026-06-07 18:47"
     },
     {
       "title": "저자 정정: 돼지에서 인간으로의 죽은 신장 이종 이식의 생리학 및 면역학",
@@ -55,7 +183,7 @@
       "url": "https://www.nature.com/articles/s41586-026-10694-2",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-06-07 09:02"
+      "date": "2026-06-07 18:47"
     },
     {
       "title": "비밀리에 핵폭탄 재료를 만드는 핵융합로의 냄새를 맡을 수 있는 장치",
@@ -63,344 +191,216 @@
       "url": "https://www.nature.com/articles/d41586-026-01764-6",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-06-07 09:02"
-    },
-    {
-      "title": "\"한국, AI 비싸게 쓴다\"…한국어 토큰 소모, 영어 최대 2.59배 높아",
-      "summary": "최근 글로벌 AI 기업이 사용량(토큰)만큼 비용을 청구하는 종량제 요금제를 확대하면서 이용자의 비용 부담이 커지고 있다.여기에 동일한 AI 모델이라도 한국어가 영어보다 토큰을 최대 3.5배 더 소모한다는 연구...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211350",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "월마트가 직접 만든 AI 코딩 에이전트 인기...\"빅테크 종속 깬다\"",
-      "summary": "월마트의 자체 개발 AI 코딩 에이전트가 사내에서 폭발적인 인기를 끌고 있다. 특정 AI 모델에 의존하지 않고 다양한 대형언어모델(LLM)을 자유롭게 활용할 수 있도록 설계된 점이 강점으로 꼽히며, AI 시대 최대...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211414",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "구글, 연주자 입력에 실시간 반응하는 AI 악기 ‘마젠타 리얼타임 2’ 공개",
-      "summary": "구글이 텍스트로 음악을 만드는 수준을 넘어, 연주자의 입력에 실시간으로 반응하며 악기처럼 사용할 수 있는 AI 음악 모델을 공개했다. 구글은 4일(현지시간) 음악가들이 실제 악기처럼 연주할 수 있는 차세대 실시간...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211417",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "구글, ‘젬마 4' 온디바이스 버전 QAT 공개…“메모리 1GB로 압축”",
-      "summary": "구글이 오픈소스 AI 모델 '젬마 4(Gemma 4)'를 스마트폰과 엣지 기기에서도 원활하게 구동할 수 있도록 최적화한 새로운 양자화 인식 학습(QAT·Quantization-Aware Training ) 버전을...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211418",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "나델라 \"신규 에이전트 목표는 사용자 중독\" 내부 문건에 격노",
-      "summary": "사티아 나델라 마이크로소프트(MS) CEO가 최근 공개된 사내 문건을 통해 신규 AI 에이전트 ‘스카우트(Scout)’의 초기 목표로 “사용자를 중독시키는 것”이라는 표현이 사용된 데 대해 공개적으로 반박하고...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211416",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "메타, 구글 따라 '대규모 주식 발행' 검토 중…AI 자금 조달 총력전",
-      "summary": "메타가 AI 인프라 구축을 위한 막대한 자금 수요를 충당하기 위해 수십억달러 규모의 신규 주식 발행을 검토하고 있는 것으로 알려졌다. 최근 구글이 기록적인 규모의 자금 조달에 성공한 이후 메타 내부 논의가 더...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211412",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "모건스탠리, 스페이스X 2040년 매출 5300조 전망...\"초대형 성장 핵심은 AI 사업\"",
-      "summary": "스페이스X가 다음주 기업공개(IPO)를 통해 1조7700억달러(약 2760조원)의 기업 가치를 목표로 하는 가운데, 주관사인 모건스탠리가 2040년 연 매출이 3조4000억달러(약 5302조원)에 달할 수 있다는...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211413",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "스페이스X, 앤트로픽 이어 구글과도 컴퓨팅 임대 계약...\"3년간 47조\"",
-      "summary": "구글이 스페이스X로부터 데이터센터 용량을 임대하기로 합의했다. 다음 주 상장을 앞둔 스페이스X는 앤트로픽에 이어 본격적인 클라우드 사업 확장에 나서게 됐다.스페이스X가 5일(현지시간) 미 증권거래위원회(SEC)에...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211421",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "비행기 직접 조종하는 로봇···KAIST '파이봇', 세계 최고 권위 학술지서 '최우수'",
-      "summary": "국내 연구팀이 개발한 사람처럼 조종 장치를 다루는 인간형 로봇 기술이 세계 최고 권위 로봇 학술지로부터 연구 성과를 인정받았다.KAIST(총장 이광형)는 심현철 전기및전자공학부 교수 연구팀의 인간형 조종사 로봇...",
-      "url": "http://www.hellodd.com/news/articleView.html?idxno=112000",
-      "source": "헬로디디",
-      "category": "과학",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "\"세계 연구행정 전문가 한자리에\"···2026 SRAI 하와이 연수단 모집",
-      "summary": "대덕넷(HelloDD)은 오는 10월 10일부터 16일까지 미국 하와이 호놀룰루에서 열리는 '2026 SRAI 연례총회 연수단 프로그램' 참가자를 모집한다고 7일 밝혔다.SRAI는 전 세계 연구행정 전문가들이...",
-      "url": "http://www.hellodd.com/news/articleView.html?idxno=111999",
-      "source": "헬로디디",
-      "category": "과학",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "떡잎부터 다른 AI 영재 양성···DGIST, 전주기 인재 육성 나선다",
-      "summary": "대구경북과학기술원(DGIST·총장 이건우)이 인공지능(AI) 인재 발굴부터 대학 교육, 기술창업까지 연결하는 인재 육성 체계를 구축하고 대구·경북 AI 생태계 확대에 나선다.DGIST는 지역 우수 인재의 수도권...",
-      "url": "http://www.hellodd.com/news/articleView.html?idxno=111998",
-      "source": "헬로디디",
-      "category": "과학",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "\"견적서 올리면 결재 신청까지\"···표준연, 내부 AI 플랫폼 구축",
-      "summary": "한국표준과학연구원(원장 이호성)이 보안 문제로 외부 생성형 인공지능(AI) 활용이 제한되는 내부 업무를 처리하기 위해 자체 AI 플랫폼을 구축했다.표준연은 독립된 내부망에서 구동되는 자체 AI 플랫폼 'KRISS...",
-      "url": "http://www.hellodd.com/news/articleView.html?idxno=111994",
-      "source": "헬로디디",
-      "category": "과학",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "[조간브리핑] 불 꺼진 실험실서 밤새 신약 찾는 로봇···AI 신약 개발 새 국면",
-      "summary": "[조선일보] [단독] AI가 두뇌, 로봇이 손… 사람 없이 24시간 실험로봇 팔 하나가 손가락만 한 유리병(바이알)을 향해 천천히 다가갔다. 위치를 가늠하듯 잠시 멈췄다가, 뚜껑 부분을 단단히 움켜쥐었다. 로봇 팔...",
-      "url": "http://www.hellodd.com/news/articleView.html?idxno=111995",
-      "source": "헬로디디",
-      "category": "과학",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "여의도 큰손들 대덕 딥테크에 '시선집중'<br>\"직접 보니 황금밭\"···혁신 밀도 1위 '대전'",
-      "summary": "\"기대했던 것보다 훨씬 인상 깊었습니다. 세 회사가 서로 다른 영역에 있는데도, 공통적으로 느낀 건 '연구개발(R&D)이 회사의 본체'라는 점이었습니다.\"서울의 투자자들이 대전 딥테크 기업에 주목하기 시작했다....",
-      "url": "http://www.hellodd.com/news/articleView.html?idxno=111854",
-      "source": "헬로디디",
-      "category": "과학",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "\"AI보다 강한 中 제조력, 첨단산업 10개 중 7개 장악\" 美 싱크탱크 경고",
-      "summary": "중국의 첨단산업 경쟁력이 빠른 속도로 확대되고 있다는 분석이 나왔다. 인공지능(AI) 경쟁에 관심이 집중되고 있지만, 실제 산업 생산 역량에서는 중국이 세계 첨단산업의 중심 국가로 부상하고 있다는 평가다.미국의...",
-      "url": "http://www.hellodd.com/news/articleView.html?idxno=111990",
-      "source": "헬로디디",
-      "category": "과학",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "[화보]70년의 빵과 시간을 굽다···성심당이 전하는 '오래된 진심'",
-      "summary": "대전의 대표 빵집 성심당이 창업 70주년을 맞았다. 70년 전 대전역 앞 작은 천막에서 시작된 찐빵 노점이 연매출 2600억 원을 넘기며 이제는 대전을 넘어 명실상부 국내 대표 빵집으로 자리잡았다. 성심당은 지난...",
-      "url": "http://www.hellodd.com/news/articleView.html?idxno=111774",
-      "source": "헬로디디",
-      "category": "과학",
-      "date": "2026-06-07 09:01"
-    },
-    {
-      "title": "국방부, 군 공인 종교 목록에서 공식적으로 180개 신앙 삭제",
-      "summary": "기사 URL: https://www.military.com/dod-officially-drops-180-faiths-from-militarys-recognized-religion-list 댓글...",
-      "url": "https://www.military.com/dod-officially-drops-180-faiths-from-militarys-recognized-religion-list",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-07 08:37"
+      "date": "2026-06-07 18:47"
     },
     {
       "title": "코메디닷컴",
-      "summary": "최근 방한한 엔비디아 최고경영자(CEO) 젠슨 황이 국내 기업 총수들과 삼겹살에 소맥을 곁들이는 모습이 화제를 모았다. 특히 젠슨 황은… The post “젠승 황도 삼겹살에 소맥”…다음날 멀쩡하려면 ‘이렇게’...",
+      "summary": "나이 든 어르신일수록 걷다가 전화가 오면 멈춰 선다. 계단 앞에서는 말을 끊는다. 그 이유를 물으면 \"그냥 그게 편해\"라고만… The post 서 있기만 해도 뇌가 꽉 찼다…전화 받다 넘어지는 이유 appeared...",
       "url": "https://kormedi.com/",
       "source": "코메디닷컴",
       "category": "의료",
-      "date": "2026-06-07 08:10"
+      "date": "2026-06-07 18:05"
     },
     {
-      "title": "“젠승 황도 삼겹살에 소맥”…다음날 멀쩡하려면 ‘이렇게’ 마셔라?",
-      "summary": "입맛 없는 여름철, 간편하게 먹기 좋은 음식으로 비빔국수만 한 것이 없다. 차갑게 헹군 소면에 새콤달콤한 양념장을 비벼내면 한… The post 비빔국수에 ‘이것’ 더했더니…아삭함과 영양이 2배 appeared...",
-      "url": "https://kormedi.com/2822525/",
+      "title": "서 있기만 해도 뇌가 꽉 찼다…전화 받다 넘어지는 이유",
+      "summary": "방송인 안선영이 머리숱 관리법을 소개했다. 최근 안선영은 자신의 유튜브 채널에 나이가 들수록 머리숱 관리가 중요하다는 내용이 담긴 영상을… The post “몸매 필요없어” 안선영, 나이 들수록 ‘이것’ 관리...",
+      "url": "https://kormedi.com/2822124/",
       "source": "코메디닷컴",
       "category": "의료",
-      "date": "2026-06-07 08:04"
+      "date": "2026-06-07 18:03"
     },
     {
-      "title": "감염은 당뇨병 환자에게 주요 '건강 위험'입니다",
-      "summary": "당뇨병 환자에게 감염은 \"건강 위험\"으로 간주되어야 하며, 전문가들은 현재...",
-      "url": "https://medicalxpress.com/news/2026-06-infections-major-health-hazard-people.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-07 07:50"
-    },
-    {
-      "title": "약물이 진행성 췌장암에서 생존율을 거의 두 배로 늘립니다. 다락손라십이 '견딜 수 없는' 질병을 극복한 방법",
-      "summary": "오랫동안 췌장암의 생존 가능성은 극히 낮았습니다. 진단을 받은 환자의 경우..",
-      "url": "https://medicalxpress.com/news/2026-06-drug-survival-advanced-pancreatic-cancer.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-07 07:30"
-    },
-    {
-      "title": "비빔국수에 ‘이것’ 더했더니…아삭함과 영양이 2배",
-      "summary": "친구들과 저녁 식사에서 발효 황새치 회를 한입 먹은 뒤 갑자기 물조차 삼킬 수 없게 된 20대 여성이 보튤리늄… The post \"친구들과 ‘이것’ 한입 먹고\"…물도 못 삼키더니 전신 마비된 24세女, 무슨 일?...",
-      "url": "https://kormedi.com/2822325/",
+      "title": "“몸매 필요없어” 안선영, 나이 들수록 ‘이것’ 관리 당부…뭘까?",
+      "summary": "20대 여성이 항상 매혹적인 입술을 갖고 싶어 입술에 붉은색 문신을 했다가, 입술 곳곳이 거무튀튀하게 변하는 끔찍한 부작용을 겪은… The post ‘빨간 립스틱’문신 27세女...입술 거무튀튀 변해 낭패감, 그...",
+      "url": "https://kormedi.com/2822398/",
       "source": "코메디닷컴",
       "category": "의료",
-      "date": "2026-06-07 06:09"
+      "date": "2026-06-07 18:01"
     },
     {
-      "title": "\"친구들과 ‘이것’ 한입 먹고\"…물도 못 삼키더니 전신 마비된 24세女, 무슨 일?",
-      "summary": "15kg 감량에 성공해 화제가 된 가수 서인영이 아침 운동하는 모습을 공개했다. 서인영은 최근 자신의 유튜브 채널 '개과천선 서인영'에서… The post \"진짜 살 빠진다\" 15kg 감량 서인영, 아침부터 '이...",
-      "url": "https://kormedi.com/2822231/",
+      "title": "치료는 잘못된 기준으로 판단될 수 있다고 새로운 분석이 주장",
+      "summary": "심리 치료는 대화보다는 약물을 위해 고안된 연구 방법을 사용하여 평가될 수 있습니다.",
+      "url": "https://medicalxpress.com/news/2026-06-therapy-wrong-standards-analysis.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-06-07 18:00"
+    },
+    {
+      "title": "최신 과학 뉴스 - ScienceDaily",
+      "summary": "더 많은 과학 뉴스를 보려면 ScienceDaily를 방문하세요.",
+      "url": "https://www.sciencedaily.com/news/",
+      "source": "ScienceDaily",
+      "category": "과학",
+      "date": "2026-06-07 17:19"
+    },
+    {
+      "title": "고대 중국 의학은 탈모 치료를 변화시킬 수 있습니다",
+      "summary": "천년 넘게 사용되어 온 전통 한약 뿌리가 그 효능으로 새로운 과학적 주목을 받고 있습니다.",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260606015144.htm",
+      "source": "ScienceDaily",
+      "category": "과학",
+      "date": "2026-06-07 17:19"
+    },
+    {
+      "title": "‘빨간 립스틱’문신 27세女...입술 거무튀튀 변해 낭패감, 그 까닭은?",
+      "summary": "아이가 또래보다 빨리 크기 시작했다. 병원에선 이상 없다고 했지만 마음은 편하지 않다. 그 불안이 틀리지 않을 수 있다.… The post 우리 아이 쑥쑥 큰다고 좋아했는데… “수명 짧아질 수도” 왜?...",
+      "url": "https://kormedi.com/2822660/",
       "source": "코메디닷컴",
       "category": "의료",
-      "date": "2026-06-07 06:05"
+      "date": "2026-06-07 17:05"
     },
     {
-      "title": "연구원, 객관적인 통증 평가를 위한 세계 최초의 AI 개발",
-      "summary": "인공지능을 이용해 뇌파 신호를 분석하는 기술을 연구팀이 개발했다.",
-      "url": "https://medicalxpress.com/news/2026-06-world-ai-pain.html",
+      "title": "우리 아이 쑥쑥 큰다고 좋아했는데… “수명 짧아질 수도” 왜?",
+      "summary": "요즘 혈관 건강을 위해 생활 습관을 조심하는 사람들이 많다. 혈관이 기름 찌꺼기 등에 의해 막히면 생명을 위협하고 몸에… The post “어, 혈관에 기름 찌꺼기”… 고지혈증, 고혈압 다 있는데 거리에서...",
+      "url": "https://kormedi.com/2821761/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-06-07 17:01"
+    },
+    {
+      "title": "과학자들이 마침내 슈뢰딩거의 100년 된 색 이론을 완성했습니다.",
+      "summary": "연구자들은 마침내 100년 된 색 이론의 주요 문제를 해결하여 우리가...",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260606015140.htm",
+      "source": "ScienceDaily",
+      "category": "과학",
+      "date": "2026-06-07 16:55"
+    },
+    {
+      "title": "ZDNet Korea",
+      "summary": "IT 세상을 바꾸는 힘 - 지디넷코리아",
+      "url": "http://zdnet.co.kr/news/?lstcode=0000",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-06-07 16:40"
+    },
+    {
+      "title": "美 스타벅스, 탱크데이 공식 사과…\"결코 일어나선 안 될 마케팅\"",
+      "summary": "[지디넷코리아]스타벅스 코리아 탱크데이 마케팅 논란이 미국 본사 차원의 공식 사과로 이어졌다. 5·18민주화운동 관련 단체 문제 제기 이후 스타벅스 미국 본사가 해당 사안을 \"결코 일어나서는 안 될 부적절한...",
+      "url": "https://zdnet.co.kr/view/?no=20260607162201",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-06-07 16:05"
+    },
+    {
+      "title": "“어, 혈관에 기름 찌꺼기”… 고지혈증, 고혈압 다 있는데 거리에서 흡연까지?",
+      "summary": "이른 더위 탓에 잠깐만 움직여도 금방 땀이 나고 몸도 축 처진다. 이런 날씨에는 차갑고 달콤한 음식에 먼저 손이… The post 화채 칼로리 낮추고 포만감 높이는 비결...사이다 아닌 ‘이 재료’ appeared...",
+      "url": "https://kormedi.com/2822634/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-06-07 16:03"
+    },
+    {
+      "title": "곰팡이는 음식과 인간의 건강을 위협한다고 연구자들은 주장합니다",
+      "summary": "다가오는 공중 보건 위기가 영국의 분야에서 병원, 전문가로 확산될 수 있습니다.",
+      "url": "https://medicalxpress.com/news/2026-06-fungus-threatens-food-human-health.html",
       "source": "Medical Xpress",
       "category": "의료",
-      "date": "2026-06-07 06:00"
+      "date": "2026-06-07 15:40"
     },
     {
-      "title": "미국의 새로운 대학 졸업생은 이제 일반 근로자보다 실업률이 더 높습니다.",
-      "summary": "기사 URL: https://www.randalolson.com/2026/06/04/recent-grad-unemployment-flip/ 댓글 URL:...",
-      "url": "https://www.randalolson.com/2026/06/04/recent-grad-unemployment-flip/",
-      "source": "Hacker News",
+      "title": "젠슨 황, 정의선 회장과 냉면 회동…8일 현대차 양재사옥 방문",
+      "summary": "[지디넷코리아]젠슨 황 엔비디아 최고경영자(CEO)가 정의선 현대자동차그룹 회장과 서울에서 오찬 회동을 가졌다. 황 CEO는 방한 기간 국내 주요 기업 총수들과 잇따라 만나며 협력 논의를 이어가고 있다.7일 업계에...",
+      "url": "https://zdnet.co.kr/view/?no=20260607152955",
+      "source": "ZDNet Korea",
       "category": "IT",
-      "date": "2026-06-07 05:35"
+      "date": "2026-06-07 15:17"
     },
     {
-      "title": "Computex 2026: 우리는 Agentic PC 시대를 향해 나아가고 있습니까?",
-      "summary": "기사 URL: https://www.eetimes.com/computex-2026-are-we-heading-for-the-agentic-pc-era-yet/ 댓글 URL:...",
-      "url": "https://www.eetimes.com/computex-2026-are-we-heading-for-the-agentic-pc-era-yet/",
-      "source": "Hacker News",
+      "title": "젠슨 황, 장병규 크래프톤 의장과 AI 협력 다져...배그 행사장 방문",
+      "summary": "[지디넷코리아]젠슨 황 엔비디아 최고경영자(CEO)가 방한 일정 중 장병규 크래프톤 의장을 만나 인공지능(AI)과 게임 생태계 확장을 위한 협력을 다졌다.7일 서울 강남구 신논현역 인근 PC방에서 열린 크래프톤...",
+      "url": "https://zdnet.co.kr/view/?no=20260607151732",
+      "source": "ZDNet Korea",
       "category": "IT",
-      "date": "2026-06-07 05:24"
+      "date": "2026-06-07 15:12"
     },
     {
-      "title": "일부 종양은 성장하기 위해 건강한 이웃 세포를 제거한다는 연구 결과가 밝혀졌습니다.",
-      "summary": "염색체 불안정성은 많은 고형 종양의 일반적인 특징이며 더 큰 공격성과 관련이 있습니다. 을 위한...",
-      "url": "https://medicalxpress.com/news/2026-06-tumors-healthy-neighboring-cells-reveals.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-07 05:20"
-    },
-    {
-      "title": "Sem: 코드 이해를 위한 새로운 기본 요소 - LSP가 아니라 Git 위의 엔터티",
-      "summary": "기사 URL: https://ataraxy-labs.github.io/sem/ 댓글 URL: https://news.ycombinator.com/item?id=48428475 포인트: 30...",
-      "url": "https://ataraxy-labs.github.io/sem/",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-07 05:03"
-    },
-    {
-      "title": "질병이 미국으로 확산됨에 따라 최초의 레슈마니아증 백신이 1상 시험에 들어갑니다.",
-      "summary": "레슈마니아증 백신의 안전성을 테스트하는 1상 임상시험이 앞으로 몇 달 안에 시작될 예정입니다.",
-      "url": "https://medicalxpress.com/news/2026-06-leishmaniasis-vaccine-phase-trial-disease.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-07 05:00"
-    },
-    {
-      "title": "통합 진료로 발달 장애가 있는 성인의 응급실 방문 및 입원 횟수가 줄어들 수 있습니다.",
-      "summary": "신시내티 대학교와 오하이오 주립 대학교 연구진은 발달 장애가 있는 성인이...",
-      "url": "https://medicalxpress.com/news/2026-06-er-hospital-stays-adults-developmental.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-07 05:00"
-    },
-    {
-      "title": "집에 혼자: 원격 근무, 고립 및 정신 건강",
-      "summary": "기사 URL: https://www.science.org/doi/10.1126/science.aec7671 댓글 URL:...",
-      "url": "https://www.science.org/doi/10.1126/science.aec7671",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-07 04:51"
-    },
-    {
-      "title": "일반적인 관절염 약물은 24주 만에 전신 쇼그렌병 활동을 감소시킵니다.",
-      "summary": "널리 사용되는 두 가지 항류마티스제의 조합은 다음과 같은 환자에게 효과적이고 저렴한 최초의 치료법을 제공합니다.",
-      "url": "https://medicalxpress.com/news/2026-06-common-arthritis-drugs-sjgren-disease.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-07 04:40"
-    },
-    {
-      "title": "신생아 균형 검사는 청력 상실과 함께 숨겨진 전정 문제를 표시할 수 있습니다.",
-      "summary": "Karolinska Institutet의 새로운 박사 학위 논문은 균형 시스템이 첫 달 동안 평가될 수 있음을 보여줍니다...",
-      "url": "https://medicalxpress.com/news/2026-06-newborn-flag-hidden-vestibular-problems.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-07 04:30"
-    },
-    {
-      "title": "Ntsc-rs – 아날로그 TV 및 VHS 아티팩트의 오픈 소스 비디오 에뮬레이션",
-      "summary": "기사 URL: https://ntsc.rs/ 댓글 URL: https://news.ycombinator.com/item?id=48428025 포인트: 226 # 댓글: 49",
-      "url": "https://ntsc.rs/",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-07 04:17"
-    },
-    {
-      "title": "Meta는 AI 챗봇을 악용하여 Instagram 계정 1000개를 해킹했다고 확인했습니다.",
-      "summary": "기사 URL:...",
-      "url": "https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-07 03:35"
-    },
-    {
-      "title": "트럼프, 죽어가는 석탄산업에 필사적으로 돈 쏟아부어",
-      "summary": "\"깨끗하고 아름다운 석탄.\" 트럼프가 죽어가는 석탄 산업에 필사적으로 돈을 쏟아 붓는 포스트가 미래주의(Futurism)에 처음 등장했습니다.",
-      "url": "https://futurism.com/science-energy/trump-pumps-money-dying-coal",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-06-07 03:30"
-    },
-    {
-      "title": "국방부는 이스라엘의 미국 스파이 위협을 최고 수준으로 격상했다고 소식통은 전했다.",
-      "summary": "기사 URL:...",
-      "url": "https://www.nbcnews.com/politics/national-security/pentagon-raised-threat-israeli-spying-us-highest-level-sources-say-rcna348565",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-07 03:21"
-    },
-    {
-      "title": "UFO가 악마라고 말한 가톨릭 교회의 퇴마사",
-      "summary": "\"용서를 구합니다.\" UFO가 악마라고 말한 후 가톨릭 교회 부츠 엑소시스트 포스트가 미래주의에 처음 등장했습니다.",
-      "url": "https://futurism.com/future-society/catholic-church-removes-exorcist-demons-ufos",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-06-07 02:30"
-    },
-    {
-      "title": "Meta는 컴퓨팅이 너무 절실해서 AI 칩으로 가득 찬 텐트에 불과한 \"데이터 센터\"를 구축하고 있습니다.",
-      "summary": "반창고 수정입니다. 메타는 컴퓨팅이 너무 절실해서 텐트만 가득찬 \"데이터 센터\"를 짓고 있습니다...",
-      "url": "https://futurism.com/artificial-intelligence/meta-compute-ai-data-centers-tents-chips",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-06-07 01:30"
-    },
-    {
-      "title": "새로운 연구에 따르면 인류는 이전에 기록된 것보다 70만년 더 일찍 불을 사용했습니다.",
-      "summary": "찾기 힘든 고대 Wonderwerk 동굴은 초기 발견으로 수십 년 동안 과학적 주목을 받아 왔습니다.",
-      "url": "https://interestingengineering.com/culture/hominids-used-fire-700000-years-earlier",
+      "title": "미국 회사의 재사용 가능한 발사 시스템은 준궤도 임무의 핵심인 마하 4 속도를 두 배 이상 향상합니다.",
+      "summary": "워싱턴에 본사를 둔 한 회사는 마하 4를 초과하는 재사용 가능한 발사 시스템을 비행했습니다. 로켓이 필요 없는 재사용 가능한 발사...",
+      "url": "https://interestingengineering.com/space/reusable-launch-system-mach-4-speed",
       "source": "Interesting Eng",
       "category": "흥미",
-      "date": "2026-06-07 01:19"
+      "date": "2026-06-07 15:10"
     },
     {
-      "title": "UN 보고서에서는 AI가 2030년까지 10억 명만큼의 물을 소비할 것이라고 추정합니다.",
-      "summary": "꿀꺽. AI는 2030년까지 10억 명만큼의 물을 소비할 것입니다. UN 보고서 추정치가 첫 번째로 게재되었습니다.",
-      "url": "https://futurism.com/artificial-intelligence/ai-consume-water-billion-people",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-06-07 00:30"
+      "title": "화채 칼로리 낮추고 포만감 높이는 비결...사이다 아닌 ‘이 재료’",
+      "summary": "방송인 최은경(53)이 눈 밑 지방 재배치 수술 후기를 공유했다. 최은경은 최근 자신의 유튜브 채널 '최은경의 관리사무소'에서 눈 밑… The post \"대만족\" 최은경, '이 수술'하니 피곤해 보인단 말 안...",
+      "url": "https://kormedi.com/2822300/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-06-07 15:05"
     },
     {
-      "title": "NASA의 James Webb은 3I/ATLAS가 태양계를 통과하면서 하나의 찢어짐을 발견했습니다.",
-      "summary": "농담은 스스로 씁니다. NASA의 James Webb은 3I/ATLAS가 태양광을 통과하면서 하나가 찢어지는 것을 발견했습니다.",
-      "url": "https://futurism.com/space/nasa-james-webb-3i-atlas-methane",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-06-06 23:30"
+      "title": "젠슨 황-김택진, 강남 PC방 '아이온2' 행사 회동…셀카 찍으며 파트너십 재확인",
+      "summary": "[지디넷코리아]젠슨 황 엔비디아 최고경영자(CEO)가 방한 일정 중 김택진 엔씨 대표를 만나 공고한 파트너십을 재확인했다.7일 서울 강남구 신논현역 인근 포탈 PC방에서 열린 '아이온2 서프라이즈 라이브' 오프라인...",
+      "url": "https://zdnet.co.kr/view/?no=20260607145913",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-06-07 14:47"
+    },
+    {
+      "title": "제29회 국제 난독화 C 코드 콘테스트(IOCCC) 2025 수상자",
+      "summary": "기사 URL: https://www.ioccc.org/2025/ 댓글 URL: https://news.ycombinator.com/item?id=48432199 포인트: 146 #...",
+      "url": "https://www.ioccc.org/2025/",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-07 14:47"
+    },
+    {
+      "title": "AI가 AI 만드는 시대, 개발자 방향성은 어디",
+      "summary": "[지디넷코리아]인공지능(AI)이 코드를 생성하고 분석하는 수준을 넘어 새로운 AI 모델과 서비스 개발 과정에 참여하는 등 개발 현장 도입이 빨라지고 있다.AI가 소프트웨어(SW) 개발 전 공정에 깊숙이 관여하는...",
+      "url": "https://zdnet.co.kr/view/?no=20260607103612",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-06-07 14:43"
+    },
+    {
+      "title": "[사진] 화이트햇스쿨 4기 입학식...실무 인재 420명 양성",
+      "summary": "[지디넷코리아]",
+      "url": "https://zdnet.co.kr/view/?no=20260607144050",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-06-07 14:39"
+    },
+    {
+      "title": "틱톡카 나오나 했더니…바이트댄스, 중국 전기차 협업설 부인",
+      "summary": "[지디넷코리아]중국 IT 기업이자 틱톡 모회사인 바이트댄스가 화웨이 협력 자동차 업체 세레스와의 신차 출시설을 공식 부인했다. 최근 중국 자동차 업계에서 제기된 '틱톡카' 출현 가능성에 대해 선을 그은 것이다.7일...",
+      "url": "https://zdnet.co.kr/view/?no=20260607143436",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-06-07 14:24"
+    },
+    {
+      "title": "\"대만족\" 최은경, '이 수술'하니 피곤해 보인단 말 안 들어… 전후 사진 보니?",
+      "summary": "임신을 준비하는 과정에서 여성의 건강과 식습관이 중요하다는 사실은 잘 알려져 있다. 이런 가운데 최근 영국 셰필드대 연구진은 임신… The post 엄마만 중요한 게 아니었다...임신 전 아빠가 먹은 음식, 태아...",
+      "url": "https://kormedi.com/2822514/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-06-07 14:05"
+    },
+    {
+      "title": "지금은 Figma보다 Claude와 함께 디자인한다",
+      "summary": "기사 URL: https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/ 댓글 URL:...",
+      "url": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-07 14:04"
+    },
+    {
+      "title": "밸브 P2P 네트워킹이 2개월 이상 중단됨",
+      "summary": "기사 URL: https://github.com/ValveSoftware/GameNetworkingSockets/issues/398 댓글 URL:...",
+      "url": "https://github.com/ValveSoftware/GameNetworkingSockets/issues/398",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-07 12:21"
+    },
+    {
+      "title": "클론 분야: 말 복제품이 폴로를 지배하게 된 과정",
+      "summary": "기사 URL: https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses 댓글 URL:...",
+      "url": "https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-07 11:46"
     }
   ],
-  "updated": "2026-06-07 09:01:42"
+  "updated": "2026-06-07 18:47:14"
 }
