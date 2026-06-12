@@ -2,12 +2,92 @@
   "holdings": [],
   "tech": [
     {
-      "title": "Anthropic은 새로운 신화 기반 모델의 힘에 대해 너무 우려하여 자체 개선 능력을 로보토마이즈했습니다.",
-      "summary": "정말 무슨 일이 일어나고 있는 걸까요? 포스트 Anthropic은 새로운 신화 기반 모델의 힘에 대해 너무 우려해서...",
-      "url": "https://futurism.com/artificial-intelligence/anthropic-concerned-models-ability-improve-itself",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-06-12 01:17"
+      "title": "자연",
+      "summary": "",
+      "url": "http://feeds.nature.com/nature/rss/current",
+      "source": "Nature News",
+      "category": "과학",
+      "date": "2026-06-12 09:17"
+    },
+    {
+      "title": "저자 수정: 마취된 인간 해마의 가소성과 언어",
+      "summary": "",
+      "url": "https://www.nature.com/articles/s41586-026-10784-1",
+      "source": "Nature News",
+      "category": "과학",
+      "date": "2026-06-12 09:17"
+    },
+    {
+      "title": "바다 밑 7km 고래 묘지 발견",
+      "summary": "",
+      "url": "https://www.nature.com/articles/d41586-026-01886-x",
+      "source": "Nature News",
+      "category": "과학",
+      "date": "2026-06-12 09:17"
+    },
+    {
+      "title": "나의 다양한 학문적 배경이 박사 과정에 영향을 미치고 있습니다. 어떻게 해야 합니까?",
+      "summary": "",
+      "url": "https://www.nature.com/articles/d41586-026-01129-z",
+      "source": "Nature News",
+      "category": "과학",
+      "date": "2026-06-12 09:17"
+    },
+    {
+      "title": "연구자가 논문을 제출하기 전에 도구가 의심스러운 저널에 플래그를 지정합니다.",
+      "summary": "",
+      "url": "https://www.nature.com/articles/d41586-026-01707-1",
+      "source": "Nature News",
+      "category": "과학",
+      "date": "2026-06-12 09:17"
+    },
+    {
+      "title": "'축구선수는 슈퍼히어로가 아니다': 우리는 엘리트 스포츠의 정신적, 육체적 압박을 해결해야 한다",
+      "summary": "",
+      "url": "https://www.nature.com/articles/d41586-026-01865-2",
+      "source": "Nature News",
+      "category": "과학",
+      "date": "2026-06-12 09:17"
+    },
+    {
+      "title": "이번 월드컵은 역대 가장 첨단 기술이 될 수 있습니다. 주목할 만한 혁신이 될 것입니다.",
+      "summary": "",
+      "url": "https://www.nature.com/articles/d41586-026-01866-1",
+      "source": "Nature News",
+      "category": "과학",
+      "date": "2026-06-12 09:17"
+    },
+    {
+      "title": "공개: 금성 파리지옥이 놀라운 속도로 닫히는 방법",
+      "summary": "",
+      "url": "https://www.nature.com/articles/d41586-026-01857-2",
+      "source": "Nature News",
+      "category": "과학",
+      "date": "2026-06-12 09:17"
+    },
+    {
+      "title": "[6월11일] '미소스'에 이어 '페이블'까지...AI 모델 이름에 숨은 의미",
+      "summary": "앤트로픽이 9일(현지시간) 출시한 '클로드 페이블 5'와 '클로드 미소스 5'는 역대 최강인 성능 못지않게 이름으로도 눈길을 끌었습니다.미소스(Mythos)는 그리스어로 신화나 서사를 뜻하고, 페이블(Fable)은...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211607",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-12 09:16"
+    },
+    {
+      "title": "우주 데이터센터 본격화… 머스크의 꿈은 현실이 되나?",
+      "summary": "AI타임스 조예주 기자 joyejuoffice@aitimes.com",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211622",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-12 09:16"
+    },
+    {
+      "title": "[AI&빅데이터쇼] 유니트리·애지봇·갤봇 총출동...중국 '빅3' 휴머노이드 전략은",
+      "summary": "19일까지 서울 코엑스에서 'AI&빅데이터쇼'와 동시에 열리는 '스마트테크코리아(STK) 2026' 로봇 테크쇼에서는 개인 서비스용 로봇부터 산업용 로봇, 자동화 소프트웨어까지 다양한 기술들이 각축전을 벌였다.그중...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211632",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "[AI&빅데이터쇼] 뉴엔AI “대기업이 선택한 데이터 분석, 미국 출시 앞둬”",
@@ -15,7 +95,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211630",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "[AI&빅데이터쇼] 요슈아 벤지오의 MILA 연구소, AI 연구 성과 공개",
@@ -23,7 +103,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211628",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "[AI&빅데이터쇼] 홍보 없이 '성능'으로 증명…플리토, AI 통·번역 계약 논의 활발",
@@ -31,7 +111,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211629",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "페레이라 주한 퀘벡 대표 \"한국은 아시아 관문…밀라 AI DNA 이식할 것\"",
@@ -39,7 +119,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211611",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "구글, 확산 기술 기반 LLM '디퓨전젬마' 공개…“텍스트 생성 4배 빨라”",
@@ -47,31 +127,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211608",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-12 01:16"
-    },
-    {
-      "title": "[AI&빅데이터쇼] 내스타일 “레드오션 된 AI포토 체험…기술로 차별화”",
-      "summary": "내스타일(대표 이용균)은 12일까지 서울 코엑스에서 열리는 ‘2026 AI&빅데이터쇼’에 참가해 ‘AI포토 체험 솔루션’을 선보였다.최근 몇 년 간 시장에는 생성 AI의 영향으로 ‘AI 프로필’ 형태의 서비스가...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211631",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-12 01:16"
-    },
-    {
-      "title": "\"1500달러로 LLM 사전학습\"…사피언트, '트랜스포머' 넘는 새 아키텍처 공개",
-      "summary": "10억개 규모의 매개변수와 1500달러(약 220만원) 수준의 학습 비용만으로도 훨씬 큰 공개 모델들과 경쟁할 수 있는 새로운 언어모델 아키텍처가 나왔다.싱가포르의 AI 스타트업 사피언트 인텔리전스는...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211613",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-12 01:16"
-    },
-    {
-      "title": "\"의미 있는 성능 개선\"…오픈AI 'GPT-5.6' 출시 카운트다운",
-      "summary": "오픈AI가 곧 출시할 'GPT-5.6'를 두고 큰 성능 개선이 이뤄졌다고 밝혔다. 앤트로픽에 잠시 내줬던 최고 성능을 되찾는 것은 물론, '미소스'와 같은 임팩트를 줄 수 있을지 관심이 모인다.디 인포메이션에...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211618",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "추격 끝! 韓 '브레이크스루' 연구로 전환<br>과학계 \"젊은 연구자 키우고, 테뉴어 논문보다 학문적 기여\"",
@@ -79,7 +135,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112076",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "\"韓·中 피지컬 AI 협력 협의체 신설 필요\"<br>KAIST, 기술패권 시대 국제협력 해법 모색",
@@ -87,7 +143,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112072",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "中·日 의존 반도체 특수가스 국산화 성큼···에너지연 \"생산 기술 확보\"",
@@ -95,7 +151,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112069",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "대한민국을 만든 엔지니어 30인의 기록",
@@ -103,7 +159,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112073",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "김현정 PD \"AI 시대일수록 사람과 사람 교감이 중요\"",
@@ -111,7 +167,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112075",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "\"HBM보다 더 촘촘하다\"···ETRI, 초정밀 접합 기술 개발",
@@ -119,7 +175,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112074",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "\"해안침수 100년에 1번에서 8년 단위로\" 인간활동이 해수면 상승 주범",
@@ -127,7 +183,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112065",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-12 01:16"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "\"한반도 남쪽바다 2배 빨리 뜨거워졌다\" 해양과기원, 20년 축적 이어도의 경고",
@@ -135,272 +191,216 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112068",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-12 01:16"
-    },
-    {
-      "title": "자궁내막증 및 자궁근종: 전문가가 여성에게 덜 침습적인 치료 옵션을 제공하는 발전에 대해 설명합니다.",
-      "summary": "자궁내막증과 자궁근종은 가장 흔한 부인과 질환 중 두 가지입니다. 중요한 일이 있는 반면...",
-      "url": "https://medicalxpress.com/news/2026-06-endometriosis-fibroids-expert-advances-women.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-12 01:00"
-    },
-    {
-      "title": "TBX18이 실패하고 Hcn2가 전달됨에 따라 생물학적 심장박동기 교리가 도전받음",
-      "summary": "암스테르담 UMC의 연구원들은 생물학적 심장 박동기 분야의 주요 가정을 뒤집었습니다. 새로운 전임상...",
-      "url": "https://medicalxpress.com/news/2026-06-biological-pacemaker-dogma-tbx18-hcn2.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-12 01:00"
-    },
-    {
-      "title": "그리스 이오안니나 섬의 알리 파샤 박물관과 혁명 시대",
-      "summary": "",
-      "url": "https://www.atlasobscura.com/places/museum-ali-pasha-and-revolutionary-period",
-      "source": "Atlas Obscura",
-      "category": "기이",
-      "date": "2026-06-12 01:00"
-    },
-    {
-      "title": "OpenAI 경영진은 당황하고 있습니다",
-      "summary": "그들은 점점 절망에 빠지고 있습니다. OpenAI Execs Are Panicking이라는 게시물이 Futurism에 처음 등장했습니다.",
-      "url": "https://futurism.com/artificial-intelligence/openai-execs-panicking-price-anthropic",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-06-12 00:46"
-    },
-    {
-      "title": "과급된 자연 살해 세포는 생쥐의 고형 종양을 억제합니다",
-      "summary": "과학자들은 소위 액체 종양, 암을 치료하기 위해 신체 자체의 면역 세포를 활용하는 데 큰 진전을 이루었습니다.",
-      "url": "https://medicalxpress.com/news/2026-06-supercharged-natural-killer-cells-suppress.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-12 00:40"
-    },
-    {
-      "title": "미국의 에볼라 격리는 합법적인가요? 전문가가 평가합니다.",
-      "summary": "에볼라 바이러스의 확산을 막기 위해 의료 종사자들이 경쟁하고 있는 가운데 전 세계 국가들은 높은 경계 태세에 있습니다.",
-      "url": "https://medicalxpress.com/news/2026-06-ebola-quarantine-legal-expert.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-12 00:40"
-    },
-    {
-      "title": "실시간 시각추적 기술을 탑재한 미국 연구소의 원자로 사고 테스트",
-      "summary": "ORNL(Oak Ridge National Laboratory) 연구원들은 핵 실험에 실시간 시각적 추적 기능을 추가했습니다.",
-      "url": "https://interestingengineering.com/energy/nuclear-reactor-accident-testing",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-06-12 00:36"
-    },
-    {
-      "title": "15,000달러짜리 AI 법안. 귀하의 20달러 구독은 망상입니다. [동영상]",
-      "summary": "기사 URL: https://www.youtube.com/watch?v=UfApUobqN8Y 댓글 URL: https://news.ycombinator.com/item?id=48491670...",
-      "url": "https://www.youtube.com/watch?v=UfApUobqN8Y",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-12 00:27"
-    },
-    {
-      "title": "장내 미생물이 장 운동을 조절하는 호르몬 신호를 차단한다는 연구 결과가 나왔습니다.",
-      "summary": "전 세계적으로 수백만 명의 사람들이 과민증과 같은 장 관련 질환으로 인해 주기적으로 또는 만성적으로 영향을 받고 있습니다.",
-      "url": "https://medicalxpress.com/news/2026-06-gut-microbes-hormone-movement.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-12 00:20"
-    },
-    {
-      "title": "미국인들은 불소화에 대해 분열했다. MAHA 지지자들의 반대가 주목할 만함",
-      "summary": "공공 식수에 불소를 첨가하는 것의 가치에 대한 논쟁이 전국의 지역 사회에 퍼지면서,",
-      "url": "https://medicalxpress.com/news/2026-06-americans-fluoridation-opposition-maha-notable.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-12 00:20"
-    },
-    {
-      "title": "FPS.cob: COBOL의 1인칭 슈팅 게임",
-      "summary": "기사 URL: https://github.com/icitry/FPS.cob 댓글 URL: https://news.ycombinator.com/item?id=48491486 포인트: 33 #...",
-      "url": "https://github.com/icitry/FPS.cob",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-12 00:13"
-    },
-    {
-      "title": "Show HN: Ory가 Go로 작성한 오픈 소스 API 키 서버",
-      "summary": "기사 URL: https://github.com/ory/talos/tree/master 댓글 URL: https://news.ycombinator.com/item?id=48491426...",
-      "url": "https://github.com/ory/talos/tree/master",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-12 00:09"
-    },
-    {
-      "title": "생쥐에서 자란 쥐 신장은 장기 기증자 부족 문제를 해결하는 데 새로운 통찰력을 제공합니다",
-      "summary": "신장 이식은 말기 신장 질환에 대한 가장 효과적인 치료법이지만 여전히 심각한 부족...",
-      "url": "https://medicalxpress.com/news/2026-06-rat-kidneys-grown-mice-insights.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-12 00:00"
-    },
-    {
-      "title": "순간순간의 기억 접근은 히스타민 뉴런의 변화에 ​​따라 달라질 수 있습니다.",
-      "summary": "같은 기억이 어느 순간에는 생생하고 접근 가능하다고 느껴지지만 다음 순간에는 완고하게 손이 닿지 않을 수 있습니다. 심지어 그 기억이...",
-      "url": "https://medicalxpress.com/news/2026-06-moment-memory-access-histamine-neuron.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-06-12 00:00"
-    },
-    {
-      "title": "BBC 뉴스",
-      "summary": "제조업체인 Novo Nordisk는 이 약을 매일 복용하는 것이 주간 복용보다 일부 사람들에게 더 편리할 수 있다고 말했습니다.",
-      "url": "https://www.bbc.co.uk/news/health",
-      "source": "BBC Health",
-      "category": "의료",
-      "date": "2026-06-12 00:00"
-    },
-    {
-      "title": "미국에서 운전하는 것은 헤드라이트 지옥이다",
-      "summary": "기사 URL: https://www.theatlantic.com/technology/2026/06/car-headlights-too-bright-adaptive-beams/687488/ 댓글...",
-      "url": "https://www.theatlantic.com/technology/2026/06/car-headlights-too-bright-adaptive-beams/687488/",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-11 23:55"
-    },
-    {
-      "title": "뉴욕주, 회사가 시체로 만든 주사제를 밀수입했다고 비난",
-      "summary": "이 제품은 도착 시 사망한 것으로 예상됩니다. 뉴욕, 주사제 밀수 혐의로 회사 고발…",
-      "url": "https://futurism.com/health-medicine/new-york-smuggling-injectable-substance-cadavers",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-06-11 23:47"
-    },
-    {
-      "title": "미국은 수십 년 동안 지속적인 전력을 공급할 수 있는 상업용 핵융합 발전소 설계를 지지합니다.",
-      "summary": "미국 에너지부(DOE)가 선제적 설계와 기술개발을 공식 승인했다.",
-      "url": "https://interestingengineering.com/energy/us-backs-commercial-fusion-plant-design",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-06-11 23:38"
-    },
-    {
-      "title": "Cobra 600: IRIS-T 및 155마일 범위를 갖춘 독일의 620mph 제트 드론 요격기",
-      "summary": "독일 무기 제조업체인 Diehl Defense는 Cobra 600이라는 제트 추진 요격 드론을 개발했습니다.",
-      "url": "https://interestingengineering.com/military/germany-cobra-600-jet-powered-iris-t-drone",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-06-11 23:29"
-    },
-    {
-      "title": "MiMo 코드가 이제 출시되어 오픈 소스로 제공됩니다.",
-      "summary": "기사 URL: https://mimo.xiaomi.com/mimocode 댓글 URL: https://news.ycombinator.com/item?id=48490826 포인트: 130 #...",
-      "url": "https://mimo.xiaomi.com/mimocode",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-11 23:27"
-    },
-    {
-      "title": "Nextcloud Hub 26 Spring: 함께 만들어지고 미래를 위해 설계됨",
-      "summary": "기사 URL: https://nextcloud.com/blog/nextcloud-hub26-spring/ 댓글 URL:...",
-      "url": "https://nextcloud.com/blog/nextcloud-hub26-spring/",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-11 23:17"
-    },
-    {
-      "title": "미국 기업, 능동 냉각 없이 99% 가동 시간을 제공하는 비리튬 그리드 배터리 생산",
-      "summary": "미국의 에너지 저장 스타트업인 피크 에너지(Peak Energy)가 최근 선도적인 자동차 제조업체인 General...",
-      "url": "https://interestingengineering.com/energy/us-sodium-ion-batteries-grid-storage",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-06-11 23:16"
-    },
-    {
-      "title": "Euro-Office: 오픈 소스 웹 오피스의 첫 번째 버전이 출시되었습니다.",
-      "summary": "기사 URL: https://www.heise.de/en/news/Euro-Office-First-version-of-the-open-source-web-office-is-here-11322160.html...",
-      "url": "https://www.heise.de/en/news/Euro-Office-First-version-of-the-open-source-web-office-is-here-11322160.html",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-11 23:06"
-    },
-    {
-      "title": "KLM, 합성 등유 혼합 연료로 독일행 첫 여객기 운항",
-      "summary": "KLM Cityhopper 항공편이 암스테르담에서 짧은 여행을 마치고 독일 함부르크에 착륙했습니다....",
-      "url": "https://interestingengineering.com/transportation/synthetic-fuel-passenger-flight-germany",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-06-11 23:05"
+      "date": "2026-06-12 09:16"
     },
     {
       "title": "코메디닷컴",
-      "summary": "과도한 중성지방 수치로 피부에 발진성 황색종이 생긴 사례가 저널에 공개됐다. 발진성 황색종은 혈액 속 지방 성분이 피부에 쌓여… The post 중성지방 많으면 피부에도 드러나…돌기 발생한 남성, 자세히 봤더니?...",
+      "summary": "당뇨병을 예방하거나 당뇨 관리를 잘 하려면 혈당 스파이크를 막는 게 중요하다. 식후 혈당이 짧은 시간에 급격히 상승하는 현상,… The post 영양 전문가들이 꼽는 혈당 안정에 좋은 식품들...추천하는 이유는?...",
       "url": "https://kormedi.com/",
       "source": "코메디닷컴",
       "category": "의료",
-      "date": "2026-06-11 23:04"
+      "date": "2026-06-12 09:07"
     },
     {
-      "title": "MapComplete – OpenStreetMaps에 참여",
-      "summary": "기사 URL: https://mapcomplete.org/ 댓글 URL: https://news.ycombinator.com/item?id=48490532 포인트: 101 #...",
-      "url": "https://mapcomplete.org/",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-06-11 23:04"
+      "title": "희귀 혈액 질환 환자에게 가능성을 보여주는 새로운 치료법",
+      "summary": "환자의 면역 세포를 성장시킨 다음 다시 몸에 주입하는 새로운 치료법이 나타났습니다.",
+      "url": "https://medicalxpress.com/news/2026-06-treatment-patients-rare-blood-disorder.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-06-12 09:00"
     },
     {
-      "title": "아이슬란드 레이캬비크의 Skuli Magnusson 동상",
-      "summary": "",
-      "url": "https://www.atlasobscura.com/places/skuli-magnusson-statue",
-      "source": "Atlas Obscura",
-      "category": "기이",
-      "date": "2026-06-11 23:00"
-    },
-    {
-      "title": "세계에서 가장 눈물을 흘리는 사우론의 눈 팔란티어, 계약 파기 후 런던 시장 고소",
-      "summary": "\"Met는 오직 하나의 잠재적 공급업체인 Palantir와만 완전히 협력했습니다.\" 세상에서 가장 눈물을 흘리는 사우론의 눈, 팔란티르(Palantir) 포스트",
-      "url": "https://futurism.com/future-society/palantir-eye-sauron-sues-mayor-london",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-06-11 23:00"
-    },
-    {
-      "title": "미 해군의 신형 2만톤급 컬럼비아급 핵추진 잠수함의 모습",
-      "summary": "최근 공개된 사진은 미래 USS의 건설 과정을 명확하게 보여줍니다.",
-      "url": "https://interestingengineering.com/military/us-navy-columbia-class-submarine",
+      "title": "로봇 손은 터치와 비전을 사용하여 거의 100% 정확도로 잘 익은 과일을 수확합니다.",
+      "summary": "연구원들은 과일의 익은 정도와 수확량을 검사할 수 있는 부드러운 로봇 그리퍼를 개발했습니다.",
+      "url": "https://interestingengineering.com/ai-robotics/soft-robotic-gripper-harvests-fruit-without-damage",
       "source": "Interesting Eng",
       "category": "흥미",
-      "date": "2026-06-11 22:58"
+      "date": "2026-06-12 08:37"
     },
     {
-      "title": "최신 과학 뉴스 - ScienceDaily",
-      "summary": "더 많은 과학 뉴스를 보려면 ScienceDaily를 방문하세요.",
-      "url": "https://www.sciencedaily.com/news/",
-      "source": "ScienceDaily",
-      "category": "과학",
-      "date": "2026-06-11 22:45"
+      "title": "생물학적 진화와 정보 획득",
+      "summary": "기사 URL: https://www.construction-physics.com/p/biological-evolution-and-information 댓글 URL:...",
+      "url": "https://www.construction-physics.com/p/biological-evolution-and-information",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-12 08:33"
     },
     {
-      "title": "과학자들은 햇빛을 연료로 바꾸는 배터리가 없는 장치를 만들었습니다.",
-      "summary": "과학자들은 본질적으로 스스로 조절하여 광합성의 필요성을 제거하는 인공 광합성 시스템을 개발했습니다.",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260611024601.htm",
-      "source": "ScienceDaily",
-      "category": "과학",
-      "date": "2026-06-11 22:44"
+      "title": "BBC 뉴스",
+      "summary": "임상시험에 참여한 환자들은 자신의 상태를 관리하기 위해 약물 치료가 필요하지 않았습니다.",
+      "url": "https://www.bbc.co.uk/news/health",
+      "source": "BBC Health",
+      "category": "의료",
+      "date": "2026-06-12 08:31"
     },
     {
-      "title": "미국 전역에 퍼지는 치명적인 촌충이 태평양 북서부에 도달했습니다.",
-      "summary": "심각한 암과 유사한 질병과 관련된 잠재적으로 위험한 촌충이 태평양 북서부에서 발견되었습니다.",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260611024610.htm",
-      "source": "ScienceDaily",
-      "category": "과학",
-      "date": "2026-06-11 22:31"
-    },
-    {
-      "title": "중성지방 많으면 피부에도 드러나…돌기 발생한 남성, 자세히 봤더니?",
-      "summary": "커피의 카페인은 졸음을 쫓고 집중력을 높이는 데 도움을 줄 수 있으며, 일부 연구에서는 체중 관리나 만성질환 예방과 관련된… The post 혈압 높거나 속 쓰리다면? 커피 당장 끊어야 한다는 신호 5가지...",
-      "url": "https://kormedi.com/2823490/",
+      "title": "영양 전문가들이 꼽는 혈당 안정에 좋은 식품들...추천하는 이유는?",
+      "summary": "KTX와 수도권 지하철이 함께 서는 경기 양평역. 택시를 타고 동쪽으로 5~6분 가면 대지 2만 7000여 평에 연건평 1만… The post “대형사고 뉴스 나면 한 달 뒤 중증 환자는 이곳에” appeared...",
+      "url": "https://kormedi.com/2824118/",
       "source": "코메디닷컴",
       "category": "의료",
-      "date": "2026-06-11 22:30"
+      "date": "2026-06-12 08:26"
+    },
+    {
+      "title": "자율 항공기는 최전선 물류를 위해 50피트 이내에서 200파운드의 탑재량을 떨어뜨립니다.",
+      "summary": "미군이 새로운 방법을 모색하면서 자율 항공기가 점점 더 주목을 받고 있습니다.",
+      "url": "https://interestingengineering.com/military/pyka-autonomous-aircraft-precision-airdrop-test",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-06-12 08:21"
+    },
+    {
+      "title": "초가공 곡물은 IBD 발병 위험이 더 높습니다",
+      "summary": "초가공 곡물 섭취는 염증성 장 질환(IBD) 발병 위험 증가와 관련이 있습니다...",
+      "url": "https://medicalxpress.com/news/2026-06-ultraprocessed-grains-linked-higher-ibd.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-06-12 08:20"
+    },
+    {
+      "title": "“대형사고 뉴스 나면 한 달 뒤 중증 환자는 이곳에”",
+      "summary": "올여름 역대급 폭염이 예고된 가운데, 더운 날씨에는 땀을 많이 흘리는 만큼 칼로리도 더 많이 소모할 것이라고 생각하는 사람이… The post \"더우면 살 더 빠질까, 더 찔까?\"…여름철 대사 유지법 5가지...",
+      "url": "https://kormedi.com/2824114/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-06-12 08:06"
+    },
+    {
+      "title": "'이렇게 좋았던 적은 없었다' – 혁명적인 면역 재설정으로 루푸스가 완화되었습니다",
+      "summary": "사람들은 BBC Your Voice에 민간 치과의 비용 상승으로 인해 어려운 상황에 처해 있다고 말합니다.",
+      "url": "https://www.bbc.com/news/articles/c4gy2d9y5z3o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC Health",
+      "category": "의료",
+      "date": "2026-06-12 08:03"
+    },
+    {
+      "title": "'치아 교정을 위해 저축한 돈을 썼습니다' - NHS 치과의사 부족으로 인해 막대한 손실이 발생한 이유",
+      "summary": "일회성 백신 프로그램에 대한 결정은 올해 켄트에서 전례 없는 발병이 발생한 데 따른 것입니다.",
+      "url": "https://www.bbc.com/news/articles/czrx7pvx57eo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC Health",
+      "category": "의료",
+      "date": "2026-06-12 08:02"
+    },
+    {
+      "title": "인간의 관심을 요구한다면 인간의 노력을 보여주십시오.",
+      "summary": "기사 URL: https://tombedor.dev/human-attention-and-human-effort/ 댓글 URL:...",
+      "url": "https://tombedor.dev/human-attention-and-human-effort/",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-12 08:01"
+    },
+    {
+      "title": "이 재킷은 허공에서 식수를 끌어옵니다",
+      "summary": "기사 URL: https://news.utexas.edu/2026/06/11/this-jacket-pulls-drinking-water-from-thin-air/ 댓글 URL:...",
+      "url": "https://news.utexas.edu/2026/06/11/this-jacket-pulls-drinking-water-from-thin-air/",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-12 07:59"
+    },
+    {
+      "title": "트럼프, 이란 공격 계획 취소…\"평화협정 곧 나올 것\"",
+      "summary": "도널드 트럼프 미국 대통령은 이란에 대한 군사 공격 계획을 취소했다고 밝혔습니다.",
+      "url": "https://interestingengineering.com/military/trump-cancels-us-strikes-iran-peace-deal-near",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-06-12 07:53"
+    },
+    {
+      "title": "미국의 안전 설계 승인으로 아이다호의 차세대 오로라 원자로 계획이 진전되었습니다.",
+      "summary": "Oklo는 최초의 첨단 원자로를 온라인화하는 데 한 걸음 더 가까워졌습니다.",
+      "url": "https://interestingengineering.com/energy/oklo-aurora-reactor-doe-safety-approval",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-06-12 07:52"
+    },
+    {
+      "title": "저용량 아트로핀 안약은 어린이 근시에 안전하고 효과적이라는 임상 시험 결과가 나왔습니다.",
+      "summary": "저농도 아트로핀 안약은 영국 어린이의 근시(근시)에 안전하고 효과적인 치료법입니다.",
+      "url": "https://medicalxpress.com/news/2026-06-dose-atropine-eye-safe-effective.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-06-12 07:30"
+    },
+    {
+      "title": "칠레의 식품 경고 라벨 및 광고 금지로 아동 비만 위험 감소",
+      "summary": "지방, 소금, 설탕 함량이 높은 식품을 대상으로 하는 칠레의 일련의 보완적인 정책은 아마도 다음과 같은 위험을 감소시킬 것입니다.",
+      "url": "https://medicalxpress.com/news/2026-06-chile-food-ad-child-obesity.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-06-12 07:30"
+    },
+    {
+      "title": "ZDNet Korea",
+      "summary": "IT 세상을 바꾸는 힘 - 지디넷코리아",
+      "url": "http://zdnet.co.kr/news/?lstcode=0000",
+      "source": "ZDNet Korea",
+      "category": "IT",
+      "date": "2026-06-12 07:24"
+    },
+    {
+      "title": "노화 세포에 대한 최초의 대규모 지도책은 노화 관련 질병에 대한 미래 치료법에 대한 정보를 제공하는 데 도움이 될 수 있습니다",
+      "summary": "연구 컨소시엄은 노화 세포, 즉 분열을 멈추는 세포를 식별하고 분류하기 위한 새로운 프레임워크를 확립했습니다.",
+      "url": "https://medicalxpress.com/news/2026-06-large-scale-atlas-senescent-cells.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-06-12 07:20"
+    },
+    {
+      "title": "단순한 HTML의 비합리적인 효율성(2021)",
+      "summary": "기사 URL: https://shkspr.mobi/blog/2021/01/the-unreasonable-efficacy-of-simple-html/ 댓글 URL:...",
+      "url": "https://shkspr.mobi/blog/2021/01/the-unreasonable-effectiveness-of-simple-html/",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-12 07:17"
+    },
+    {
+      "title": "\"더우면 살 더 빠질까, 더 찔까?\"…여름철 대사 유지법 5가지",
+      "summary": "비데는 배변 후 청결을 유지하는 데 도움을 주는 대표적인 위생용품이다. 물로 씻어내는 방식인 만큼 피부 자극이 덜하고 이물질도… The post 비데 ‘이렇게’ 썼다간 세균 범벅?…꼭 알아야 할 사용법 6가지...",
+      "url": "https://kormedi.com/2823699/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-06-12 07:03"
+    },
+    {
+      "title": "신체 시계가 염증, 암 위험 및 향후 치료 시기를 결정하는 방법",
+      "summary": "일상 생활은 태양일에 따라 형성되며 우리가 일어나고, 먹고, 일하고, 자는 시간에 영향을 미칩니다. 몸 안에도 비슷한...",
+      "url": "https://medicalxpress.com/news/2026-06-body-clock-inflammation-cancer-future.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-06-12 07:00"
+    },
+    {
+      "title": "Dodge Charger 제조업체, 18분 만에 90% 충전에 도달하는 고체 EV 배터리 도로 테스트",
+      "summary": "Stellantis는 Factorial Energy의 전고체 배터리 셀을 Dodge Charger Daytona 개발에 통합했습니다.",
+      "url": "https://interestingengineering.com/energy/stellantis-solid-state-ev-battery-dodge-charger-test",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-06-12 06:27"
+    },
+    {
+      "title": "몸을 단단하게 만드는 것: 무술 컨디셔닝 뒤에 숨은 과학",
+      "summary": "백악관이 미국 독립 250주년을 기념해 UFC 행사를 개최할 예정이다.",
+      "url": "https://medicalxpress.com/news/2026-06-hardening-body-science-martial-arts.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-06-12 06:20"
+    },
+    {
+      "title": "Show HN: FablePool – 프롬프트 뒤에 돈을 모으고 Fable은 이를 공개적으로 구축합니다.",
+      "summary": "기사 URL: https://fablepool.com 댓글 URL: https://news.ycombinator.com/item?id=48496539 포인트: 175 # 댓글:...",
+      "url": "https://fablepool.com",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-12 06:17"
+    },
+    {
+      "title": "국방 프로그램을 위한 미국의 우라늄 농축 복원 프로젝트가 가동을 시작합니다.",
+      "summary": "미국은 국방을 위해 국내 우라늄 농축 인프라를 재건하기 위해 노력하고 있습니다.",
+      "url": "https://interestingengineering.com/energy/uranium-enrichment-us-military-applications",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-06-12 06:16"
     }
   ],
-  "updated": "2026-06-12 01:16:49"
+  "updated": "2026-06-12 09:16:38"
 }
