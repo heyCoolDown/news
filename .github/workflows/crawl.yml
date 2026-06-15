@@ -34,6 +34,7 @@ jobs:
         env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          HOLDINGS_PASSWORD: ${{ secrets.HOLDINGS_PASSWORD }}
         run: python crawl.py
 
       - name: news.json 커밋 & 푸시
