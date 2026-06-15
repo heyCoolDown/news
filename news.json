@@ -1,77 +1,122 @@
 {
-  "holdings": [],
+  "holdings": [
+    {
+      "title": "[AI MY 증시전망] 종전 기대에 외국인 매수까지…상승 출발 전망",
+      "summary": "삼성전자는 7.86%, SK하이닉스는 2.33% 올랐다. SK스퀘어, 삼성전자우, 현대차, LG에너지솔루션, 삼성생명, 삼성물산 등도 상승 마감했다. 반면 삼성전기는 약세를 보였다. 미국 증시도 주말을 앞두고...",
+      "url": "https://www.newspim.com/news/view/20260615000129",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "삼성전자우",
+      "date": "2026-06-15 08:48"
+    },
+    {
+      "title": "25거래일 만에 돌아온 외인...개인과 수익률 차이는 '백중세'[떠나는 외...",
+      "summary": "개인 순매수 1·2위 종목은 삼성전자(23조6291억원)와 SK하이닉스(22조9430억원)였다. 이어 △LG전자(2조4392억원) △현대차(2조1000억원) △현대모비스(1조9532억원)...",
+      "url": "https://www.etoday.co.kr/news/view/2593236",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "삼성전자우",
+      "date": "2026-06-15 07:42"
+    },
+    {
+      "title": "[애널픽] \"삼성생명, 삼성전자 주가 상승은 '양날의 검'\"",
+      "summary": "뷰어스 홍승훈 기­자 hooni7424@naver.com 삼성전자의 주가 상승이 삼성생명으로선 양날의 검이 될 수 있다는 지적이다. 주가 상승 국면에선 강력한 모멘텀이 될 수 있지만 반대로 삼성전자 주가 조정시...",
+      "url": "https://theviewers.co.kr/View.aspx?No=4111836",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "NAVER",
+      "date": "2026-06-15 08:50"
+    },
+    {
+      "title": "LG엔솔, 배터리 기술 인재 선점.. 글로벌 기술 컨퍼런스 'BTC' 개최",
+      "summary": "한국정경신문 문상혁 기­자 nasa7457@naver.com [한국정경신문=문상혁 기자] 배터리 산업 주도권 경쟁이 치열한 가운데 LG에너지솔루션이 글로벌 핵심 연구 인재 확보에 나섰다. LG에너지솔루션은 지난...",
+      "url": "https://kpenews.com/View.aspx?No=4111817",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "NAVER",
+      "date": "2026-06-15 08:36"
+    },
+    {
+      "title": "생보-손보협회장 하마평 벌써부터 ‘무성’",
+      "summary": "이동철 전 KB금융지주 부회장이 오는 16일 임시총회 의결을 거쳐 임기 3년의 제14대 여신금융협회장으로 최종 선임될 예정으로, 민간 금융사 출신이 여신협회장을 맡는 것은 약 10년 만의 일이다. 고려대...",
+      "url": "http://www.globalepic.co.kr/view.php?ud=202606150836009857cc35ccc5c_29",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "KB금융",
+      "date": "2026-06-15 08:48"
+    },
+    {
+      "title": "[더벨][금융지주 거버넌스 진화] 회장 만드는 시스템의 등장",
+      "summary": "최근 KB금융이 차기 회장 승계 절차를 조기에 시작하고 외부 후보에게 문을 넓힌 것도 같은 흐름으로 볼 수 있다. 과거처럼 단순히 후임자를 결정하는 차원을 넘어 승계 시스템 자체를 시장에 설명하고 검증받는...",
+      "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606081025233520104416",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "KB금융",
+      "date": "2026-06-15 08:18"
+    },
+    {
+      "title": "좁고 험한 랠리도 쌩쌩… 日 WRC 내달린 ‘K타이어’",
+      "summary": "김찬회 한국타이어앤테크놀로지 타이어팀 연구원은 “얼음길, 눈길, 거친 비포장도로까지 다 주행 가능한 타이어가 준비돼 있다”며 “타이어 성능이 검증됐기 때문에 다양한 극한 환경에서 이루어지는 경기에도...",
+      "url": "https://www.donga.com/news/Sports/article/all/20260614/134109038/2",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "한국타이어앤테크놀로지",
+      "date": "2026-06-15 04:32"
+    },
+    {
+      "title": "'EU 관세 적용' 앞둔 한국·금호·넥센타이어, 하반기 실적 불안감",
+      "summary": "사진=한국타이어앤테크놀로지 제공 한국·금호·넥센타이어의 하반기 실적에 먹구름이 드리우고 있다. 이들 기업은 중국산 타이어에 대해 유럽연합(EU)의 고관세 적용을 앞뒀다. 최대 수출국인 유럽으로 향하는 제품...",
+      "url": "https://daily.hankooki.com/news/articleView.html?idxno=1376156",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "한국타이어앤테크놀로지",
+      "date": "2026-06-14 08:00"
+    },
+    {
+      "title": "‘장롱면허’의 라이딩, ‘특별한 차’서 캠핑…그 로망 여기서 실현된...",
+      "summary": "축구장 125개 크기 아시아 최대 규모 HMG 드라이빙 익스피리언스의 무대는 한국타이어앤테크놀로지가 세운 한국테크노링이다. 부지 면적은 126만㎡(약 38만 평)으로 축구장 약 125개 규모다. 13개의 코스에서...",
+      "url": "https://www.joongang.co.kr/article/25436515",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "한국타이어앤테크놀로지",
+      "date": "2026-06-14 05:00"
+    },
+    {
+      "title": "케이뱅크, 수수료손익 적자 털었다",
+      "summary": "카카오뱅크는 글로벌 확장과 플랫폼 비즈니스 확대를 통해 비이자수익을 늘리는 데 집중하고 있다. 토스뱅크는 연내 펀드 판매에 나설 계획이다. 지난 달 금융당국으로부터 펀드 판매를 위한 금융투자업 본인가를...",
+      "url": "http://datanews.co.kr/news/article.html?no=145103",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "카카오뱅크",
+      "date": "2026-06-15 08:42"
+    },
+    {
+      "title": "'반팔 티셔츠' 이모지...카카오뱅크 AI 퀴즈 정답 (6월 15일)",
+      "summary": "반팔 티셔츠 이모지가 제시된 카카오뱅크 AI퀴즈 정답에 관심이 쏠렸다. 6월 15일 오전 8시 공개된 문제는 화면에 등장한 이모지와 힌트를 보고 정답을 유추하는 방식으로 출제됐다. 이번 문제는 ‘스파오 여름...",
+      "url": "https://www.wikitree.co.kr/articles/1141362",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "카카오뱅크",
+      "date": "2026-06-15 08:16"
+    },
+    {
+      "title": "대출비교 플랫폼 어쩌나...금융권 대출 조이기에 직격탄",
+      "summary": "15일 금융권에 따르면 우리은행과 경남은행, KB국민카드는 최근 대출비교 플랫폼(네이버페이·카카오페이·토스·핀다·뱅크샐러드)을 통한 신규 대출 취급을 축소·중단하고 있다. 금융당국의 가계대출 관리 기조에 맞춰...",
+      "url": "http://www.fnnews.com/news/202606131928254563",
+      "source": "네이버뉴스",
+      "category": "보유종목",
+      "stock": "카카오뱅크",
+      "date": "2026-06-15 08:05"
+    }
+  ],
   "tech": [
-    {
-      "title": "자연",
-      "summary": "",
-      "url": "http://feeds.nature.com/nature/rss/current",
-      "source": "Nature News",
-      "category": "과학",
-      "date": "2026-06-15 09:06"
-    },
-    {
-      "title": "대규모 연구에서 일반담배에서 베이프로 전환할 때의 위험성을 암시합니다.",
-      "summary": "",
-      "url": "https://www.nature.com/articles/d41586-026-01834-9",
-      "source": "Nature News",
-      "category": "과학",
-      "date": "2026-06-15 09:06"
-    },
-    {
-      "title": "우리가 비행을 추구하는 이유: 요약 책",
-      "summary": "",
-      "url": "https://www.nature.com/articles/d41586-026-01911-z",
-      "source": "Nature News",
-      "category": "과학",
-      "date": "2026-06-15 09:06"
-    },
-    {
-      "title": "브리핑 채팅: 스톤헨지 중앙 돌의 장대한 여정",
-      "summary": "",
-      "url": "https://www.nature.com/articles/d41586-026-01912-y",
-      "source": "Nature News",
-      "category": "과학",
-      "date": "2026-06-15 09:06"
-    },
-    {
-      "title": "나는 AI에 관해 바티칸과 UN에 조언합니다. 교황의 메시지를 신학으로 무시하지 마십시오",
-      "summary": "",
-      "url": "https://www.nature.com/articles/d41586-026-01876-z",
-      "source": "Nature News",
-      "category": "과학",
-      "date": "2026-06-15 09:06"
-    },
-    {
-      "title": "'학생 Geng'은 고위 학자들을 소환한 후 중국에서 연구 무결성 스캔들을 촉발시켰습니다.",
-      "summary": "",
-      "url": "https://www.nature.com/articles/d41586-026-01902-0",
-      "source": "Nature News",
-      "category": "과학",
-      "date": "2026-06-15 09:06"
-    },
-    {
-      "title": "이 매우 엄격한 수학 테스트에서 인간은 AI를 능가합니다.",
-      "summary": "",
-      "url": "https://www.nature.com/articles/d41586-026-01888-9",
-      "source": "Nature News",
-      "category": "과학",
-      "date": "2026-06-15 09:06"
-    },
-    {
-      "title": "혁신적인 기술로 단백질 구조의 이미지 품질 향상",
-      "summary": "",
-      "url": "https://www.nature.com/articles/d41586-026-01858-1",
-      "source": "Nature News",
-      "category": "과학",
-      "date": "2026-06-15 09:06"
-    },
     {
       "title": "글로벌 기술력 입증한 라이드플럭스 \"레벨4 자율주행 판도 바꾼다\"",
       "summary": "자율주행 기술은 가까워진 것 같으면서도 아직 멀게만 느껴진다. 막상 탑승하면 운전석엔 안전요원이 자리하고, 운행 구간도 극히 제한적이다.수조원을 넘나드는 글로벌 자율주행 시장에서 '레벨4' 수준의 기술을 갖춘...",
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211535",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "하드웨어 벤치마크 ‘AA-에이전트퍼프’ 등장...블랙웰, 전력 효율 1위",
@@ -79,7 +124,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211703",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "아티피셜 애널리시스, ‘딥SWE’ 벤치마크 도입...'페이블 5' 코딩 1위 등극",
@@ -87,7 +132,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211706",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "[AI&빅데이터쇼] 산업AX부터 XR·자율주행까지 미래 혁신 기술 한자리에",
@@ -95,7 +140,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211697",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "베이조스의 AI 스타트업 프로메테우스, 몸값 62조 기록…\"인공 일반 엔지니어 개발 중\"",
@@ -103,7 +148,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211708",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "\"인간 개입 없이 2명 살상\"…우크라이나, 2년 전 '자율 AI 드론' 투입 논란",
@@ -111,7 +156,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211702",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "중국, 미 국방부 기술 기업 블랙리스트 조치에 “정상회담 합의 훼손” 반발",
@@ -119,7 +164,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211707",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "메타, 무리한 AI 인력 재편에 내부 반발 폭발…저커버그 \"실수 인정\"",
@@ -127,7 +172,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=211705",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "골관절염 신약 승부수···엔솔바이오, 'E1K' 임상 3상 첫 환자 투여",
@@ -135,7 +180,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112094",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "[현장] 中 제조업 질주, \"100% 자체 기술 눈 앞\" <br> 핵심 부품부터 휴머노이드까지, A to Z 제조",
@@ -143,7 +188,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112087",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "[화보] 공장으로 향하는 휴머노이드와 AI<br>中 실리콘밸리 '심천'에서 본 미래 공장",
@@ -151,7 +196,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112088",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "서선옥 KAIST 교수 '2026 프런티어 과학상' \"10년 내 독창적 성과\"",
@@ -159,7 +204,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112090",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "\"新 인공태양 원천기술 확보\" GIST, 국가 연구사업 선정",
@@ -167,7 +212,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112093",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "의약품 후보물질 범위 넓힌다···UNIST, 新 화학합성법 개발",
@@ -175,7 +220,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112089",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "대덕특구 14개 혁신주체 뭉쳤다···딥테크 창업 전주기 지원 강화",
@@ -183,7 +228,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112086",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
     },
     {
       "title": "사람 부족하면 식량도 사라진다···KAIST, 식량안보 새 변수 제시",
@@ -191,7 +236,15 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112080",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-06-15 09:05"
+      "date": "2026-06-15 09:09"
+    },
+    {
+      "title": "코메디닷컴",
+      "summary": "건강에 여러모로 좋은 과일도 체중 증가와 혈당 급증을 막기 위해 피하는 경우가 많다. 특히 당뇨병이 있거나 당뇨가 걱정되면… The post 포도, 망고, 리치...혈당 관리할 때 단 과일 잘 먹는 법...",
+      "url": "https://kormedi.com/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-06-15 09:07"
     },
     {
       "title": "완하제, 우울증과 관련된 뇌 혼미 현상을 완화할 수 있다고 초기 실험에서 밝혀짐",
@@ -218,9 +271,9 @@
       "date": "2026-06-15 08:10"
     },
     {
-      "title": "코메디닷컴",
+      "title": "포도, 망고, 리치...혈당 관리할 때 단 과일 잘 먹는 법",
       "summary": "대학가 시험 기간이면 에너지 드링크가 불티나게 나간다. 에너지 드링크의 양대 성분은 카페인과 타우린이다. 카페인은 내일 시간을 오늘로 당겨… The post 박카스는 제로 칼로리? 왜 열량을 표기하지 않나?...",
-      "url": "https://kormedi.com/",
+      "url": "https://kormedi.com/2824773/",
       "source": "코메디닷컴",
       "category": "의료",
       "date": "2026-06-15 08:01"
@@ -298,7 +351,7 @@
       "date": "2026-06-15 07:11"
     },
     {
-      "title": "줄기세포로 미니 뇌를 생성하면 치명적인 소아 질병에 대한 새롭고 유망한 치료법이 밝혀집니다.",
+      "title": "줄기 세포로 미니 두뇌를 만드는 것은 파괴적인 아동기 질병에 대한 새롭고 유망한 치료법을 보여줍니다.",
       "summary": "DHDDS 유전자의 변종은 떨림, 발작, 협응을 특징으로 하는 심각한 신경퇴행성 질환을 유발합니다.",
       "url": "https://medicalxpress.com/news/2026-06-mini-brains-stem-cells-reveals.html",
       "source": "Medical Xpress",
@@ -400,7 +453,63 @@
       "source": "Medical Xpress",
       "category": "의료",
       "date": "2026-06-15 04:30"
+    },
+    {
+      "title": "카오스넷(1981)",
+      "summary": "https://bitsavers.trailing-edge.com/pdf/mit/ai/AIM-628_chaos... 댓글 URL:...",
+      "url": "https://tumbleweed.nu/r/lm-3/uv/amber.html",
+      "source": "Hacker News",
+      "category": "IT",
+      "date": "2026-06-15 04:14"
+    },
+    {
+      "title": "딥 러닝 공동 설계를 통해 과학자들은 누화 없이 28층 3D 이미지를 투사할 수 있습니다.",
+      "summary": "캘리포니아 대학교 로스앤젤레스 캠퍼스(UCLA)의 공학 연구원들이 첨단 기술을 개발했습니다.",
+      "url": "https://interestingengineering.com/science/ucla-3d-projection-multi-layer-imaging",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-06-15 03:47"
+    },
+    {
+      "title": "유령 입자는 핵융합로에서 폭탄 제조 물질의 비밀 생산을 밝힐 수 있습니다",
+      "summary": "핵융합 에너지의 가장 큰 판매 포인트 중 하나는 다르다는 것입니다.",
+      "url": "https://interestingengineering.com/science/ghost-particles-reveal-bomb-making-material",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-06-15 01:48"
+    },
+    {
+      "title": "에베레스트 산 등반을 준비하는 휴머노이드 로봇",
+      "summary": "로봇은 화려한 위업을 꿈꾸는가? 포스트 에베레스트 등정 준비하는 휴머노이드 로봇 첫 등장…",
+      "url": "https://futurism.com/robots-and-machines/humanoid-robot-training-mount-everest-chimborazo",
+      "source": "Futurism",
+      "category": "흥미",
+      "date": "2026-06-15 01:45"
+    },
+    {
+      "title": "NASA, 거대한 트럼프 브랜드 기차에 달 로켓을 실다",
+      "summary": "그것은 비유와 같습니다. NASA가 거대한 트럼프 브랜드 기차에 달 로켓을 싣는 게시물이 Futurism에 처음 등장했습니다.",
+      "url": "https://futurism.com/space/nasa-moon-rocket-trump-train",
+      "source": "Futurism",
+      "category": "흥미",
+      "date": "2026-06-15 01:00"
+    },
+    {
+      "title": "미국의 재급유 함대가 공군 준비 기준에 미치지 못한다고 새로운 감시 보고서가 밝혀졌습니다.",
+      "summary": "미국 회계감사원(GAO) 감시단체는 미국이 유지하는 데 어려움을 겪을 수 있다고 경고했습니다.",
+      "url": "https://interestingengineering.com/military/us-refueling-fleet-falls-below-air-force-standards",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-06-15 00:44"
+    },
+    {
+      "title": "로마 학교 체육관 지하에서 발견된 1,800년 된 부유한 가족 별장",
+      "summary": "로마의 한 지역 고등학교 학생들은 오랫동안 신비한 지하 세계에 대해 알고 있었습니다.",
+      "url": "https://interestingengineering.com/culture/wealthy-roman-villa-found-underneath-school-gym",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-06-15 00:33"
     }
   ],
-  "updated": "2026-06-15 09:05:43"
+  "updated": "2026-06-15 09:08:53"
 }
