@@ -24,14 +24,16 @@
     --sans:     'Noto Sans KR', sans-serif;
   }
 
-  * { margin:0; padding:0; box-sizing:border-box; }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
 
   body {
     background: var(--bg);
     color: var(--text);
     font-family: var(--sans);
-    font-size: 13px;
-    min-height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   body::before {
@@ -46,103 +48,103 @@
     z-index: 0;
   }
 
-  .wrap {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px;
-  }
-
   /* ── 헤더 ── */
   header {
+    position: relative;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 20px;
+    padding: 12px 16px;
     background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
   }
 
   .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     font-family: var(--mono);
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--blue);
     letter-spacing: 1px;
   }
 
   .logo-icon {
-    width: 28px; height: 28px;
+    width: 26px; height: 26px;
     background: var(--blue);
     border-radius: 6px;
     display: flex; align-items: center; justify-content: center;
-    font-size: 14px;
-  }
-
-  .header-right {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--muted);
+    font-size: 13px;
   }
 
   #updated-time {
+    font-family: var(--mono);
+    font-size: 11px;
     color: var(--green);
   }
 
   /* ── 탭 ── */
   .tabs {
+    position: relative;
+    z-index: 10;
     display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
+    gap: 0;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
   }
+  .tabs::-webkit-scrollbar { display: none; }
 
   .tab {
-    padding: 8px 18px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
+    flex: 1;
+    padding: 11px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
     font-family: var(--mono);
     font-size: 11px;
     font-weight: 600;
     color: var(--muted);
     cursor: pointer;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
     transition: all .2s;
-    text-transform: uppercase;
   }
 
-  .tab:hover { border-color: var(--border2); color: var(--text); }
-
   .tab.active {
-    background: var(--surface2);
-    border-color: var(--blue);
+    border-bottom-color: var(--blue);
     color: var(--blue);
   }
 
   /* ── 필터 바 ── */
   .filter-bar {
-    display: flex;
+    position: relative;
+    z-index: 10;
+    display: none;
     gap: 8px;
-    margin-bottom: 14px;
-    flex-wrap: wrap;
+    padding: 10px 14px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
   }
+  .filter-bar::-webkit-scrollbar { display: none; }
+  .filter-bar.visible { display: flex; }
 
   .filter-btn {
-    padding: 5px 12px;
+    flex-shrink: 0;
+    padding: 6px 14px;
     background: transparent;
     border: 1px solid var(--border);
     border-radius: 20px;
     font-family: var(--mono);
-    font-size: 10px;
+    font-size: 11px;
     color: var(--muted);
     cursor: pointer;
     transition: all .15s;
@@ -150,41 +152,61 @@
     letter-spacing: 0.5px;
   }
 
-  .filter-btn:hover { border-color: var(--border2); color: var(--text); }
-
   .filter-btn.active {
     background: var(--surface2);
     border-color: var(--purple);
     color: var(--purple);
   }
 
-  /* ── 뉴스 그리드 ── */
-  .news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 12px;
+  /* ── 카운터 ── */
+  .card-counter {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 6px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    background: var(--bg);
+    flex-shrink: 0;
   }
 
-  /* ── 뉴스 카드 ── */
+  #counter-current { color: var(--blue); font-weight: 700; }
+
+  /* ── 카드 슬라이더 ── */
+  .card-slider {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+  }
+  .card-slider::-webkit-scrollbar { display: none; }
+
+  /* ── 카드 ── */
   .news-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 16px;
-    transition: all .2s;
-    cursor: pointer;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 22px 20px;
+    text-decoration: none;
+    color: inherit;
     position: relative;
     overflow: hidden;
-    text-decoration: none;
-    display: block;
-    color: inherit;
+    border-right: 1px solid var(--border);
   }
 
   .news-card::before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0;
-    height: 2px;
+    height: 3px;
   }
 
   .news-card.cat-IT::before      { background: var(--blue); }
@@ -194,24 +216,19 @@
   .news-card.cat-기이::before    { background: #e879f9; }
   .news-card.cat-흥미::before    { background: #14b8a6; }
 
-  .news-card:hover {
-    border-color: var(--border2);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  }
-
   .card-meta {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
   }
 
   .cat-badge {
     font-family: var(--mono);
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 600;
-    padding: 2px 8px;
+    padding: 4px 12px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -226,8 +243,8 @@
 
   .stock-tag {
     font-family: var(--mono);
-    font-size: 9px;
-    padding: 2px 7px;
+    font-size: 11px;
+    padding: 4px 10px;
     border-radius: 20px;
     background: rgba(167,139,250,0.15);
     color: var(--purple);
@@ -236,71 +253,65 @@
   .card-date {
     margin-left: auto;
     font-family: var(--mono);
-    font-size: 10px;
+    font-size: 11px;
     color: var(--muted);
   }
 
   .card-title {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.5;
-    margin-bottom: 8px;
-    color: var(--text);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 20px;
+    color: #eef2ff;
+    flex-shrink: 0;
   }
 
   .card-summary {
-    font-size: 11px;
-    color: var(--muted);
-    line-height: 1.6;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    font-size: 16px;
+    color: rgba(205,217,240,0.7);
+    line-height: 1.7;
+    flex: 1;
     overflow: hidden;
-    margin-bottom: 10px;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
   }
 
   .card-source {
     font-family: var(--mono);
-    font-size: 10px;
+    font-size: 12px;
     color: var(--muted);
-    display: flex;
-    align-items: center;
-    gap: 4px;
   }
 
-  .card-source::before {
-    content: '↗';
-    color: var(--border2);
-  }
-
-  /* ── 빈 상태 ── */
-  .empty-state {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--muted);
+  .card-link-hint {
     font-family: var(--mono);
-    font-size: 13px;
+    font-size: 11px;
+    color: var(--blue);
+    opacity: 0.6;
   }
 
-  /* ── 로딩 ── */
-  .loading {
+  /* ── 빈 상태 / 로딩 ── */
+  .state-msg {
+    flex: 0 0 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px;
+    gap: 12px;
     color: var(--muted);
     font-family: var(--mono);
-    font-size: 13px;
-    gap: 10px;
+    font-size: 14px;
   }
 
   .spinner {
-    width: 16px; height: 16px;
+    width: 20px; height: 20px;
     border: 2px solid var(--border2);
     border-top-color: var(--blue);
     border-radius: 50%;
@@ -309,138 +320,109 @@
 
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ── 통계 바 ── */
-  .stats-bar {
+  /* ── 진행 도트 ── */
+  .dots {
+    position: relative;
+    z-index: 10;
     display: flex;
-    gap: 20px;
-    padding: 10px 16px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    margin-bottom: 14px;
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--muted);
+    justify-content: center;
+    gap: 5px;
+    padding: 8px;
+    background: var(--bg);
+    flex-shrink: 0;
+    overflow: hidden;
   }
 
-  .stat-item span { color: var(--text); font-weight: 600; }
-
-  /* ── 대시보드 링크 ── */
-  .back-link {
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--muted);
-    text-decoration: none;
-    transition: color .2s;
+  .dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--border2);
+    transition: background .2s, transform .2s;
+    flex-shrink: 0;
   }
-  .back-link:hover { color: var(--green); }
+
+  .dot.active {
+    background: var(--blue);
+    transform: scale(1.4);
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <!-- 헤더 -->
-  <header>
-    <div class="logo">
-      <div class="logo-icon">📰</div>
-      NEWS MONITOR
-    </div>
-    <div class="header-right">
-      <span>업데이트: <span id="updated-time">--</span></span>
-      <a class="back-link" href="http://168.107.56.144:5000">← 매매 대시보드</a>
-    </div>
-  </header>
-
-  <!-- 탭 -->
-  <div class="tabs">
-    <button class="tab active" onclick="switchTab('all')">전체</button>
-    <button class="tab" onclick="switchTab('holdings')">📈 보유종목</button>
-    <button class="tab" onclick="switchTab('tech')">💻 테크 · 과학 · 의료 · 기이</button>
+<header>
+  <div class="logo">
+    <div class="logo-icon">📰</div>
+    NEWS MONITOR
   </div>
+  <span id="updated-time">--</span>
+</header>
 
-  <!-- 통계 바 -->
-  <div class="stats-bar">
-    <div class="stat-item">보유종목 <span id="stat-holdings">0</span>건</div>
-    <div class="stat-item">IT <span id="stat-it">0</span>건</div>
-    <div class="stat-item">과학 <span id="stat-sci">0</span>건</div>
-    <div class="stat-item">의료 <span id="stat-med">0</span>건</div>
-    <div class="stat-item">기이 <span id="stat-weird">0</span>건</div>
-    <div class="stat-item">흥미 <span id="stat-fun">0</span>건</div>
-    <div class="stat-item">총 <span id="stat-total">0</span>건</div>
-  </div>
-
-  <!-- 필터 (tech 탭에서만 표시) -->
-  <div class="filter-bar" id="filter-bar" style="display:none">
-    <button class="filter-btn active" onclick="setFilter('all')">전체</button>
-    <button class="filter-btn" onclick="setFilter('IT')">IT</button>
-    <button class="filter-btn" onclick="setFilter('과학')">과학</button>
-    <button class="filter-btn" onclick="setFilter('의료')">의료</button>
-    <button class="filter-btn" onclick="setFilter('기이')">기이한사건</button>
-    <button class="filter-btn" onclick="setFilter('흥미')">흥미</button>
-  </div>
-
-  <!-- 뉴스 그리드 -->
-  <div id="news-container">
-    <div class="loading">
-      <div class="spinner"></div>
-      뉴스 불러오는 중...
-    </div>
-  </div>
-
+<div class="tabs">
+  <button class="tab active" data-tab="all" onclick="switchTab(this,'all')">전체</button>
+  <button class="tab" data-tab="holdings" onclick="switchTab(this,'holdings')">📈 보유종목</button>
+  <button class="tab" data-tab="tech" onclick="switchTab(this,'tech')">💻 테크·과학</button>
 </div>
 
-<script>
-let allData    = null;
-let activeTab  = 'all';
-let activeFilter = 'all';
+<div class="filter-bar" id="filter-bar">
+  <button class="filter-btn active" onclick="setFilter(this,'all')">전체</button>
+  <button class="filter-btn" onclick="setFilter(this,'IT')">IT</button>
+  <button class="filter-btn" onclick="setFilter(this,'과학')">과학</button>
+  <button class="filter-btn" onclick="setFilter(this,'의료')">의료</button>
+  <button class="filter-btn" onclick="setFilter(this,'기이')">기이</button>
+  <button class="filter-btn" onclick="setFilter(this,'흥미')">흥미</button>
+</div>
 
-// 뉴스 데이터 로드
+<div class="card-counter">
+  <span id="counter-current">0</span> / <span id="counter-total">0</span>
+</div>
+
+<div class="card-slider" id="slider">
+  <div class="state-msg">
+    <div class="spinner"></div>
+    뉴스 불러오는 중...
+  </div>
+</div>
+
+<div class="dots" id="dots"></div>
+
+<script>
+let allData     = null;
+let activeTab   = 'all';
+let activeFilter = 'all';
+let currentItems = [];
+let currentIdx  = 0;
+
+const slider = document.getElementById('slider');
+const dots   = document.getElementById('dots');
+const MAX_DOTS = 20;
+
 async function loadNews() {
   try {
-    const res  = await fetch('./news.json?t=' + Date.now());
-    allData    = await res.json();
-    document.getElementById('updated-time').textContent = allData.updated || '--';
-    updateStats();
+    const res = await fetch('./news.json?t=' + Date.now());
+    allData   = await res.json();
+    document.getElementById('updated-time').textContent = (allData.updated || '--').slice(5, 16);
     render();
   } catch(e) {
-    document.getElementById('news-container').innerHTML =
-      '<div class="loading">❌ news.json 로드 실패 — 크롤러 실행 여부를 확인하세요</div>';
+    slider.innerHTML = '<div class="state-msg">❌ 로드 실패</div>';
   }
 }
 
-function updateStats() {
-  if (!allData) return;
-  const holdings = allData.holdings || [];
-  const tech     = allData.tech || [];
-  const it    = tech.filter(n => n.category === 'IT');
-  const sci   = tech.filter(n => n.category === '과학');
-  const med   = tech.filter(n => n.category === '의료');
-  const weird = tech.filter(n => n.category === '기이');
-  const fun   = tech.filter(n => n.category === '흥미');
-  document.getElementById('stat-holdings').textContent = holdings.length;
-  document.getElementById('stat-it').textContent       = it.length;
-  document.getElementById('stat-sci').textContent      = sci.length;
-  document.getElementById('stat-med').textContent      = med.length;
-  document.getElementById('stat-weird').textContent    = weird.length;
-  document.getElementById('stat-fun').textContent      = fun.length;
-  document.getElementById('stat-total').textContent    = holdings.length + tech.length;
-}
-
-function switchTab(tab) {
+function switchTab(el, tab) {
   activeTab = tab;
   activeFilter = 'all';
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  event.target.classList.add('active');
-  document.getElementById('filter-bar').style.display = (tab === 'tech') ? 'flex' : 'none';
+  el.classList.add('active');
+  const fb = document.getElementById('filter-bar');
+  fb.classList.toggle('visible', tab === 'tech');
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   document.querySelector('.filter-btn')?.classList.add('active');
   render();
 }
 
-function setFilter(filter) {
+function setFilter(el, filter) {
   activeFilter = filter;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
+  el.classList.add('active');
   render();
 }
 
@@ -448,51 +430,80 @@ function getItems() {
   if (!allData) return [];
   const holdings = allData.holdings || [];
   const tech     = allData.tech || [];
-
   if (activeTab === 'holdings') return holdings;
-  if (activeTab === 'tech') {
+  if (activeTab === 'tech')
     return activeFilter === 'all' ? tech : tech.filter(n => n.category === activeFilter);
-  }
-  // 전체: 보유종목 먼저, 그 다음 tech
   return [...holdings, ...tech];
 }
 
 function render() {
-  const items = getItems();
-  const container = document.getElementById('news-container');
+  currentItems = getItems();
+  currentIdx = 0;
 
-  if (items.length === 0) {
-    container.innerHTML = `
-      <div class="news-grid">
-        <div class="empty-state">📭 뉴스 없음</div>
-      </div>`;
+  document.getElementById('counter-total').textContent = currentItems.length;
+  document.getElementById('counter-current').textContent = currentItems.length ? 1 : 0;
+
+  if (!currentItems.length) {
+    slider.innerHTML = '<div class="state-msg">📭 뉴스 없음</div>';
+    dots.innerHTML = '';
     return;
   }
 
-  container.innerHTML = `
-    <div class="news-grid">
-      ${items.map(item => cardHTML(item)).join('')}
-    </div>`;
+  slider.innerHTML = currentItems.map(cardHTML).join('');
+
+  // 도트 (최대 MAX_DOTS개)
+  const showDots = Math.min(currentItems.length, MAX_DOTS);
+  dots.innerHTML = Array.from({length: showDots}, (_, i) =>
+    `<div class="dot${i === 0 ? ' active' : ''}" data-i="${i}"></div>`
+  ).join('');
+
+  slider.scrollTo({ left: 0, behavior: 'instant' });
+  observeScroll();
 }
 
 function cardHTML(item) {
   const cat   = item.category || 'IT';
   const stock = item.stock ? `<span class="stock-tag">📌 ${item.stock}</span>` : '';
+  const date  = (item.date || '').slice(5, 16);
   return `
     <a class="news-card cat-${cat}" href="${item.url || '#'}" target="_blank" rel="noopener">
       <div class="card-meta">
         <span class="cat-badge ${cat}">${cat}</span>
         ${stock}
-        <span class="card-date">${(item.date || '').slice(5)}</span>
+        <span class="card-date">${date}</span>
       </div>
       <div class="card-title">${item.title || '(제목 없음)'}</div>
       <div class="card-summary">${item.summary || ''}</div>
-      <div class="card-source">${item.source || ''}</div>
+      <div class="card-footer">
+        <span class="card-source">${item.source || ''}</span>
+        <span class="card-link-hint">탭하여 원문 ↗</span>
+      </div>
     </a>`;
 }
 
+function observeScroll() {
+  let ticking = false;
+  slider.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const idx = Math.round(slider.scrollLeft / slider.clientWidth);
+      if (idx !== currentIdx) {
+        currentIdx = idx;
+        document.getElementById('counter-current').textContent = idx + 1;
+
+        // 도트 업데이트
+        const dotIdx = Math.min(idx, MAX_DOTS - 1);
+        document.querySelectorAll('.dot').forEach((d, i) => {
+          d.classList.toggle('active', i === dotIdx);
+        });
+      }
+      ticking = false;
+    });
+  }, { passive: true });
+}
+
 loadNews();
-// 30분마다 자동 새로고침
 setInterval(loadNews, 30 * 60 * 1000);
 </script>
 </body>
