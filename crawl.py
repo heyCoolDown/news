@@ -56,7 +56,9 @@ def translate(text):
 NAVER_CLIENT_ID     = os.environ.get("NAVER_CLIENT_ID", "")
 NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "")
 
-HOLDINGS_API_URL = "http://168.107.56.144:5000/api/data"
+HOLDINGS_API_URL      = "http://168.107.56.144:5000/api/data"
+HOLDINGS_LOGIN_URL    = "http://168.107.56.144:5000/login"
+HOLDINGS_PASSWORD     = os.environ.get("HOLDINGS_PASSWORD", "")
 
 KST = timezone(timedelta(hours=9))
 
@@ -129,9 +131,26 @@ def is_politics(title, desc=""):
 
 # ── 보유종목 가져오기 ──────────────────────────────────────
 def get_holdings():
+    import http.cookiejar
     try:
+        cj = http.cookiejar.CookieJar()
+        opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+
+        # 로그인
+        if HOLDINGS_PASSWORD:
+            login_data = urllib.parse.urlencode({"password": HOLDINGS_PASSWORD}).encode("utf-8")
+            login_req = urllib.request.Request(
+                HOLDINGS_LOGIN_URL, data=login_data,
+                headers={"User-Agent": "Mozilla/5.0", "Content-Type": "application/x-www-form-urlencoded"}
+            )
+            with opener.open(login_req, timeout=5) as _:
+                pass
+        else:
+            print("[보유종목] HOLDINGS_PASSWORD 미설정")
+
+        # 세션으로 API 호출
         req = urllib.request.Request(HOLDINGS_API_URL, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=5) as res:
+        with opener.open(req, timeout=5) as res:
             data = json.loads(res.read().decode("utf-8"))
         positions = data.get("positions") or []
         holdings = []
