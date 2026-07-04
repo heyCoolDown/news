@@ -1,85 +1,58 @@
 {
   "holdings": [
     {
-      "title": "코스피, 기관 매수에 상승 마감...SK하이닉스, 삼성전자, 삼성물산, SK스...",
-      "summary": "SK하이닉스(10.88%), 삼성전자우(10.23%), 삼성전자(8.22%), 삼성물산(6.64%), SK스퀘어(4.2%), 삼성생명(3.37%), 삼성전기(3.27%), LG에너지솔루션(2.4%),...",
-      "url": "http://www.econonews.co.kr/news/articleView.html?idxno=440667",
+      "title": "최근 5거래일 삼성전자우 주가 변동성 확대",
+      "summary": "3일 KRX 마감 기준, 네이버페이 증권에 따르면 삼성전자우는 최근 5거래일 동안 큰 폭의 변동성을 보인 끝에 2026년 7월 3일 208,000원에 마감하며 전일 대비 10.2% 상승했다. 이는 며칠간의 하락세를...",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16123366",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "삼성전자우",
-      "date": "2026-07-03 21:30"
+      "date": "2026-07-04 09:00"
     },
     {
-      "title": "'고점 대비 30%↓' 삼전닉스, 향방 최대 관심사 부상",
-      "summary": "국내 증시 '투톱' 삼성전자와 SK하이닉스가 고점 대비 30% 안팎으로 하락했다. /사진=챗지피티 | 서울=한스경제 김유진 기자 | 삼성전자와 SK하이닉스가 고점 대비 30% 안팎 하락하며 반도체 '투톱' 향방이...",
-      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=848132",
+      "title": "[주간 거래소 기관] SK스퀘어 삼성전자 이수페타시스 '왕성한 식욕'...한...",
+      "summary": "특히 SK스퀘어와 삼성전자가 기관 순매수 1, 2위를 기록하며 대형 기술주에 대한 투자심리가 다시 살아나는 모습이었다. 한국거래소에 따르면 지난달 29일부터 7월 3일까지 기관은 유가증권시장에서 SK스퀘어를...",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=465455",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "삼성전자우",
-      "date": "2026-07-03 18:12"
+      "date": "2026-07-04 07:30"
     },
     {
-      "title": "‘롤러코스터’ 코스피, 급락 딛고 8000선 회복",
-      "summary": "코스피가 삼성전자와 SK하이닉스를 비롯한 대형 반도체주의 급등세에 8000선을 회복했다. 3일 한국거래소에 따르면 이날 코스피는 전 거래일 대비 5.76%(440.25p) 상승한 8088.34에 거래를 마쳤다....",
-      "url": "https://www.kukinews.com/article/view/kuk202607030136",
+      "title": "[주간 거래소 외국인] SK하이닉스 삼성전자 팔고 삼성전기 DB하이텍 담았...",
+      "summary": "외국인은 SK하이닉스를 가장 많이 순매도했고 삼성전자도 대규모 매도 대상에 포함됐다. 최근 주가 상승에 따른 차익실현과 함께 반도체 업종 내 투자 대상을 다변화하는 전략을 선택한 것으로 해석된다. IT와 산업재...",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=465453",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "삼성전자우",
-      "date": "2026-07-03 18:06"
+      "date": "2026-07-04 07:26"
     },
     {
-      "title": "AI 석학 총집결한 무대 오른 포티투마루…’행동하는 AI’ 기술 공개",
-      "summary": "alongside Naver Cloud, POSCO Holdings, LG Electronics, and HD Hyundai, continuing joint research among......",
-      "url": "https://www.venturesquare.net/1095808/",
+      "title": "최근 5거래일 네이버 주가 20만원 선 공방",
+      "summary": "따르면 NAVER 주가는 07월 03일 장마감 기준 195,800원으로 거래를 마쳤다. 이는 전일 종가 199,900원 대비 4,100원 하락한 수치이며, 동일업종 등락률 -1.11%보다 큰 폭의 하락세를...",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16123345",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "NAVER",
-      "date": "2026-07-03 22:17"
+      "date": "2026-07-04 08:44"
     },
     {
-      "title": "[가평 소식] 가평군 공식 블로그, 'NAVER MATE' 선정 쾌거 외",
-      "summary": "가평군 공식 블로그가 네이버 우수 창작자 프로그램인 'NAVER MATE(네이버 메이트)'에 공식 선정돼 콘텐츠의... 가평군은 7월 3일 군의 공식 블로그가 네이버에서 운영하는 'NAVER MATE' 국내여행...",
-      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2445215",
+      "title": "[코스피 지수선물 옵션] 삼성전자·SK하이닉스 선물 급등…반도체가 지...",
+      "summary": "효성중공업, NAVER, LG전자, 한국전력, 두산 등이 약세를 기록했다. 또 LG이노텍, LG화학, 알테오젠, SK텔레콤... 인터넷과 플랫폼 업종에서는 NAVER와 카카오가 모두 하락했고, 엔터테인먼트...",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=465456",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "NAVER",
-      "date": "2026-07-03 19:19"
+      "date": "2026-07-04 07:32"
     },
     {
-      "title": "베트남 전문 미디어 '인사이드비나', 호치민서 유학생 인턴십·글로벌 ...",
-      "summary": "한국인터넷신문협회 정회원사이자 네이버(NAVER)·다음(DAUM) 뉴스검색 제휴를 맺은 베트남 전문 미디어로서 독보적인 공신력을 보유하고 있는 인사이드비나는 이번 박람회를 통해 베트남 청년들을 위한 '실무형...",
-      "url": "https://www.insidevina.com/news/articleView.html?idxno=43530",
-      "source": "네이버뉴스",
-      "category": "보유종목",
-      "stock": "NAVER",
-      "date": "2026-07-03 18:28"
-    },
-    {
-      "title": "KB금융 차기 회장 숏리스트 6인 확정 … 내부 4명·외부 2명 경쟁",
-      "summary": "KB금융지주 회장후보추천위원회(회추위)가 차기 회장 선임을 위한 숏리스트를 확정하며 본격적인 CEO 선임 절차에 돌입했다. 회추위는 3일 회의를 열고 내부 후보 4명과 외부 후보 2명 등 총 6명을 차기 회장...",
-      "url": "http://www.worktoday.co.kr/news/articleView.html?idxno=86373",
+      "title": "KB금융 차기 회장 후보 6명으로 압축-양종희 포함, 9월 최종 선임",
+      "summary": "KB금융지주의 차기 회장 선임 절차가 본격화됐다. 회장 후보군이 기존 12명에서 6명으로 압축되면서 차기 최고경영자(CEO) 선출 일정도 구체화됐다. KB금융 회장후보추천위원회는 3일 회의를 열고 내부 후보 4명과...",
+      "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=82601",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "KB금융",
-      "date": "2026-07-03 23:22"
-    },
-    {
-      "title": "KB금융, 차기 회장 후보로 양종희·이환주 등 6인 압축",
-      "summary": "KB금융지주 차기 회장 후보 6인이 최종 확정됐다. KB금융지주 회장후보추천위원회는 3일 회추위를 열고 내부 후보 4인과 외부 후보 2인, 총 6인을 차기 회장 후보 숏리스트로 확정했다고 밝혔다. 현 KB금융지주...",
-      "url": "http://www.beyondpost.co.kr/view.php?ud=202607032207059888be44c0aacd_30",
-      "source": "네이버뉴스",
-      "category": "보유종목",
-      "stock": "KB금융",
-      "date": "2026-07-03 22:12"
-    },
-    {
-      "title": "코스피, 반발매수세에 8000선 회복",
-      "summary": "코스피 시가총액 상위 종목 중 삼성전자(8.22%), SK하이닉스(10.88%), 한화에어로스페이스(5.29%), KB금융(3.09%) 등이 상승했다. 이날 코스닥은 전장보다 1.69포인트(0.19%) 상승한...",
-      "url": "https://www.betanews.net/article/view/beta202607030073",
-      "source": "네이버뉴스",
-      "category": "보유종목",
-      "stock": "KB금융",
-      "date": "2026-07-03 21:58"
+      "date": "2026-07-04 08:52"
     },
     {
       "title": "한국타이어, 포뮬러 E 시즌 12 ‘2026 상하이 E-PRIX’ 개최",
@@ -100,50 +73,40 @@
       "date": "2026-07-03 16:50"
     },
     {
-      "title": "[공매도 브리핑] 삼성전기 거래 1위…에스원 비중 37.30%",
-      "summary": "SK아이이테크놀로지는 35.56%, ESR켄달스퀘어리츠는 34.12%, 한국타이어앤테크놀로지는 31.33%, 한샘은 30.79%였다. 에스원은 전 거래일 23.79%에서 13.51%포인트 상승하며 KOSPI...",
-      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16122630",
-      "source": "네이버뉴스",
-      "category": "보유종목",
-      "stock": "한국타이어앤테크놀로지",
-      "date": "2026-07-03 16:42"
-    },
-    {
-      "title": "카카오뱅크, 세계가 주목한 AI 기술… 대체 뭐길래?",
-      "summary": "사진=카카오뱅크 카카오뱅크는 자사 금융기술연구소의 생성형 인공지능(AI) 안정성과 금융 AI 신뢰성 향상 관련 논문 4편이 국제 학술대회에 연이어 채택됐다고 지난달 30일 밝혔다. 카카오뱅크는 지난 4월 열린...",
-      "url": "https://www.ggilbo.com/news/articleView.html?idxno=1166591",
+      "title": "기업대출 빗장 풀린 인터넷은행…은행권 지각변동",
+      "summary": "올해 1분기 인터넷은행의 총여신 가운데 가계대출이 차지하는 비중은 카카오뱅크 92.9%, 토스뱅크 91.1%, 케이뱅크 85.3%에 달한다. 최근 금융당국의 가계대출 및 신용대출 규제가 강화되면서 인터넷은행은...",
+      "url": "https://www.ajunews.com/view/20260703143451160",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "카카오뱅크",
-      "date": "2026-07-03 22:50"
+      "date": "2026-07-04 08:02"
     },
     {
-      "title": "반대 청원까지 등장한 CBDC 2단계…논란 속에도 경남은행·iM뱅크 합류 이...",
-      "summary": "두 은행 모두 1단계에는 참여하지 않았다가 카카오뱅크·케이뱅크·토스뱅크 등 인터넷은행 3사와 JB금융그룹(광주·전북은행)이 참여를 포기한 시점에 합류를 결정했다. BNK금융그룹은 경남은행의 2단계 합류와 관련해...",
-      "url": "https://www.greened.kr/news/articleView.html?idxno=344186",
+      "title": "카카오뱅크 AI 이모지 퀴즈 정답(7월4일)",
+      "summary": "'카카오뱅크 AI 이모지 퀴즈'는 정답을 맞힌 이용자에게 보상을 제공하는 방식으로 진행되며, 지급된 혜택은 설정한 대표계좌 또는 보유 중인 입출금 계좌를 통해 받을 수 있다. 7월 4일 출제된 카카오뱅크 AI...",
+      "url": "https://www.gametoc.co.kr/news/articleView.html?idxno=109737",
       "source": "네이버뉴스",
       "category": "보유종목",
       "stock": "카카오뱅크",
-      "date": "2026-07-03 20:59"
-    },
-    {
-      "title": "4대 금융 ESG보고서에 AI '존재감'…활용 넘어 리스크 관리로",
-      "summary": "대상 기업은 JB우리캐피탈, KB국민카드, KB자산운용, 네이버파이낸셜, 비바리퍼블리카, 비씨카드, 삼성생명, 삼성카드, 삼성화재해상보험, 아이엠라이프생명보험, 웰컴저축은행, 카카오뱅크, 카카오페이증권...",
-      "url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=264223",
-      "source": "네이버뉴스",
-      "category": "보유종목",
-      "stock": "카카오뱅크",
-      "date": "2026-07-03 18:42"
+      "date": "2026-07-04 08:02"
     }
   ],
   "tech": [
+    {
+      "title": "[7월3일] \"비싼 모델만 쓸 필요 없다\"…AI 토큰 비용 절감이 보여주는 변화",
+      "summary": "최근 해외 AI 업계에서 가장 큰 화두 중 하나는 기업의 'AI 토큰 비용 줄이기'입니다. AI 에이전트가 여러 단계를 거쳐 작업을 수행하면서 토큰 사용량이 급증하고, AI 예산이 예상보다 빠르게 소진되는 사례가...",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212386",
+      "source": "AI타임스",
+      "category": "IT",
+      "date": "2026-07-04 09:02"
+    },
     {
       "title": "구글, 차세대 '제미나이 플래시' 테스트 중...LM 아레나서 포착",
       "summary": "구글의 경량 AI 모델 '제미나이 플래시(Gemini Flash)'의 새로운 테스트 버전이 AI 모델 평가 플랫폼인 LM 아레나(LM Arena)에 등장하면서 차기 모델 출시가 임박한 것 아니냐는 관측이 나오고...",
       "url": "https://www.aitimes.com/news/articleView.html?idxno=212397",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "저커버그 \"AI 에이전트 개발 속도 예상보다 느려\"…조직 개편 한계 인정",
@@ -151,7 +114,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=212385",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "MS 코파일럿, 소비자·기업용 전면 통합…8월 '업무형 슈퍼 앱'으로 진화",
@@ -159,7 +122,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=212399",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "알리바바, 에이전트 도구 선택 프레임워크 ‘스킬위버’ 공개… “토큰 사용량 99.9% 절감”",
@@ -167,7 +130,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=212408",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "메타, 바이브 코딩 기반 앱·게임 소셜 플랫폼 '포켓' 출시",
@@ -175,7 +138,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=212395",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "xAI, 코드 없이 음성 AI 만드는 '보이스 에이전트 빌더' 베타 공개",
@@ -183,7 +146,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=212402",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "오픈AI 5% 제안에 트럼프 행정부·앤트로픽 간 지분 논의 아직 없어",
@@ -191,15 +154,7 @@
       "url": "https://www.aitimes.com/news/articleView.html?idxno=212389",
       "source": "AI타임스",
       "category": "IT",
-      "date": "2026-07-03 23:27"
-    },
-    {
-      "title": "[게시판] 딥노이드, 의료 AI 연구 논문 게재…“학습 연산 비용 90% 절감” 등 단신",
-      "summary": "■ 딥노이드(대표 최우식)는 연구팀이 수행한 ‘환각 표현을 줄이는 검색 증강 기반 흉부 X-레이 판독문 생성 연구(RA-RRG)’가 논문집 ‘Findings of ACL 2026’에 게재됐다고 밝혔다. 연구 모델...",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=212416",
-      "source": "AI타임스",
-      "category": "IT",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "\"넘사벽된 中 과학기술, 3040 개척 과학자로 대응\"<br>장석복 IBS 원장, 젊은 과학자 중심 '디스커버리 허브' 구성",
@@ -207,7 +162,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112346",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "[특별기고] 연구로 1호기 보존은 후손 위한 중요 결정",
@@ -215,7 +170,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112344",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "'괴짜들 천국' 만든 이광형 총장 퇴임 \"KAIST, 인류 미래 기여하길\"",
@@ -223,7 +178,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112345",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "\"AI가 내 공동 창업자\"···KAIST 창업원, '1인 유니콘' 시대 개척",
@@ -231,7 +186,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112352",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "40초마다 우주 변화 기록···천문연, '우주 타임랩스' 프로젝트 본격 가동",
@@ -239,7 +194,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112348",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "\"2년 만에 머리숱 풍성\"···원자력연, 천연 탈모 제품 식약처 통과",
@@ -247,7 +202,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112355",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "ETRI, OLED·양자점 한 기판에···차세대 디스플레이 기술 개발",
@@ -255,7 +210,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112358",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "\"과학과 대중 잇는다\"···국내 첫 과학커뮤니케이션 학회 출범",
@@ -263,7 +218,7 @@
       "url": "http://www.hellodd.com/news/articleView.html?idxno=112341",
       "source": "헬로디디",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "자연",
@@ -271,7 +226,7 @@
       "url": "http://feeds.nature.com/nature/rss/current",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "중국, 젊은 과학자들을 위한 권위 있는 보조금 확대 - 경쟁을 완화할 것인가?",
@@ -279,7 +234,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01989-5",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "페로브스카이트 광전지용 전착 자기조립 분자",
@@ -287,7 +242,7 @@
       "url": "https://www.nature.com/articles/s41586-026-10844-6",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "저자 정정: 생체촉매 탈라세미화에 의한 거울상 강화 회전장애 이성질체의 합성",
@@ -295,7 +250,7 @@
       "url": "https://www.nature.com/articles/s41586-026-10854-4",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "뉴트리노의 보육원 발견: '섀도우 블래스터'",
@@ -303,7 +258,7 @@
       "url": "https://www.nature.com/articles/d41586-026-02034-1",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "일일 브리핑: 프린트 슈트를 입고 물속에서 숨을 쉬는 '사이보그' 바퀴벌레",
@@ -311,7 +266,7 @@
       "url": "https://www.nature.com/articles/d41586-026-02108-0",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "실제로 9시부터 5시까지 박사 학위를 받을 수 있나요? 자연 독자들의 평가",
@@ -319,7 +274,7 @@
       "url": "https://www.nature.com/articles/d41586-026-01773-5",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
       "title": "신임 미국 과학 아카데미 총장, 연구에 '두 배' 노력하겠다고 다짐",
@@ -327,216 +282,216 @@
       "url": "https://www.nature.com/articles/d41586-026-02088-1",
       "source": "Nature News",
       "category": "과학",
-      "date": "2026-07-03 23:27"
+      "date": "2026-07-04 09:02"
     },
     {
-      "title": "연구원은 열정을 뚜렷한 심리적 감정으로 조사합니다.",
-      "summary": "열정은 심리학에서 거의 주목을 받지 못합니다. PhD 연구원 Rijn Vogelaar는 이를 바꾸는 것을 목표로 합니다. 그 사람 박사학위..",
-      "url": "https://medicalxpress.com/news/2026-07-enthusiasm-distinct-psychological-emotion.html",
+      "title": "Vellore 집단은 인도에서 학령기 아동의 영양실조에 대한 이중 부담이 증가하고 있음을 밝힙니다.",
+      "summary": "벨로레(Vellore)의 저소득층 도시 공동체에서 자라는 아이들은 이제 겉보기에 반대되는 두 가지 형태의 문제에 직면해 있습니다.",
+      "url": "https://medicalxpress.com/news/2026-07-vellore-cohort-reveals-india-burden.html",
       "source": "Medical Xpress",
       "category": "의료",
-      "date": "2026-07-03 23:20"
+      "date": "2026-07-04 09:00"
     },
     {
-      "title": "임신우울증 심리치료에 요가와 오메가-3가 효과적",
-      "summary": "전 세계적으로 임산부 3명 중 거의 1명은 우울증을 경험하며, 대부분은 치료를 받지 않습니다. 그들이 얻을 때 ...",
-      "url": "https://medicalxpress.com/news/2026-07-yoga-omega-effective-psychological-therapy.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-07-03 23:20"
+      "title": "중국 기업, 차세대 중장비용 하이브리드 전기 기술 공개",
+      "summary": "중국 장비 제조업체 Zoomlion은 건설, 건설, 건설 등 5가지 신에너지 기술 성과를 공개했습니다.",
+      "url": "https://interestingengineering.com/innovation/zoomlion-hybrid-electric-heavy-machinery-innovation",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-07-04 08:32"
+    },
+    {
+      "title": "독일, 57억 달러 대규모 투자로 세계 최대 전력 반도체 공장 설립",
+      "summary": "인피니언 테크놀로지스는 예정보다 몇 달 앞서 독일 드레스덴에 스마트 파워 팹(Smart Power Fab)을 오픈했습니다.",
+      "url": "https://interestingengineering.com/innovation/germany-largest-power-semiconductor-fab-infineon",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-07-04 08:31"
     },
     {
       "title": "코메디닷컴",
-      "summary": "여름이면 수박이나 복숭아를 찾는 사람이 많지만, 6~7월 사이 짧은 기간에만 맛볼 수 있는 ‘살구’ 역시 놓치기 아까운 제철… The post “눈 침침하고 피부 푸석하다면?”…7월에 가장 맛있는 ‘이 과일’...",
+      "summary": "습도가 높은 장마철에는 집안 곳곳이 쉽게 눅눅해진다. 습기를 제때 제거하지 않으면 빨래가 잘 마르지 않고 곰팡이나 악취가 생길… The post 장마철 제습기 ‘이렇게’ 쓰면 전기요금 폭탄?…효율 높이는 방법...",
       "url": "https://kormedi.com/",
       "source": "코메디닷컴",
       "category": "의료",
-      "date": "2026-07-03 23:01"
+      "date": "2026-07-04 08:06"
     },
     {
-      "title": "간단한 프롬프트가 ChatGPT를 안전 가드레일을 무시하는 소시오패스로 전환시킵니다.",
-      "summary": "ChatGPT가 생성한 자료는 안전 연구자들을 \"흔들고 눈물을 흘리게\" 했습니다. 게시물의 간단한 프롬프트가 ChatGPT를...",
-      "url": "https://futurism.com/artificial-intelligence/simple-prompt-chatgpt-sociopath",
-      "source": "Futurism",
-      "category": "흥미",
-      "date": "2026-07-03 23:01"
-    },
-    {
-      "title": "난소는 생식 기관으로 기능한 후 면역 체계에서 역할을 수행할 수 있습니다.",
-      "summary": "대부분의 여성은 40~50대가 되면 신체에 급격한 변화가 시작됩니다. 폐경기로 알려진 이러한 전환기는 다음과 같습니다.",
-      "url": "https://medicalxpress.com/news/2026-07-ovaries-job-immune-tenure-reproductive.html",
+      "title": "오늘날 낮은 예방접종률에 대해 코로나19 백신 의무화를 전적으로 비난할 수는 없습니다. 그렇게 간단하지 않아요",
+      "summary": "아동 예방접종률은 전 세계적으로 감소했습니다. 몇몇 국가에서는 사람들이 얻는 것에 대해 더 주저하고 있습니다.",
+      "url": "https://medicalxpress.com/news/2026-07-blame-covid-vaccine-mandates-vaccination.html",
       "source": "Medical Xpress",
       "category": "의료",
-      "date": "2026-07-03 23:00"
+      "date": "2026-07-04 08:00"
     },
     {
-      "title": "연구에 따르면 2021~2023년 하와이 환자들은 타주 암 치료에 2억 3천만 달러 이상을 지출했습니다.",
-      "summary": "하와이 대학 암센터 연구진이 주도한 새로운 연구에 따르면 암 치료에 최소 2억 3천만 달러가 지출된 것으로 나타났습니다.",
-      "url": "https://medicalxpress.com/news/2026-07-patients-hawaii-spent-230m-state.html",
+      "title": "새로운 그래핀 인터페이스로 리튬-황 배터리를 1,000사이클 동안 작동 가능",
+      "summary": "연구자들은 가장 큰 장벽 중 하나를 해결하는 분자 공학 중간층을 개발했습니다.",
+      "url": "https://interestingengineering.com/energy/graphene-cof-lithium-sulfur-battery-polysulfide-shuttle",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-07-04 07:55"
+    },
+    {
+      "title": "중국 기업, 엣지 컴퓨팅 부문에서 월 100만 개의 마이크로 SSD 생산 기록 달성",
+      "summary": "중국의 Longsys는 월간 100만 개의 마이크로 솔리드 스테이트 드라이브 생산 능력을 안정적으로 달성했습니다.",
+      "url": "https://interestingengineering.com/ai-robotics/chinese-micro-ssd-production-milestone",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-07-04 07:46"
+    },
+    {
+      "title": "새로운 Musica 슈퍼컴퓨터는 1,088개의 Nvidia 칩으로 초당 45,110조 계산을 수행합니다.",
+      "summary": "오스트리아는 세계에서 가장 빠른 100대 슈퍼컴퓨터 중 하나를 출시했습니다.",
+      "url": "https://interestingengineering.com/science/musica-supercomputer-calculations-nvidia-chips",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-07-04 07:33"
+    },
+    {
+      "title": "새로운 자궁선근증 지도는 건강한 자궁 조직을 보호할 수 있는 병변 특이적 신호를 밝힙니다.",
+      "summary": "리버풀 대학의 연구자들은 선근증의 독특한 생물학적 특징을 확인했습니다.",
+      "url": "https://medicalxpress.com/news/2026-07-adenomyosis-atlas-reveals-lesion-specific.html",
       "source": "Medical Xpress",
       "category": "의료",
-      "date": "2026-07-03 23:00"
+      "date": "2026-07-04 07:20"
     },
     {
-      "title": "미국 기업이 공개한 세계 최초의 3D 프린팅 원자로 모듈(30MW 전력용)",
-      "summary": "첨단 에너지 기술 회사인 AMPERA가 최초의 본격적인 3D 프린팅 원자로 생산을 완료했습니다.",
-      "url": "https://interestingengineering.com/energy/worlds-first-3d-printed-nuclear-reactor-module",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-07-03 22:48"
-    },
-    {
-      "title": "생물학적 대동맥 판막은 임신 결과를 향상시키지만 재수술도 더 많이 발생합니다",
-      "summary": "심각한 대동맥 판막 질환의 경우, 새로운 심장 판막을 선택하는 것은 특히 원하는 젊은 여성에게 어렵습니다.",
-      "url": "https://medicalxpress.com/news/2026-07-biological-aortic-valves-linked-pregnancy.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-07-03 22:40"
-    },
-    {
-      "title": "새로운 4D 프린팅 기술을 사용하여 평면 패널로 만든 풍력 터빈 블레이드 80% 더 가벼워짐",
-      "summary": "Concordia University의 연구원들은 소형 풍력 터빈을 만드는 새로운 방법을 개발했습니다.",
-      "url": "https://interestingengineering.com/innovation/lighter-wind-turbine-blades-using-4d-printing",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-07-03 22:36"
-    },
-    {
-      "title": "새로운 드론 영상 시스템은 놀라운 정확도로 숨겨진 수중 폭탄을 찾아냅니다.",
-      "summary": "마이애미 대학교 Rosenstiel School의 연구원들은 새로운 공중 이미징 기술을 공개했습니다.",
-      "url": "https://interestingengineering.com/science/airborne-imaging-technique-locates-underwater-bombs",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-07-03 22:30"
-    },
-    {
-      "title": "중국의 \"옥상 비\" 도시 냉각 시스템이 급속도로 확산됨",
-      "summary": "무더운 여름날 중국의 한 아파트 건물 꼭대기에서 냉각 안개가 뿜어져 나오는 바이러스 영상이…",
-      "url": "https://www.odditycentral.com/videos/chinas-rooftop-rain-urban-cooling-system-goes-viral.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=chinas-rooftop-rain-urban-cooling-system-goes-viral",
-      "source": "Oddity Central",
-      "category": "기이",
-      "date": "2026-07-03 22:24"
-    },
-    {
-      "title": "분쇄된 핵 콘크리트는 단 48시간 만에 방사성 폐기물의 98%를 가둘 수 있습니다.",
-      "summary": "영국의 연구자들은 폐기된 원자력 발전소에서 나온 분쇄된 콘크리트가 갇힐 수 있다는 사실을 발견했습니다.",
-      "url": "https://interestingengineering.com/energy/nuclear-waste-concrete-traps-radioactive-strontium-90",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-07-03 22:24"
-    },
-    {
-      "title": "환자 치료를 개선하고 의료 비용을 절감하는 것으로 입증된 디지털 당뇨병 도구",
-      "summary": "맨체스터 대학 연구진의 새로운 연구에서는 사람들이 제2형 당뇨병을 관리하는 데 도움이 되는 디지털 플랫폼을 연결했습니다.",
-      "url": "https://medicalxpress.com/news/2026-07-digital-diabetes-tool-shown-patient.html",
-      "source": "Medical Xpress",
-      "category": "의료",
-      "date": "2026-07-03 22:20"
-    },
-    {
-      "title": "해커가 회사를 위해 눈을 삽질하고 네트워크 관리자 액세스 권한을 받았습니다.",
-      "summary": "기사 URL:...",
-      "url": "https://www.theregister.com/security/2026/07/02/hackers-shoveled-snow-for-company-were-rewarded-with-network-admin-access/5265240",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-07-03 22:19"
-    },
-    {
-      "title": "미 해군 7,640톤급 고속공격 핵잠수함, 35년 운용 끝에 퇴역",
-      "summary": "미 해군은 2026년 6월 29일에 USS 알렉산드리아(SSN-757)의 운용을 공식적으로 종료했습니다.",
-      "url": "https://interestingengineering.com/military/fast-attack-submarine-uss-alexandria-retires",
-      "source": "Interesting Eng",
-      "category": "흥미",
-      "date": "2026-07-03 22:13"
-    },
-    {
-      "title": "“눈 침침하고 피부 푸석하다면?”…7월에 가장 맛있는 ‘이 과일’ 먹어야 하는 이유",
-      "summary": "많은 사람이 다이어트에는 극적인 변화가 필요하다고 생각하지만, 일상에서 실천할 수 있는 작은 식습관만 꾸준히 유지해도 체중 감량에 성공할… The post “식사할 때 ‘이것’ 먼저 드세요”…살 빠지는 간단한...",
-      "url": "https://kormedi.com/2831105/",
+      "title": "장마철 제습기 ‘이렇게’ 쓰면 전기요금 폭탄?…효율 높이는 방법 3가지",
+      "summary": "개그우먼 조혜련이 피부가 좋아진 비결을 털어놨다. 조혜련은 최근 자신의 유튜브 채널 '조회련: 조혜련'에서 자신의 일상을 공개했다. 이날 조혜련은… The post “‘이것’ 안 먹으니, 피부 훨씬 좋아져”…...",
+      "url": "https://kormedi.com/2831085/",
       "source": "코메디닷컴",
       "category": "의료",
-      "date": "2026-07-03 22:05"
+      "date": "2026-07-04 07:13"
     },
     {
-      "title": "Valve는 Steam Machine e-ink 화면을 오픈소스로 제공하여 직접 만들 수 있습니다.",
-      "summary": "기사 URL:...",
-      "url": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-07-03 22:01"
-    },
-    {
-      "title": "Amazon은 AI 데이터 센터에 전력을 공급하기 위해 기록적인 오염량을 방출하고 있습니다.",
-      "summary": "이 회사는 한때 2040년까지 탄소배출 순제로를 달성하겠다고 약속했습니다. 아마존이 기록을 깨고 있는 게시물...",
-      "url": "https://futurism.com/science-energy/amazon-spewing-record-carbon-emissions-ai-data-centers",
-      "source": "Futurism",
+      "title": "이탈리아, 720만 달러 규모의 고전압 테스트 연구소 확장으로 전력망 강화",
+      "summary": "GE Vernova는 다음과 같은 고전압 연구 개발 연구소의 대대적인 업그레이드를 완료했습니다.",
+      "url": "https://interestingengineering.com/energy/ge-vernova-italy-high-voltage-grid-lab-upgrade",
+      "source": "Interesting Eng",
       "category": "흥미",
-      "date": "2026-07-03 22:01"
+      "date": "2026-07-04 07:11"
     },
     {
-      "title": "PostgreSQL 및 OOM Killer: 엄격한 메모리 오버커밋을 사용하는 이유",
-      "summary": "기사 URL: https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit 댓글...",
-      "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-07-03 22:00"
-    },
-    {
-      "title": "간호 지도자들은 미국 500주년을 앞두고 전문직에 그 영향력을 확대할 것을 촉구합니다.",
-      "summary": "미국이 건국 250주년을 기념할 준비를 하면서 Penn Nursing 지도자들은 공동 행동 촉구를 발표합니다...",
-      "url": "https://medicalxpress.com/news/2026-07-nursing-leaders-amplify-impact-semiquincentennial.html",
+      "title": "깨어 있는 동안에도 꿈을 꿀 수 있습니다. 깨어 있음과 수면 사이의 경계는 생각보다 훨씬 더 모호합니다.",
+      "summary": "오늘밤 침대에서 눈을 감으면 뭔가 이상한 일이 일어날 것입니다. 당신의 마음은 평범한 것에서 표류할 것입니다...",
+      "url": "https://medicalxpress.com/news/2026-07-youre-boundary-lot-blurrier-youd.html",
       "source": "Medical Xpress",
       "category": "의료",
-      "date": "2026-07-03 22:00"
+      "date": "2026-07-04 06:40"
     },
     {
-      "title": "분석에 따르면 미국의 라틴계는 국가의 번영, 건강, 미래에 없어서는 안 될 존재입니다.",
-      "summary": "라틴계가 미국으로부터 기여하는 것보다 더 많은 것을 가져가고 있다는 전통적인 이야기는 단지...",
-      "url": "https://medicalxpress.com/news/2026-07-analysis-latinos-indispensable-nation-prosperity.html",
+      "title": "BBC 뉴스",
+      "summary": "아침 식사 전 개 산책부터 버스에서 일찍 내리는 것까지, 독자들은 개를 키우는 데 필요한 팁을 공유합니다.",
+      "url": "https://www.bbc.co.uk/news/health",
+      "source": "BBC Health",
+      "category": "의료",
+      "date": "2026-07-04 06:31"
+    },
+    {
+      "title": "표준화된 그리드 설계를 통해 납냉각 원자로 배치가 더욱 가까워졌습니다.",
+      "summary": "납 냉각 원자로 개발업체 Blykalla는 Hitachi Energy와 제휴하여 표준화된 전기...",
+      "url": "https://interestingengineering.com/energy/lead-cooled-nuclear-reactor-deployment",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-07-04 06:15"
+    },
+    {
+      "title": "“‘이것’ 안 먹으니, 피부 훨씬 좋아져”… 관리의 신 조혜련, 무결점 피부로 거듭난 비결",
+      "summary": "모델 출신 방송인 홍진경(48)이 마른 몸매의 비결을 보여줬다. 홍진경은 지난 28일 자신의 소셜미디어(SNS)에 “일요일 아침 커피, 프로폴리스, 꿀,… The post 180cm·51kg 홍진경, 마른 이유...",
+      "url": "https://kormedi.com/2831162/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-07-04 06:05"
+    },
+    {
+      "title": "180cm·51kg 홍진경, 마른 이유 있었네…아침 식단 보니 “이게 다야?",
+      "summary": "“단 한 명도 포기는 없다”…환자의 삶을 다시 세운 ‘오전 8시의 기적’ 매주 수요일과 금요일. 부산… The post “단 한 명도 포기는 없다”…환자의 삶을 다시 세운 ‘오전 8시의 기적’ / “절대 먼저...",
+      "url": "https://kormedi.com/2829415/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-07-04 06:00"
+    },
+    {
+      "title": "전문가들은 과도한 열기 속에서 지구력 행사 수행에 대한 조언을 제공합니다.",
+      "summary": "프로 사이클링 팀이 토요일 투르 드 프랑스 개막을 준비하고 있는 동안 엄청난 열기가 몰아쳤습니다...",
+      "url": "https://medicalxpress.com/news/2026-07-experts-advice-events-excessive.html",
       "source": "Medical Xpress",
       "category": "의료",
-      "date": "2026-07-03 22:00"
+      "date": "2026-07-04 05:00"
     },
     {
-      "title": "스크류웜의 몰락과 부상",
-      "summary": "기사 URL: https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm 댓글 URL:...",
-      "url": "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-07-03 21:58"
+      "title": "암세포를 강제로 죽게 하면 면역체계에 경고를 보내 항종양 공격을 강화할 수 있습니다.",
+      "summary": "우발적인 세포 사멸과 달리 일부 세포는 통제된 과정을 통해 적극적으로 죽기로 결정할 수 있습니다. 이것은 ...",
+      "url": "https://medicalxpress.com/news/2026-07-cancer-cells-die-immune-anti.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-07-04 04:00"
     },
     {
-      "title": "Zuckerberg는 Meta의 해고가 효과적이지 않았다고 '인정'",
-      "summary": "기사 URL: https://eshumarneedi.com/2026/07/03/zuckerberg-admits-metas-layoffs-were.html 댓글 URL:...",
-      "url": "https://eshumarneedi.com/2026/07/03/zuckerberg-admits-metas-layoffs-were.html",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-07-03 21:54"
+      "title": "영국은 전력 수요의 11%를 충족하기 위해 4.2GW를 공급하는 민간 원자력 SMR 14개를 계획했습니다.",
+      "summary": "민간 컨소시엄이 전 세계에 14기의 소형 모듈형 원자로(SMR)를 건설할 계획을 발표했습니다.",
+      "url": "https://interestingengineering.com/energy/uk-14-smr-bwrx300-nuclear-fleet-plan",
+      "source": "Interesting Eng",
+      "category": "흥미",
+      "date": "2026-07-04 03:58"
     },
     {
-      "title": "Gemini Code Assist가 7월 17일에 종료됩니다",
-      "summary": "기사 URL: https://docs.cloud.google.com/gemini/docs/code-review/review-repo-code 댓글 URL:...",
-      "url": "https://docs.cloud.google.com/gemini/docs/code-review/review-repo-code",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-07-03 21:52"
-    },
-    {
-      "title": "AI 신뢰극장을 멈춰주세요",
-      "summary": "기사 URL: https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater 댓글 URL:...",
-      "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-      "source": "Hacker News",
-      "category": "IT",
-      "date": "2026-07-03 21:51"
+      "title": "미성숙 면역 세포는 심장 마비 후 생존 가능성을 예측합니다",
+      "summary": "심한 심장마비가 발생하면 미성숙 면역세포가 골수에서 혈류로 방출됩니다. 에이...",
+      "url": "https://medicalxpress.com/news/2026-07-immature-immune-cells-chances-survival.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-07-04 02:40"
     },
     {
       "title": "MIT 기술 검토",
-      "summary": "이것은 현재 진행되고 있는 일을 매일 제공하는 주중 뉴스레터인 The Download의 오늘 버전입니다.",
+      "summary": "사람의 눈 전체를 이식하는 것은 쉽지 않습니다. 수술이 어렵습니다. 그리고 눈 자체도 퇴화되기 시작하는데...",
       "url": "https://www.technologyreview.com",
       "source": "MIT Tech Review",
       "category": "IT",
-      "date": "2026-07-03 21:10"
+      "date": "2026-07-04 02:34"
+    },
+    {
+      "title": "Polymarket의 누군가가 푸틴의 몰락을 알고 있습니까?",
+      "summary": "누군가 엄청난 양의 현금을 내려놓았습니다. 해당 게시물 폴리마켓의 누군가 푸틴의 몰락을 알고 있는가?...",
+      "url": "https://futurism.com/future-society/polymarket-putin-going-down",
+      "source": "Futurism",
+      "category": "흥미",
+      "date": "2026-07-04 02:01"
+    },
+    {
+      "title": "제브라피시 뇌는 포유류와 공유되는 전뇌에 대한 감각의 대체 경로를 밝힙니다",
+      "summary": "물고기, 새, 포유류의 두뇌를 정렬하면 예상치 못한 일이 일어납니다. 3개 다른거 안보이는데...",
+      "url": "https://medicalxpress.com/news/2026-07-zebrafish-brains-reveal-alternate-route.html",
+      "source": "Medical Xpress",
+      "category": "의료",
+      "date": "2026-07-04 01:40"
+    },
+    {
+      "title": "양자물리학의 신비한 실험 이후 인간이 사라진다",
+      "summary": "그는 \"구체적으로\" \"동시에 두 장소에 존재하는 것\"을 연구하는 양자물리학 분야에서 일했습니다. 남자가 사라진 포스트..",
+      "url": "https://futurism.com/future-society/man-vanishes-experiments-quantum-physics",
+      "source": "Futurism",
+      "category": "흥미",
+      "date": "2026-07-04 01:02"
+    },
+    {
+      "title": "“단 한 명도 포기는 없다”…환자의 삶을 다시 세운 ‘오전 8시의 기적’ / “절대 먼저 말하지 않아요. 대신 먼저 듣습니다” / “41kg→50kg” 한그루, 힘들게 살 뺐는데 ‘이 음식’ 먹고 다시 쪄…왜?",
+      "summary": "날씨가 무더운 여름에는 마치 보상처럼 맛있는 과일들이 제철을 맞는다. 갈증 해소에 좋은 수박부터 상큼한 자두, 아삭함과 부드러움 사이에서… The post “혈당 치솟고 뱃살 찐다”… 약사가 피해야 할 1위로 꼽은...",
+      "url": "https://kormedi.com/2831241/",
+      "source": "코메디닷컴",
+      "category": "의료",
+      "date": "2026-07-04 00:04"
+    },
+    {
+      "title": "Weird Al은 AI 광고에 출연하기 위해 막대한 금액을 거절했습니다.",
+      "summary": "그를 \"쿨 알\"이라고 부르기 시작하세요. Weird Al이 AI 광고에 등장하기 위해 막대한 금액을 거절한 게시물이 Futurism에 처음 게재되었습니다.",
+      "url": "https://futurism.com/future-society/weird-al-yankovic-ai-ad",
+      "source": "Futurism",
+      "category": "흥미",
+      "date": "2026-07-04 00:01"
     }
   ],
-  "updated": "2026-07-03 23:27:06"
+  "updated": "2026-07-04 09:01:50"
 }
