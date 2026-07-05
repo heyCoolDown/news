@@ -253,6 +253,76 @@ def parse_rss(feed_info, max_items=8):
 
     return items
 
+# ── 구글 트렌드 (실시간 인기 검색어) ──────────────────────
+GOOGLE_TRENDS_FEEDS = [
+    {"geo": "KR", "label": "구글트렌드 KR", "lang": "ko"},
+    {"geo": "US", "label": "구글트렌드 US", "lang": "en"},
+]
+
+def fetch_google_trends(feed_info, max_items=10):
+    """구글 실시간 인기 검색어 RSS 파싱"""
+    items = []
+    try:
+        url = f"https://trends.google.com/trending/rss?geo={feed_info['geo']}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=8) as res:
+            raw = res.read().decode("utf-8", errors="replace")
+
+        blocks = re.findall(r'<item>(.*?)</item>', raw, re.DOTALL)
+
+        count = 0
+        for block in blocks:
+            if count >= max_items:
+                break
+
+            m_title = re.search(r'<title>(.*?)</title>', block, re.DOTALL)
+            keyword = strip_tags((m_title.group(1) if m_title else "").strip())
+            if not keyword:
+                continue
+
+            m_traffic = re.search(r'<ht:approx_traffic>(.*?)</ht:approx_traffic>', block)
+            traffic = m_traffic.group(1).strip() if m_traffic else ""
+
+            m_date = re.search(r'<pubDate>(.*?)</pubDate>', block)
+            try:
+                from email.utils import parsedate_to_datetime
+                dt = parsedate_to_datetime(m_date.group(1).strip())
+                pub_date = dt.astimezone(KST).strftime("%Y-%m-%d %H:%M")
+            except:
+                pub_date = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
+
+            m_news_title  = re.search(r'<ht:news_item_title>(.*?)</ht:news_item_title>', block, re.DOTALL)
+            m_news_url    = re.search(r'<ht:news_item_url>(.*?)</ht:news_item_url>', block)
+            m_news_source = re.search(r'<ht:news_item_source>(.*?)</ht:news_item_source>', block)
+
+            news_title  = strip_tags((m_news_title.group(1) if m_news_title else "").strip())
+            news_url    = (m_news_url.group(1).strip() if m_news_url else "")
+            news_source = strip_tags((m_news_source.group(1) if m_news_source else "").strip())
+
+            if is_politics(keyword, news_title):
+                continue
+
+            if feed_info.get("lang") == "en":
+                keyword    = translate(keyword)
+                news_title = translate(news_title)
+
+            summary = f"실시간 검색량 {traffic} · {news_title}" if news_title else f"실시간 검색량 {traffic}"
+
+            items.append({
+                "title":    keyword,
+                "summary":  summary,
+                "url":      news_url or f"https://trends.google.com/trending?geo={feed_info['geo']}",
+                "source":   news_source or feed_info["label"],
+                "category": "트렌드",
+                "date":     pub_date,
+            })
+            count += 1
+
+    except Exception as e:
+        print(f"[구글트렌드] {feed_info['label']} 실패: {e}")
+
+    return items
+
 # ── 중복 제거 ──────────────────────────────────────────────
 def deduplicate(news_list):
     seen = set()
@@ -274,6 +344,7 @@ def main():
     all_news = {
         "holdings": [],   # 보유종목 뉴스
         "tech":     [],   # IT/과학 뉴스
+        "trends":   [],   # 실시간 인기 검색어
         "updated":  now_kst,
     }
 
@@ -314,12 +385,22 @@ def main():
     all_news["tech"] = all_news["tech"][:50]  # 최대 50건만 유지
     print(f"[IT/과학 뉴스] {len(all_news['tech'])}건 수집")
 
-    # 3. JSON 저장
+    # 3. 구글 실시간 트렌드
+    for feed in GOOGLE_TRENDS_FEEDS:
+        print(f"[구글트렌드] {feed['label']} 수집중...")
+        items = fetch_google_trends(feed, max_items=10)
+        all_news["trends"].extend(items)
+        time.sleep(0.2)
+
+    all_news["trends"] = deduplicate(all_news["trends"])
+    print(f"[구글트렌드] {len(all_news['trends'])}건 수집")
+
+    # 4. JSON 저장
     output_path = os.path.join(os.path.dirname(__file__), "news.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(all_news, f, ensure_ascii=False, indent=2)
 
-    print(f"\n[완료] news.json 저장 ({len(all_news['holdings'])}건 보유종목 + {len(all_news['tech'])}건 IT/과학)")
+    print(f"\n[완료] news.json 저장 ({len(all_news['holdings'])}건 보유종목 + {len(all_news['tech'])}건 IT/과학 + {len(all_news['trends'])}건 트렌드)")
 
 if __name__ == "__main__":
     main()

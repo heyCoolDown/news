@@ -215,6 +215,7 @@
   .news-card.cat-의료::before    { background: #f97316; }
   .news-card.cat-기이::before    { background: #e879f9; }
   .news-card.cat-흥미::before    { background: #14b8a6; }
+  .news-card.cat-트렌드::before  { background: var(--red); }
 
   .card-meta {
     display: flex;
@@ -240,6 +241,7 @@
   .cat-badge.의료     { background: rgba(249,115,22,0.15);  color: #f97316; }
   .cat-badge.기이     { background: rgba(232,121,249,0.15); color: #e879f9; }
   .cat-badge.흥미     { background: rgba(20,184,166,0.15);  color: #14b8a6; }
+  .cat-badge.트렌드   { background: rgba(255,62,94,0.15);   color: var(--red); }
 
   .stock-tag {
     font-family: var(--mono);
@@ -361,6 +363,7 @@
   <button class="tab active" data-tab="all" onclick="switchTab(this,'all')">전체</button>
   <button class="tab" data-tab="holdings" onclick="switchTab(this,'holdings')">📈 보유종목</button>
   <button class="tab" data-tab="tech" onclick="switchTab(this,'tech')">💻 테크·과학</button>
+  <button class="tab" data-tab="trends" onclick="switchTab(this,'trends')">🔥 트렌드</button>
 </div>
 
 <div class="filter-bar" id="filter-bar">
@@ -430,10 +433,12 @@ function getItems() {
   if (!allData) return [];
   const holdings = allData.holdings || [];
   const tech     = allData.tech || [];
+  const trends   = allData.trends || [];
   if (activeTab === 'holdings') return holdings;
+  if (activeTab === 'trends') return trends;
   if (activeTab === 'tech')
     return activeFilter === 'all' ? tech : tech.filter(n => n.category === activeFilter);
-  return [...holdings, ...tech];
+  return [...holdings, ...tech, ...trends];
 }
 
 function render() {
@@ -456,9 +461,16 @@ function render() {
   dots.innerHTML = Array.from({length: showDots}, (_, i) =>
     `<div class="dot${i === 0 ? ' active' : ''}" data-i="${i}"></div>`
   ).join('');
+  document.querySelectorAll('.dot').forEach((d, i) => {
+    d.addEventListener('click', () => goToCard(i));
+  });
 
   slider.scrollTo({ left: 0, behavior: 'instant' });
-  observeScroll();
+}
+
+function goToCard(i) {
+  const idx = Math.max(0, Math.min(i, currentItems.length - 1));
+  slider.scrollTo({ left: idx * slider.clientWidth, behavior: 'smooth' });
 }
 
 function cardHTML(item) {
@@ -503,6 +515,51 @@ function observeScroll() {
   }, { passive: true });
 }
 
+// ── 마우스 드래그로 카드 넘기기 (데스크톱, 터치는 브라우저 기본 스크롤 사용) ──
+let dragState = null;
+let justDragged = false;
+
+slider.addEventListener('pointerdown', (e) => {
+  if (e.pointerType !== 'mouse') return;
+  e.preventDefault(); // 카드(a태그) 기본 드래그 동작 막기 - 없으면 pointermove가 첫 이벤트 후 끊김
+  dragState = { startX: e.pageX, startScroll: slider.scrollLeft, moved: false };
+  slider.setPointerCapture(e.pointerId);
+  slider.style.scrollSnapType = 'none';
+  slider.style.cursor = 'grabbing';
+});
+
+slider.addEventListener('pointermove', (e) => {
+  if (!dragState) return;
+  const dx = e.pageX - dragState.startX;
+  if (Math.abs(dx) > 5) dragState.moved = true;
+  slider.scrollLeft = dragState.startScroll - dx;
+});
+
+slider.addEventListener('pointerup', (e) => {
+  if (!dragState) return;
+  justDragged = dragState.moved;
+  dragState = null;
+  slider.style.scrollSnapType = 'x mandatory';
+  slider.style.cursor = '';
+  const idx = Math.round(slider.scrollLeft / slider.clientWidth);
+  goToCard(idx);
+  slider.releasePointerCapture(e.pointerId);
+});
+
+slider.addEventListener('click', (e) => {
+  if (justDragged) {
+    e.preventDefault();
+    justDragged = false;
+  }
+}, true);
+
+// ── 키보드 좌우 화살표로 카드 넘기기 ──
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') goToCard(currentIdx + 1);
+  if (e.key === 'ArrowLeft')  goToCard(currentIdx - 1);
+});
+
+observeScroll();
 loadNews();
 setInterval(loadNews, 30 * 60 * 1000);
 </script>
