@@ -4,8 +4,6 @@ on:
   schedule:
     # KST 기준 (UTC+9)
     - cron: '0 23 * * *'    # 08:00 KST
-    - cron: '30 6 * * *'    # 15:30 KST
-    - cron: '0 12 * * *'    # 21:00 KST
   workflow_dispatch:         # 수동 실행 버튼
 
 jobs:
