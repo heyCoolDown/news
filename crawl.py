@@ -116,11 +116,11 @@ def strip_tags(html):
     except:
         return re.sub(r'<[^>]+>', '', html or '').strip()
 
-def summarize(text, length=120):
-    """본문 앞부분 잘라서 요약"""
+def summarize(text, length=None):
+    """HTML 태그 제거 후 공백 정리 (length 지정 시에만 잘라냄)"""
     clean = strip_tags(text)
     clean = re.sub(r'\s+', ' ', clean).strip()
-    if len(clean) <= length:
+    if length is None or len(clean) <= length:
         return clean
     return clean[:length].rsplit(' ', 1)[0] + '...'
 
@@ -302,9 +302,8 @@ def fetch_google_trends(feed_info, max_items=10):
             if is_politics(keyword, news_title):
                 continue
 
-            if feed_info.get("lang") == "en":
-                keyword    = translate(keyword)
-                news_title = translate(news_title)
+            keyword    = translate(keyword)
+            news_title = translate(news_title)
 
             summary = f"실시간 검색량 {traffic} · {news_title}" if news_title else f"실시간 검색량 {traffic}"
 
