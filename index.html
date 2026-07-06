@@ -215,6 +215,7 @@
   .cat-badge.기이     { background: rgba(175,82,222,0.12);  color: var(--purple); }
   .cat-badge.흥미     { background: rgba(48,176,199,0.12);  color: var(--teal); }
   .cat-badge.트렌드   { background: rgba(255,55,95,0.12);   color: var(--pink); }
+  .cat-badge.일본어   { background: rgba(188,0,45,0.12);    color: #bc002d; }
 
   .stock-tag {
     font-size: 12px;
@@ -250,6 +251,58 @@
     -webkit-overflow-scrolling: touch;
   }
 
+  /* ── 일본어 학습 카드 ── */
+  .jp-title-ko {
+    font-size: 14px;
+    color: var(--text2);
+    margin-top: -10px;
+    margin-bottom: 16px;
+  }
+
+  .jp-thumb {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .jp-audio {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 16px;
+  }
+
+  .jp-body {
+    font-size: 17px;
+    line-height: 2.1;
+    color: var(--text);
+  }
+
+  .jp-body p { margin-bottom: 14px; }
+
+  .jp-body ruby rt {
+    font-size: 0.55em;
+    color: var(--muted);
+    user-select: none;
+  }
+
+  .jp-translation {
+    margin-top: 6px;
+    padding-top: 14px;
+    border-top: 0.5px dashed var(--border);
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text2);
+  }
+
+  .jp-translation-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
   .card-footer {
     display: flex;
     align-items: center;
@@ -270,6 +323,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--blue);
+    text-decoration: none;
   }
 
   /* ── 빈 상태 / 로딩 ── */
@@ -336,6 +390,7 @@
   <button class="tab" data-tab="holdings" onclick="switchTab(this,'holdings')">📈 보유종목</button>
   <button class="tab" data-tab="tech" onclick="switchTab(this,'tech')">💻 테크·과학</button>
   <button class="tab" data-tab="trends" onclick="switchTab(this,'trends')">🔥 트렌드</button>
+  <button class="tab" data-tab="japanese" onclick="switchTab(this,'japanese')">🇯🇵 일본어</button>
 </div>
 
 <div class="filter-bar" id="filter-bar">
@@ -406,8 +461,10 @@ function getItems() {
   const holdings = allData.holdings || [];
   const tech     = allData.tech || [];
   const trends   = allData.trends || [];
+  const japanese = allData.japanese || [];
   if (activeTab === 'holdings') return holdings;
   if (activeTab === 'trends') return trends;
+  if (activeTab === 'japanese') return japanese;
   if (activeTab === 'tech')
     return activeFilter === 'all' ? tech : tech.filter(n => n.category === activeFilter);
   return [...holdings, ...tech, ...trends];
@@ -446,6 +503,8 @@ function goToCard(i) {
 }
 
 function cardHTML(item) {
+  if (item.category === '일본어') return jpCardHTML(item);
+
   const cat   = item.category || 'IT';
   const stock = item.stock ? `<span class="stock-tag">📌 ${item.stock}</span>` : '';
   const date  = (item.date || '').slice(5, 16);
@@ -463,6 +522,38 @@ function cardHTML(item) {
         <span class="card-link-hint">탭하여 원문 ↗</span>
       </div>
     </a>`;
+}
+
+function jpCardHTML(item) {
+  // audio controls는 <a> 안에 중첩되면 브라우저별 클릭 동작이 불안정해서
+  // 이 카드만 div로 두고 원문 링크는 푸터에 별도 <a>로 분리
+  const date  = (item.date || '').slice(5, 16);
+  const img   = item.image ? `<img class="jp-thumb" src="${item.image}" alt="">` : '';
+  const audio = item.audio
+    ? `<audio class="jp-audio" src="${item.audio}" controls preload="none"></audio>`
+    : '';
+  return `
+    <div class="news-card cat-일본어">
+      <div class="card-meta">
+        <span class="cat-badge 일본어">🇯🇵 일본어</span>
+        <span class="card-date">${date}</span>
+      </div>
+      <div class="card-title">${item.title || ''}</div>
+      <div class="jp-title-ko">${item.title_ko || ''}</div>
+      <div class="card-summary">
+        ${img}
+        ${audio}
+        <div class="jp-body">${item.body_html || ''}</div>
+        <div class="jp-translation">
+          <div class="jp-translation-label">한국어 번역</div>
+          ${item.summary_ko || ''}
+        </div>
+      </div>
+      <div class="card-footer">
+        <span class="card-source">${item.source || ''}</span>
+        <a class="card-link-hint" href="${item.url || '#'}" target="_blank" rel="noopener">원문 보기 ↗</a>
+      </div>
+    </div>`;
 }
 
 function observeScroll() {
@@ -493,6 +584,7 @@ let justDragged = false;
 
 slider.addEventListener('pointerdown', (e) => {
   if (e.pointerType !== 'mouse') return;
+  if (e.target.closest('audio')) return; // 오디오 컨트롤 클릭은 드래그 취급 안 함
   e.preventDefault(); // 카드(a태그) 기본 드래그 동작 막기 - 없으면 pointermove가 첫 이벤트 후 끊김
   dragState = { startX: e.pageX, startScroll: slider.scrollLeft, moved: false };
   slider.setPointerCapture(e.pointerId);

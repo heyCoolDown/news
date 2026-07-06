@@ -11,6 +11,7 @@ import os
 import json
 import time
 import re
+import html
 import urllib.request
 import urllib.parse
 from datetime import datetime, timezone, timedelta
@@ -322,6 +323,80 @@ def fetch_google_trends(feed_info, max_items=10):
 
     return items
 
+# ── 일본어 학습 (NHK Easy News, 후리가나 포함) ─────────────
+NHK_EASY_FEED_URL = "https://nhkeasier.com/feed/"
+
+def fetch_nhk_easy(max_items=10):
+    """NHK Easy News(やさしい日本語ニュース) RSS 파싱
+    - 원문은 <ruby><rt>로 후리가나가 이미 붙어있어 그대로 렌더링
+    - 본문은 한국어로 번역해서 별도 필드에 저장 (초급 학습자용)
+    """
+    items = []
+    try:
+        req = urllib.request.Request(NHK_EASY_FEED_URL, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as res:
+            raw = res.read().decode("utf-8", errors="replace")
+
+        blocks = re.findall(r'<item>(.*?)</item>', raw, re.DOTALL)
+
+        count = 0
+        for block in blocks:
+            if count >= max_items:
+                break
+
+            m_title = re.search(r'<title>(.*?)</title>', block, re.DOTALL)
+            m_link  = re.search(r'<link>(.*?)</link>', block, re.DOTALL)
+            m_desc  = re.search(r'<description>(.*?)</description>', block, re.DOTALL)
+            m_date  = re.search(r'<pubDate>(.*?)</pubDate>', block)
+            m_audio = re.search(r'<enclosure url="([^"]+)"', block)
+
+            title = strip_tags((m_title.group(1) if m_title else "").strip())
+            link  = (m_link.group(1) if m_link else "").strip()
+            if not title or not m_desc:
+                continue
+
+            desc = html.unescape(m_desc.group(1))
+
+            m_img = re.search(r'<img src="([^"]+)"', desc)
+            image = m_img.group(1) if m_img else ""
+            audio = m_audio.group(1) if m_audio else ""
+
+            paragraphs = re.findall(r'<p>(.*?)</p>', desc, re.DOTALL)
+            body_html = ''.join(f'<p>{p.strip()}</p>' for p in paragraphs if p.strip())
+
+            # 후리가나(rt) 제거 후 순수 텍스트만 추출 (번역용)
+            plain_paragraphs = [
+                strip_tags(re.sub(r'<rt>.*?</rt>', '', p, flags=re.DOTALL))
+                for p in paragraphs
+            ]
+            plain_text = ' '.join(t.strip() for t in plain_paragraphs if t.strip())
+
+            try:
+                from email.utils import parsedate_to_datetime
+                dt = parsedate_to_datetime(m_date.group(1).strip()) if m_date else datetime.now(KST)
+                pub_date = dt.astimezone(KST).strftime("%Y-%m-%d %H:%M")
+            except:
+                pub_date = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
+
+            items.append({
+                "title":     title,
+                "title_ko":  translate(title),
+                "body_html": body_html,
+                "summary_ko": translate(plain_text),
+                "image":     image,
+                "audio":     audio,
+                "url":       link,
+                "source":    "NHK Easy News",
+                "category":  "일본어",
+                "date":      pub_date,
+            })
+            count += 1
+
+    except Exception as e:
+        print(f"[일본어학습] NHK Easy News 실패: {e}")
+
+    return items
+
 # ── 중복 제거 ──────────────────────────────────────────────
 def deduplicate(news_list):
     seen = set()
@@ -344,6 +419,7 @@ def main():
         "holdings": [],   # 보유종목 뉴스
         "tech":     [],   # IT/과학 뉴스
         "trends":   [],   # 실시간 인기 검색어
+        "japanese": [],   # 일본어 학습 (NHK Easy News)
         "updated":  now_kst,
     }
 
@@ -394,12 +470,17 @@ def main():
     all_news["trends"] = deduplicate(all_news["trends"])
     print(f"[구글트렌드] {len(all_news['trends'])}건 수집")
 
-    # 4. JSON 저장
+    # 4. 일본어 학습 (NHK Easy News)
+    print("[일본어학습] NHK Easy News 수집중...")
+    all_news["japanese"] = fetch_nhk_easy(max_items=10)
+    print(f"[일본어학습] {len(all_news['japanese'])}건 수집")
+
+    # 5. JSON 저장
     output_path = os.path.join(os.path.dirname(__file__), "news.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(all_news, f, ensure_ascii=False, indent=2)
 
-    print(f"\n[완료] news.json 저장 ({len(all_news['holdings'])}건 보유종목 + {len(all_news['tech'])}건 IT/과학 + {len(all_news['trends'])}건 트렌드)")
+    print(f"\n[완료] news.json 저장 ({len(all_news['holdings'])}건 보유종목 + {len(all_news['tech'])}건 IT/과학 + {len(all_news['trends'])}건 트렌드 + {len(all_news['japanese'])}건 일본어)")
 
 if __name__ == "__main__":
     main()
