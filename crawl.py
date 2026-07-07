@@ -53,6 +53,52 @@ def translate(text):
     except Exception:
         return text
 
+# ── 본문 전체 추출 ──────────────────────────────────────────
+try:
+    import trafilatura
+    from trafilatura.settings import use_config
+    _trafilatura_config = use_config()
+    _trafilatura_config.set("DEFAULT", "DOWNLOAD_TIMEOUT", "8")
+    TRAFILATURA_AVAILABLE = True
+except ImportError:
+    TRAFILATURA_AVAILABLE = False
+
+def cap_text(text, limit=3000):
+    """너무 긴 본문은 문단 경계에서 잘라냄"""
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    idx = cut.rfind('\n')
+    if idx > limit * 0.5:
+        cut = cut[:idx]
+    return cut.rstrip() + '\n\n...(중략)'
+
+def fetch_full_text(url, timeout=8):
+    """기사 원문 URL에서 본문 전체 추출 (실패 시 빈 문자열 반환 → 호출부에서 summary로 폴백)"""
+    if not TRAFILATURA_AVAILABLE or not url:
+        return ""
+    try:
+        downloaded = trafilatura.fetch_url(url, config=_trafilatura_config)
+        if not downloaded:
+            return ""
+        text = trafilatura.extract(downloaded, include_comments=False, include_tables=False)
+        return cap_text(text.strip(), 3000) if text else ""
+    except Exception:
+        return ""
+
+def enrich_full_text(items, sleep=0.15):
+    """각 기사에 본문 전체(content) 필드 추가, 실패 시 summary로 폴백"""
+    for item in items:
+        full = fetch_full_text(item.get("url", ""))
+        if full:
+            if item.get("lang") == "en":
+                full = translate(full)
+            item["content"] = full
+        else:
+            item["content"] = item.get("summary", "")
+        time.sleep(sleep)
+    return items
+
 # ── 설정 ──────────────────────────────────────────────────
 NAVER_CLIENT_ID     = os.environ.get("NAVER_CLIENT_ID", "")
 NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "")
@@ -246,6 +292,7 @@ def parse_rss(feed_info, max_items=8):
                 "source":   feed_info["name"],
                 "category": feed_info["category"],
                 "date":     pub_date,
+                "lang":     feed_info.get("lang", "ko"),
             })
             count += 1
 
@@ -447,6 +494,9 @@ def main():
     all_news["holdings"] = deduplicate(all_news["holdings"])
     print(f"[보유종목 뉴스] {len(all_news['holdings'])}건 수집")
 
+    print("[본문추출] 보유종목 뉴스 본문 가져오는 중...")
+    enrich_full_text(all_news["holdings"])
+
     # 2. IT/과학 RSS 뉴스
     for feed in RSS_FEEDS:
         print(f"[RSS] {feed['name']} 수집중...")
@@ -459,6 +509,9 @@ def main():
     all_news["tech"].sort(key=lambda x: x["date"], reverse=True)
     all_news["tech"] = all_news["tech"][:50]  # 최대 50건만 유지
     print(f"[IT/과학 뉴스] {len(all_news['tech'])}건 수집")
+
+    print("[본문추출] IT/과학 뉴스 본문 가져오는 중...")
+    enrich_full_text(all_news["tech"])
 
     # 3. 구글 실시간 트렌드
     for feed in GOOGLE_TRENDS_FEEDS:

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>뉴스 모니터</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg:        #f2f2f7;
@@ -25,6 +25,7 @@
     --text2:     rgba(60,60,67,0.68);
     --muted:     rgba(60,60,67,0.45);
     --sans:      -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Noto Sans KR', 'Segoe UI', Roboto, sans-serif;
+    --serif:     'Noto Serif KR', Georgia, 'Times New Roman', serif;
     --ease:      cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
@@ -243,13 +244,18 @@
   }
 
   .card-summary {
-    font-size: 15px;
-    color: var(--text2);
-    line-height: 1.65;
+    font-family: var(--serif);
+    font-size: 16.5px;
+    color: var(--text);
+    line-height: 1.9;
+    letter-spacing: -0.1px;
     flex: 1;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  .card-summary p { margin-bottom: 14px; }
+  .card-summary p:last-child { margin-bottom: 0; }
 
   /* ── 일본어 학습 카드 ── */
   .jp-title-ko {
@@ -502,6 +508,19 @@ function goToCard(i) {
   slider.scrollTo({ left: idx * slider.clientWidth, behavior: 'smooth' });
 }
 
+function escapeHtml(s) {
+  return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function paragraphize(text) {
+  return (text || '')
+    .split(/\n+/)
+    .map(p => p.trim())
+    .filter(Boolean)
+    .map(p => `<p>${escapeHtml(p)}</p>`)
+    .join('');
+}
+
 function cardHTML(item) {
   if (item.category === '일본어') return jpCardHTML(item);
 
@@ -516,7 +535,7 @@ function cardHTML(item) {
         <span class="card-date">${date}</span>
       </div>
       <div class="card-title">${item.title || '(제목 없음)'}</div>
-      <div class="card-summary">${item.summary || ''}</div>
+      <div class="card-summary">${paragraphize(item.content || item.summary)}</div>
       <div class="card-footer">
         <span class="card-source">${item.source || ''}</span>
         <span class="card-link-hint">탭하여 원문 ↗</span>
@@ -538,15 +557,15 @@ function jpCardHTML(item) {
         <span class="cat-badge 일본어">🇯🇵 일본어</span>
         <span class="card-date">${date}</span>
       </div>
-      <div class="card-title">${item.title || ''}</div>
-      <div class="jp-title-ko">${item.title_ko || ''}</div>
+      <div class="card-title">${escapeHtml(item.title)}</div>
+      <div class="jp-title-ko">${escapeHtml(item.title_ko)}</div>
       <div class="card-summary">
         ${img}
         ${audio}
         <div class="jp-body">${item.body_html || ''}</div>
         <div class="jp-translation">
           <div class="jp-translation-label">한국어 번역</div>
-          ${item.summary_ko || ''}
+          ${escapeHtml(item.summary_ko)}
         </div>
       </div>
       <div class="card-footer">

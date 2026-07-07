@@ -95,6 +95,11 @@ news/
 | Futurism | 흥미 |
 | Atlas Obscura | 흥미 |
 
+### 일본어 학습
+| 소스 | 내용 |
+|------|------|
+| NHK Easy News (nhkeasier.com) | やさしい日本語ニュース, 후리가나 원문 + 한국어 번역 + 낭독 음성 |
+
 ---
 
 ## 정치 뉴스 차단
@@ -107,3 +112,4 @@ news/
 - 커밋 방식: `git commit --amend + push --force` → 커밋 1개만 유지
 - 네이버 API 키는 GitHub Secrets로만 관리 (코드에 하드코딩 없음)
 - workflow 권한: `permissions: contents: write`, `fetch-depth: 0`
+- 보유종목/IT·과학 뉴스는 `trafilatura`로 원문 URL에서 본문 전체를 추출해 저장 (추출 실패 시 RSS 요약으로 폴백)
