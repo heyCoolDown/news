@@ -216,7 +216,6 @@
   .cat-badge.기이     { background: rgba(175,82,222,0.12);  color: var(--purple); }
   .cat-badge.흥미     { background: rgba(48,176,199,0.12);  color: var(--teal); }
   .cat-badge.경제     { background: rgba(255,55,95,0.12);   color: var(--pink); }
-  .cat-badge.일본어   { background: rgba(188,0,45,0.12);    color: #bc002d; }
 
   .stock-tag {
     font-size: 12px;
@@ -257,29 +256,12 @@
   .card-summary p { margin-bottom: 14px; }
   .card-summary p:last-child { margin-bottom: 0; }
 
-  /* ── 일본어 학습 카드 (청공문고 소설 하루 한 페이지) ── */
-  .jp-progress {
-    font-size: 11px;
-    color: var(--muted);
-  }
-
+  /* ── 원문+번역 병기 카드 (경제 탭에서 사용) ── */
   .jp-title-orig {
     font-size: 14px;
     font-weight: 400;
     color: var(--text2);
     margin-left: 6px;
-  }
-
-  .jp-body {
-    font-size: 17px;
-    line-height: 2.1;
-    color: var(--text);
-  }
-
-  .jp-body ruby rt {
-    font-size: 0.55em;
-    color: var(--muted);
-    user-select: none;
   }
 
   .jp-translation {
@@ -291,57 +273,12 @@
     color: var(--text2);
   }
 
-  .jp-translation-label,
-  .jp-section-label {
+  .jp-translation-label {
     font-size: 11px;
     font-weight: 700;
     color: var(--muted);
     letter-spacing: 0.5px;
     margin-bottom: 6px;
-  }
-
-  .jp-section-label {
-    margin-top: 16px;
-    padding-top: 14px;
-    border-top: 0.5px dashed var(--border);
-  }
-
-  .jp-grammar-row {
-    margin-bottom: 10px;
-    font-size: 13px;
-    line-height: 1.6;
-  }
-
-  .jp-grammar-pattern {
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 2px;
-  }
-
-  .jp-grammar-explanation {
-    color: var(--text2);
-  }
-
-  .jp-vocab-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    font-size: 13px;
-    padding: 6px 0;
-    border-bottom: 0.5px solid var(--border);
-  }
-
-  .jp-vocab-row:last-child { border-bottom: none; }
-
-  .jp-vocab-word {
-    color: var(--text);
-    font-weight: 500;
-    flex-shrink: 0;
-  }
-
-  .jp-vocab-meaning {
-    color: var(--text2);
-    text-align: right;
   }
 
   .card-footer {
@@ -431,7 +368,6 @@
   <button class="tab" data-tab="holdings" onclick="switchTab(this,'holdings')">📈 보유종목</button>
   <button class="tab" data-tab="tech" onclick="switchTab(this,'tech')">💻 테크·과학</button>
   <button class="tab" data-tab="trends" onclick="switchTab(this,'trends')">💰 경제</button>
-  <button class="tab" data-tab="japanese" onclick="switchTab(this,'japanese')">🇯🇵 일본어</button>
 </div>
 
 <div class="filter-bar" id="filter-bar">
@@ -502,10 +438,8 @@ function getItems() {
   const holdings = allData.holdings || [];
   const tech     = allData.tech || [];
   const trends   = allData.trends || [];
-  const japanese = allData.japanese || [];
   if (activeTab === 'holdings') return holdings;
   if (activeTab === 'trends') return trends;
-  if (activeTab === 'japanese') return japanese;
   if (activeTab === 'tech')
     return activeFilter === 'all' ? tech : tech.filter(n => n.category === activeFilter);
   return [...holdings, ...tech, ...trends];
@@ -557,7 +491,6 @@ function paragraphize(text) {
 }
 
 function cardHTML(item) {
-  if (item.category === '일본어') return jpCardHTML(item);
   if (item.category === '경제')   return trendsCardHTML(item);
 
   const cat   = item.category || 'IT';
@@ -606,38 +539,6 @@ function trendsCardHTML(item) {
         <span class="card-link-hint">탭하여 원문 ↗</span>
       </div>
     </a>`;
-}
-
-function jpCardHTML(item) {
-  const progress = `${item.page}/${item.total_pages}페이지`;
-  const vocabHtml = (item.vocab || []).map(v =>
-    `<div class="jp-vocab-row"><span class="jp-vocab-word">${escapeHtml(v.word)}</span><span class="jp-vocab-meaning">${escapeHtml(v.meaning)}</span></div>`
-  ).join('');
-  const grammarHtml = (item.grammar || []).map(g =>
-    `<div class="jp-grammar-row"><div class="jp-grammar-pattern">${escapeHtml(g.pattern)}</div><div class="jp-grammar-explanation">${escapeHtml(g.explanation)}</div></div>`
-  ).join('');
-
-  return `
-    <div class="news-card cat-일본어">
-      <div class="card-meta">
-        <span class="cat-badge 일본어">🇯🇵 일본어</span>
-        <span class="jp-progress">${progress} · ${escapeHtml(item.chapter || '')}장</span>
-      </div>
-      <div class="card-title">${escapeHtml(item.title_ko)} <span class="jp-title-orig">${escapeHtml(item.title)}</span></div>
-      <div class="card-summary">
-        <div class="jp-body">${item.jp_html || ''}</div>
-        <div class="jp-translation">
-          <div class="jp-translation-label">한국어 번역</div>
-          ${escapeHtml(item.ko)}
-        </div>
-        ${grammarHtml ? `<div class="jp-section-label">📌 오늘의 문법</div>${grammarHtml}` : ''}
-        ${vocabHtml ? `<div class="jp-section-label">📖 단어·숙어</div>${vocabHtml}` : ''}
-      </div>
-      <div class="card-footer">
-        <span class="card-source">${escapeHtml(item.source || '')} · ${escapeHtml(item.author_ko || '')}</span>
-        <a class="card-link-hint" href="${item.source_url || '#'}" target="_blank" rel="noopener">원문 보기 ↗</a>
-      </div>
-    </div>`;
 }
 
 function observeScroll() {

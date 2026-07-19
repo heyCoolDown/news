@@ -95,11 +95,6 @@ news/
 | Futurism | 흥미 |
 | Atlas Obscura | 흥미 |
 
-### 일본어 학습
-| 소스 | 내용 |
-|------|------|
-| NHK Easy News (nhkeasier.com) | やさしい日本語ニュース, 후리가나 원문 + 한국어 번역 + 낭독 음성 |
-
 ---
 
 ## 정치 뉴스 차단

@@ -317,46 +317,6 @@ YAHOO_FINANCE_FEED = {
     "category": "경제", "lang": "en",
 }
 
-# ── 일본어 학습 (청공문고 소설 하루 한 페이지) ──────────────
-GONGITSUNE_START_DATE = datetime(2026, 7, 20, tzinfo=KST).date()  # 1페이지가 노출되는 날짜
-GONGITSUNE_PATH = os.path.join(os.path.dirname(__file__), "data", "gongitsune.json")
-
-def get_daily_reading():
-    """data/gongitsune.json(청공문고 공공영역 소설, 페이지별 번역/문법/단어 수록)에서
-    오늘 날짜에 해당하는 페이지를 골라 반환. 네트워크 호출 없음 — 정적 데이터 순환.
-    """
-    try:
-        with open(GONGITSUNE_PATH, encoding="utf-8") as f:
-            book = json.load(f)
-    except Exception as e:
-        print(f"[일본어학습] gongitsune.json 로드 실패: {e}")
-        return None
-
-    pages = book.get("pages", [])
-    if not pages:
-        return None
-
-    day_index = (datetime.now(KST).date() - GONGITSUNE_START_DATE).days
-    day_index = max(0, min(day_index, len(pages) - 1))
-    page = pages[day_index]
-
-    return {
-        "title":       book.get("title", ""),
-        "title_ko":    book.get("title_ko", ""),
-        "author_ko":   book.get("author_ko", ""),
-        "source":      book.get("source", ""),
-        "source_url":  book.get("source_url", ""),
-        "page":        page["page"],
-        "total_pages": len(pages),
-        "chapter":     page.get("chapter", ""),
-        "jp_html":     page.get("jp_html", ""),
-        "ko":          page.get("ko", ""),
-        "vocab":       page.get("vocab", []),
-        "grammar":     page.get("grammar", []),
-        "category":    "일본어",
-        "date":        datetime.now(KST).strftime("%Y-%m-%d %H:%M"),
-    }
-
 # ── 중복 제거 ──────────────────────────────────────────────
 def deduplicate(news_list):
     seen = set()
@@ -379,7 +339,6 @@ def main():
         "holdings": [],   # 보유종목 뉴스
         "tech":     [],   # IT/과학 뉴스
         "trends":   [],   # 야후 파이낸스 헤드라인
-        "japanese": [],   # 일본어 학습 (청공문고 소설 하루 한 페이지)
         "updated":  now_kst,
     }
 
@@ -435,18 +394,12 @@ def main():
     print("[본문추출] 야후파이낸스 본문 가져오는 중...")
     enrich_full_text(all_news["trends"])
 
-    # 4. 일본어 학습 (청공문고 소설 하루 한 페이지, 정적 데이터 순환 — 네트워크 호출 없음)
-    print("[일본어학습] 오늘의 페이지 선택중...")
-    reading = get_daily_reading()
-    all_news["japanese"] = [reading] if reading else []
-    print(f"[일본어학습] {reading['page']}/{reading['total_pages']}페이지" if reading else "[일본어학습] 실패")
-
-    # 5. JSON 저장
+    # 4. JSON 저장
     output_path = os.path.join(os.path.dirname(__file__), "news.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(all_news, f, ensure_ascii=False, indent=2)
 
-    print(f"\n[완료] news.json 저장 ({len(all_news['holdings'])}건 보유종목 + {len(all_news['tech'])}건 IT/과학 + {len(all_news['trends'])}건 경제(야후파이낸스) + {len(all_news['japanese'])}건 일본어)")
+    print(f"\n[완료] news.json 저장 ({len(all_news['holdings'])}건 보유종목 + {len(all_news['tech'])}건 IT/과학 + {len(all_news['trends'])}건 경제(야후파이낸스))")
 
 if __name__ == "__main__":
     main()

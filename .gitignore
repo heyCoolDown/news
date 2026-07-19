@@ -1,3 +1,5 @@
 .env
+.login_fails.json
+logs/
 __pycache__/
 *.pyc

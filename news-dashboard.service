@@ -1,0 +1,17 @@
+[Unit]
+Description=News Dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/news
+EnvironmentFile=/home/ubuntu/news/.env
+ExecStart=/usr/bin/python3 /home/ubuntu/news/app.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/ubuntu/news/logs/dashboard.log
+StandardError=append:/home/ubuntu/news/logs/dashboard.log
+
+[Install]
+WantedBy=multi-user.target
