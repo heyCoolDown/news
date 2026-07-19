@@ -558,6 +558,7 @@ function paragraphize(text) {
 
 function cardHTML(item) {
   if (item.category === '일본어') return jpCardHTML(item);
+  if (item.category === '경제')   return trendsCardHTML(item);
 
   const cat   = item.category || 'IT';
   const stock = item.stock ? `<span class="stock-tag">📌 ${item.stock}</span>` : '';
@@ -571,6 +572,35 @@ function cardHTML(item) {
       </div>
       <div class="card-title">${item.title || '(제목 없음)'}</div>
       <div class="card-summary">${paragraphize(item.content || item.summary)}</div>
+      <div class="card-footer">
+        <span class="card-source">${item.source || ''}</span>
+        <span class="card-link-hint">탭하여 원문 ↗</span>
+      </div>
+    </a>`;
+}
+
+function trendsCardHTML(item) {
+  const date = (item.date || '').slice(5, 16);
+  const titleOriginal = item.title_en || item.title || '(제목 없음)';
+  const titleKo       = item.title_en ? item.title : '';
+  const bodyOriginal  = item.content_en || item.summary_en || '';
+  const bodyKo        = item.content_en ? (item.content || item.summary) : '';
+  return `
+    <a class="news-card cat-경제" href="${item.url || '#'}" target="_blank" rel="noopener">
+      <div class="card-meta">
+        <span class="cat-badge 경제">경제</span>
+        <span class="card-date">${date}</span>
+      </div>
+      <div class="card-title">${escapeHtml(titleOriginal)}</div>
+      ${titleKo ? `<div class="jp-title-orig" style="margin:2px 0 10px;">${escapeHtml(titleKo)}</div>` : ''}
+      <div class="card-summary">
+        ${paragraphize(bodyOriginal)}
+        ${bodyKo ? `
+        <div class="jp-translation">
+          <div class="jp-translation-label">한국어 번역</div>
+          ${paragraphize(bodyKo)}
+        </div>` : ''}
+      </div>
       <div class="card-footer">
         <span class="card-source">${item.source || ''}</span>
         <span class="card-link-hint">탭하여 원문 ↗</span>

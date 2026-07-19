@@ -86,15 +86,19 @@ def fetch_full_text(url, timeout=8):
         return ""
 
 def enrich_full_text(items, sleep=0.15):
-    """각 기사에 본문 전체(content) 필드 추가, 실패 시 summary로 폴백"""
+    """각 기사에 본문 전체(content) 필드 추가, 실패 시 summary로 폴백.
+    영문 기사는 원문을 content_en에 따로 보관 (번역만 있으면 어색해서 원문 병기)"""
     for item in items:
         full = fetch_full_text(item.get("url", ""))
         if full:
             if item.get("lang") == "en":
+                item["content_en"] = full
                 full = translate(full)
             item["content"] = full
         else:
             item["content"] = item.get("summary", "")
+            if item.get("lang") == "en":
+                item["content_en"] = item.get("summary_en", "")
         time.sleep(sleep)
     return items
 
@@ -282,11 +286,12 @@ def parse_rss(feed_info, max_items=8):
                 continue
 
             summary = summarize(desc)
+            title_en, summary_en = title, summary
             if feed_info.get("lang") == "en":
                 title   = translate(title)
                 summary = translate(summary)
 
-            items.append({
+            item = {
                 "title":    title,
                 "summary":  summary,
                 "url":      link,
@@ -294,7 +299,11 @@ def parse_rss(feed_info, max_items=8):
                 "category": feed_info["category"],
                 "date":     pub_date,
                 "lang":     feed_info.get("lang", "ko"),
-            })
+            }
+            if feed_info.get("lang") == "en":
+                item["title_en"]   = title_en
+                item["summary_en"] = summary_en
+            items.append(item)
             count += 1
 
     except Exception as e:
