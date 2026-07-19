@@ -11,7 +11,6 @@ import os
 import json
 import time
 import re
-import html
 import urllib.request
 import urllib.parse
 from datetime import datetime, timezone, timedelta
@@ -239,35 +238,37 @@ def parse_naver_date(date_str):
 
 # ── RSS 파싱 ───────────────────────────────────────────────
 def parse_rss(feed_info, max_items=8):
-    """RSS 피드 파싱 (표준 라이브러리만 사용)"""
+    """RSS 피드 파싱 (표준 라이브러리만 사용)
+    <item> 블록 단위로 파싱 — 문서 전체에서 태그를 한꺼번에 긁으면
+    <image><title> 같은 채널 부가 태그 때문에 title/link 인덱스가 어긋날 수 있어
+    (예: Yahoo Finance RSS) 블록 단위로 격리해서 파싱한다.
+    """
     items = []
     try:
         req = urllib.request.Request(feed_info["url"], headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=8) as res:
             raw = res.read().decode("utf-8", errors="replace")
 
-        # title 추출
-        titles = re.findall(r'<title><!\[CDATA\[(.*?)\]\]></title>|<title>(.*?)</title>', raw, re.DOTALL)
-        descs  = re.findall(r'<description><!\[CDATA\[(.*?)\]\]></description>|<description>(.*?)</description>', raw, re.DOTALL)
-        links  = re.findall(r'<link>(https?://[^<]+)</link>', raw)
-        dates  = re.findall(r'<pubDate>(.*?)</pubDate>', raw)
-
-        # 첫 번째는 채널 title이라 스킵
-        titles = titles[1:]
-        descs  = descs[1:]
+        blocks = re.findall(r'<item>(.*?)</item>', raw, re.DOTALL)
 
         count = 0
-        for i, (t1, t2) in enumerate(titles):
+        for block in blocks:
             if count >= max_items:
                 break
-            title = strip_tags((t1 or t2).strip())
+
+            m_title = re.search(r'<title><!\[CDATA\[(.*?)\]\]></title>|<title>(.*?)</title>', block, re.DOTALL)
+            title = strip_tags(((m_title.group(1) or m_title.group(2)) if m_title else "").strip())
             if not title:
                 continue
 
-            d1, d2 = descs[i] if i < len(descs) else ("", "")
-            desc = strip_tags((d1 or d2).strip())
-            link = links[i+1] if i+1 < len(links) else (links[i] if i < len(links) else "")
-            date_raw = dates[i] if i < len(dates) else ""
+            m_desc = re.search(r'<description><!\[CDATA\[(.*?)\]\]></description>|<description>(.*?)</description>', block, re.DOTALL)
+            desc = strip_tags(((m_desc.group(1) or m_desc.group(2)) if m_desc else "").strip())
+
+            m_link = re.search(r'<link>(https?://[^<]+)</link>', block)
+            link = m_link.group(1).strip() if m_link else ""
+
+            m_date = re.search(r'<pubDate>(.*?)</pubDate>', block)
+            date_raw = m_date.group(1) if m_date else ""
 
             # 날짜 파싱
             try:
@@ -288,7 +289,7 @@ def parse_rss(feed_info, max_items=8):
             items.append({
                 "title":    title,
                 "summary":  summary,
-                "url":      link.strip(),
+                "url":      link,
                 "source":   feed_info["name"],
                 "category": feed_info["category"],
                 "date":     pub_date,
@@ -301,148 +302,51 @@ def parse_rss(feed_info, max_items=8):
 
     return items
 
-# ── 구글 트렌드 (실시간 인기 검색어) ──────────────────────
-GOOGLE_TRENDS_FEEDS = [
-    {"geo": "KR", "label": "구글트렌드 KR", "lang": "ko"},
-    {"geo": "US", "label": "구글트렌드 US", "lang": "en"},
-]
+# ── 야후 파이낸스 헤드라인 ─────────────────────────────────
+YAHOO_FINANCE_FEED = {
+    "name": "Yahoo Finance", "url": "https://finance.yahoo.com/news/rssindex",
+    "category": "경제", "lang": "en",
+}
 
-def fetch_google_trends(feed_info, max_items=10):
-    """구글 실시간 인기 검색어 RSS 파싱"""
-    items = []
-    try:
-        url = f"https://trends.google.com/trending/rss?geo={feed_info['geo']}"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=8) as res:
-            raw = res.read().decode("utf-8", errors="replace")
+# ── 일본어 학습 (청공문고 소설 하루 한 페이지) ──────────────
+GONGITSUNE_START_DATE = datetime(2026, 7, 20, tzinfo=KST).date()  # 1페이지가 노출되는 날짜
+GONGITSUNE_PATH = os.path.join(os.path.dirname(__file__), "data", "gongitsune.json")
 
-        blocks = re.findall(r'<item>(.*?)</item>', raw, re.DOTALL)
-
-        count = 0
-        for block in blocks:
-            if count >= max_items:
-                break
-
-            m_title = re.search(r'<title>(.*?)</title>', block, re.DOTALL)
-            keyword = strip_tags((m_title.group(1) if m_title else "").strip())
-            if not keyword:
-                continue
-
-            m_traffic = re.search(r'<ht:approx_traffic>(.*?)</ht:approx_traffic>', block)
-            traffic = m_traffic.group(1).strip() if m_traffic else ""
-
-            m_date = re.search(r'<pubDate>(.*?)</pubDate>', block)
-            try:
-                from email.utils import parsedate_to_datetime
-                dt = parsedate_to_datetime(m_date.group(1).strip())
-                pub_date = dt.astimezone(KST).strftime("%Y-%m-%d %H:%M")
-            except:
-                pub_date = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
-
-            m_news_title  = re.search(r'<ht:news_item_title>(.*?)</ht:news_item_title>', block, re.DOTALL)
-            m_news_url    = re.search(r'<ht:news_item_url>(.*?)</ht:news_item_url>', block)
-            m_news_source = re.search(r'<ht:news_item_source>(.*?)</ht:news_item_source>', block)
-
-            news_title  = strip_tags((m_news_title.group(1) if m_news_title else "").strip())
-            news_url    = (m_news_url.group(1).strip() if m_news_url else "")
-            news_source = strip_tags((m_news_source.group(1) if m_news_source else "").strip())
-
-            if is_politics(keyword, news_title):
-                continue
-
-            keyword    = translate(keyword)
-            news_title = translate(news_title)
-
-            summary = f"실시간 검색량 {traffic} · {news_title}" if news_title else f"실시간 검색량 {traffic}"
-
-            items.append({
-                "title":    keyword,
-                "summary":  summary,
-                "url":      news_url or f"https://trends.google.com/trending?geo={feed_info['geo']}",
-                "source":   news_source or feed_info["label"],
-                "category": "트렌드",
-                "date":     pub_date,
-            })
-            count += 1
-
-    except Exception as e:
-        print(f"[구글트렌드] {feed_info['label']} 실패: {e}")
-
-    return items
-
-# ── 일본어 학습 (NHK Easy News, 후리가나 포함) ─────────────
-NHK_EASY_FEED_URL = "https://nhkeasier.com/feed/"
-
-def fetch_nhk_easy(max_items=10):
-    """NHK Easy News(やさしい日本語ニュース) RSS 파싱
-    - 원문은 <ruby><rt>로 후리가나가 이미 붙어있어 그대로 렌더링
-    - 본문은 한국어로 번역해서 별도 필드에 저장 (초급 학습자용)
+def get_daily_reading():
+    """data/gongitsune.json(청공문고 공공영역 소설, 페이지별 번역/문법/단어 수록)에서
+    오늘 날짜에 해당하는 페이지를 골라 반환. 네트워크 호출 없음 — 정적 데이터 순환.
     """
-    items = []
     try:
-        req = urllib.request.Request(NHK_EASY_FEED_URL, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=10) as res:
-            raw = res.read().decode("utf-8", errors="replace")
-
-        blocks = re.findall(r'<item>(.*?)</item>', raw, re.DOTALL)
-
-        count = 0
-        for block in blocks:
-            if count >= max_items:
-                break
-
-            m_title = re.search(r'<title>(.*?)</title>', block, re.DOTALL)
-            m_link  = re.search(r'<link>(.*?)</link>', block, re.DOTALL)
-            m_desc  = re.search(r'<description>(.*?)</description>', block, re.DOTALL)
-            m_date  = re.search(r'<pubDate>(.*?)</pubDate>', block)
-            m_audio = re.search(r'<enclosure url="([^"]+)"', block)
-
-            title = strip_tags((m_title.group(1) if m_title else "").strip())
-            link  = (m_link.group(1) if m_link else "").strip()
-            if not title or not m_desc:
-                continue
-
-            desc = html.unescape(m_desc.group(1))
-
-            m_img = re.search(r'<img src="([^"]+)"', desc)
-            image = m_img.group(1) if m_img else ""
-            audio = m_audio.group(1) if m_audio else ""
-
-            paragraphs = re.findall(r'<p>(.*?)</p>', desc, re.DOTALL)
-            body_html = ''.join(f'<p>{p.strip()}</p>' for p in paragraphs if p.strip())
-
-            # 후리가나(rt) 제거 후 순수 텍스트만 추출 (번역용)
-            plain_paragraphs = [
-                strip_tags(re.sub(r'<rt>.*?</rt>', '', p, flags=re.DOTALL))
-                for p in paragraphs
-            ]
-            plain_text = ' '.join(t.strip() for t in plain_paragraphs if t.strip())
-
-            try:
-                from email.utils import parsedate_to_datetime
-                dt = parsedate_to_datetime(m_date.group(1).strip()) if m_date else datetime.now(KST)
-                pub_date = dt.astimezone(KST).strftime("%Y-%m-%d %H:%M")
-            except:
-                pub_date = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
-
-            items.append({
-                "title":     title,
-                "title_ko":  translate(title),
-                "body_html": body_html,
-                "summary_ko": translate(plain_text),
-                "image":     image,
-                "audio":     audio,
-                "url":       link,
-                "source":    "NHK Easy News",
-                "category":  "일본어",
-                "date":      pub_date,
-            })
-            count += 1
-
+        with open(GONGITSUNE_PATH, encoding="utf-8") as f:
+            book = json.load(f)
     except Exception as e:
-        print(f"[일본어학습] NHK Easy News 실패: {e}")
+        print(f"[일본어학습] gongitsune.json 로드 실패: {e}")
+        return None
 
-    return items
+    pages = book.get("pages", [])
+    if not pages:
+        return None
+
+    day_index = (datetime.now(KST).date() - GONGITSUNE_START_DATE).days
+    day_index = max(0, min(day_index, len(pages) - 1))
+    page = pages[day_index]
+
+    return {
+        "title":       book.get("title", ""),
+        "title_ko":    book.get("title_ko", ""),
+        "author_ko":   book.get("author_ko", ""),
+        "source":      book.get("source", ""),
+        "source_url":  book.get("source_url", ""),
+        "page":        page["page"],
+        "total_pages": len(pages),
+        "chapter":     page.get("chapter", ""),
+        "jp_html":     page.get("jp_html", ""),
+        "ko":          page.get("ko", ""),
+        "vocab":       page.get("vocab", []),
+        "grammar":     page.get("grammar", []),
+        "category":    "일본어",
+        "date":        datetime.now(KST).strftime("%Y-%m-%d %H:%M"),
+    }
 
 # ── 중복 제거 ──────────────────────────────────────────────
 def deduplicate(news_list):
@@ -465,8 +369,8 @@ def main():
     all_news = {
         "holdings": [],   # 보유종목 뉴스
         "tech":     [],   # IT/과학 뉴스
-        "trends":   [],   # 실시간 인기 검색어
-        "japanese": [],   # 일본어 학습 (NHK Easy News)
+        "trends":   [],   # 야후 파이낸스 헤드라인
+        "japanese": [],   # 일본어 학습 (청공문고 소설 하루 한 페이지)
         "updated":  now_kst,
     }
 
@@ -513,27 +417,27 @@ def main():
     print("[본문추출] IT/과학 뉴스 본문 가져오는 중...")
     enrich_full_text(all_news["tech"])
 
-    # 3. 구글 실시간 트렌드
-    for feed in GOOGLE_TRENDS_FEEDS:
-        print(f"[구글트렌드] {feed['label']} 수집중...")
-        items = fetch_google_trends(feed, max_items=10)
-        all_news["trends"].extend(items)
-        time.sleep(0.2)
-
+    # 3. 야후 파이낸스 헤드라인
+    print("[야후파이낸스] 헤드라인 수집중...")
+    all_news["trends"] = parse_rss(YAHOO_FINANCE_FEED, max_items=8)
     all_news["trends"] = deduplicate(all_news["trends"])
-    print(f"[구글트렌드] {len(all_news['trends'])}건 수집")
+    print(f"[야후파이낸스] {len(all_news['trends'])}건 수집")
 
-    # 4. 일본어 학습 (NHK Easy News)
-    print("[일본어학습] NHK Easy News 수집중...")
-    all_news["japanese"] = fetch_nhk_easy(max_items=10)
-    print(f"[일본어학습] {len(all_news['japanese'])}건 수집")
+    print("[본문추출] 야후파이낸스 본문 가져오는 중...")
+    enrich_full_text(all_news["trends"])
+
+    # 4. 일본어 학습 (청공문고 소설 하루 한 페이지, 정적 데이터 순환 — 네트워크 호출 없음)
+    print("[일본어학습] 오늘의 페이지 선택중...")
+    reading = get_daily_reading()
+    all_news["japanese"] = [reading] if reading else []
+    print(f"[일본어학습] {reading['page']}/{reading['total_pages']}페이지" if reading else "[일본어학습] 실패")
 
     # 5. JSON 저장
     output_path = os.path.join(os.path.dirname(__file__), "news.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(all_news, f, ensure_ascii=False, indent=2)
 
-    print(f"\n[완료] news.json 저장 ({len(all_news['holdings'])}건 보유종목 + {len(all_news['tech'])}건 IT/과학 + {len(all_news['trends'])}건 트렌드 + {len(all_news['japanese'])}건 일본어)")
+    print(f"\n[완료] news.json 저장 ({len(all_news['holdings'])}건 보유종목 + {len(all_news['tech'])}건 IT/과학 + {len(all_news['trends'])}건 경제(야후파이낸스) + {len(all_news['japanese'])}건 일본어)")
 
 if __name__ == "__main__":
     main()
