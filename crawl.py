@@ -110,6 +110,10 @@ HOLDINGS_API_URL      = "http://168.107.56.144:5000/api/data"
 HOLDINGS_LOGIN_URL    = "http://168.107.56.144:5000/login"
 HOLDINGS_PASSWORD     = os.environ.get("HOLDINGS_PASSWORD", "")
 
+# money 대시보드(한투 계좌, 미니스탁 포함) — 같은 DASHBOARD_PASSWORD를 쓰지만 로그인 필드명이 다름(pw)
+MONEY_API_URL      = "http://168.107.56.144/api/hantoo"
+MONEY_LOGIN_URL    = "http://168.107.56.144/login"
+
 KST = timezone(timedelta(hours=9))
 
 # 정치 블랙리스트 키워드
@@ -210,9 +214,55 @@ def get_holdings():
             if name:
                 holdings.append({"name": name, "code": code})
         print(f"[보유종목] {len(holdings)}종목: {[h['name'] for h in holdings]}")
-        return holdings
+
+        holdings += get_money_holdings()
+        seen = set()
+        deduped = []
+        for h in holdings:
+            if h["name"] in seen:
+                continue
+            seen.add(h["name"])
+            deduped.append(h)
+        return deduped
     except Exception as e:
         print(f"[보유종목] 가져오기 실패: {e}")
+        return []
+
+def get_money_holdings():
+    """money 대시보드(한투 계좌 — 미니스탁 소수점 매매 포함)의 보유종목."""
+    import http.cookiejar
+    try:
+        cj = http.cookiejar.CookieJar()
+        opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+
+        if not HOLDINGS_PASSWORD:
+            return []
+
+        login_data = urllib.parse.urlencode({"pw": HOLDINGS_PASSWORD}).encode("utf-8")
+        login_req = urllib.request.Request(
+            MONEY_LOGIN_URL, data=login_data,
+            headers={"User-Agent": "Mozilla/5.0", "Content-Type": "application/x-www-form-urlencoded"}
+        )
+        with opener.open(login_req, timeout=5) as _:
+            pass
+
+        req = urllib.request.Request(MONEY_API_URL, headers={"User-Agent": "Mozilla/5.0"})
+        with opener.open(req, timeout=5) as res:
+            data = json.loads(res.read().decode("utf-8"))
+        if data.get("status") != "ok":
+            print(f"[한투 보유종목] API 오류: {data.get('message')}")
+            return []
+
+        holdings = []
+        for p in data.get("holdings") or []:
+            name = (p.get("name") or "").strip()
+            code = (p.get("code") or "").strip()
+            if name:
+                holdings.append({"name": name, "code": code})
+        print(f"[한투 보유종목] {len(holdings)}종목: {[h['name'] for h in holdings]}")
+        return holdings
+    except Exception as e:
+        print(f"[한투 보유종목] 가져오기 실패: {e}")
         return []
 
 # ── 네이버 뉴스 API ────────────────────────────────────────
