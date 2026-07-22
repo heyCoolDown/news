@@ -2,6 +2,7 @@ from flask import Flask, send_from_directory, jsonify, request, session, redirec
 import json
 import os
 import time
+import requests as req
 from functools import wraps
 from datetime import timedelta
 
@@ -158,6 +159,52 @@ def index():
 @require_auth
 def news_json():
     return send_from_directory(BASE_DIR, 'news.json')
+
+
+# ── Serenity(X @aleabitoreddit) 트윗 피드 ────────────────────────────
+# 오라클 미러 전용(require_auth) — GitHub Actions(crawl.py)나 news.json에는
+# 절대 넣지 않는다. news 저장소는 Public이라 3rd-party 저작권 콘텐츠를
+# 커밋하면 비번게이트와 무관하게 노출되기 때문 (.serenity_cache.json은 .gitignore 처리).
+SERENITY_URL = 'https://www.trackserenity.com/data/signals.json'
+SERENITY_CACHE_FILE = os.path.join(BASE_DIR, '.serenity_cache.json')
+SERENITY_TTL_SEC = 6 * 3600
+
+
+def _fetch_serenity():
+    try:
+        res = req.get(SERENITY_URL, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
+        data = res.json()
+        tweets = data.get('tweets', [])[:20]
+        items = [{
+            'id':         t.get('id'),
+            'text':       t.get('text', ''),
+            'url':        t.get('url', ''),
+            'time':       t.get('displayTime', ''),
+            'cashtags':   t.get('cashtags', []),
+            'is_retweet': t.get('isRetweet', False),
+        } for t in tweets]
+        return {'items': items, 'source_updated': data.get('updatedAt', ''), 'fetched_at': time.time()}
+    except Exception:
+        return {'items': [], 'source_updated': '', 'fetched_at': time.time()}
+
+
+@app.route('/api/serenity')
+@require_auth
+def api_serenity():
+    cached = None
+    if os.path.exists(SERENITY_CACHE_FILE):
+        try:
+            with open(SERENITY_CACHE_FILE, encoding='utf-8') as f:
+                cached = json.load(f)
+        except Exception:
+            cached = None
+    if not cached or time.time() - cached.get('fetched_at', 0) > SERENITY_TTL_SEC:
+        cached = _fetch_serenity()
+        tmp = SERENITY_CACHE_FILE + '.tmp'
+        with open(tmp, 'w', encoding='utf-8') as f:
+            json.dump(cached, f, ensure_ascii=False)
+        os.replace(tmp, SERENITY_CACHE_FILE)
+    return jsonify(cached)
 
 
 if __name__ == '__main__':

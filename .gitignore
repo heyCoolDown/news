@@ -1,5 +1,6 @@
 .env
 .login_fails.json
+.serenity_cache.json
 logs/
 __pycache__/
 *.pyc

@@ -216,6 +216,10 @@
   .cat-badge.기이     { background: rgba(175,82,222,0.12);  color: var(--purple); }
   .cat-badge.흥미     { background: rgba(48,176,199,0.12);  color: var(--teal); }
   .cat-badge.경제     { background: rgba(255,55,95,0.12);   color: var(--pink); }
+  .cat-badge.serenity { background: rgba(88,86,214,0.12);   color: var(--indigo); }
+
+  .cashtag-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 14px; padding-top: 14px; border-top: 0.5px dashed var(--border); }
+  .cashtag { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 20px; background: rgba(88,86,214,0.12); color: var(--indigo); }
 
   .stock-tag {
     font-size: 12px;
@@ -414,6 +418,27 @@ async function loadNews() {
   }
 }
 
+// 오라클 미러 전용(로그인 필요) 엔드포인트 — GitHub Pages(공개)에는 이 라우트 자체가 없어
+// fetch가 그냥 실패하고 조용히 무시됨 (경제 탭에 Serenity 항목이 안 보일 뿐, 에러 없음)
+let serenityItems = [];
+async function loadSerenity() {
+  try {
+    const res = await fetch('/api/serenity');
+    if (!res.ok) return;
+    const d = await res.json();
+    serenityItems = (d.items || []).map(t => ({
+      category: 'serenity',
+      title:    (t.text || '').split('\n')[0].slice(0, 60),
+      content:  t.text,
+      url:      t.url,
+      date:     t.time,
+      source:   'Serenity (@aleabitoreddit)',
+      cashtags: t.cashtags || [],
+    }));
+    if (activeTab === 'trends') render();
+  } catch(e) { /* GitHub Pages 등 엔드포인트 없는 환경에서는 무시 */ }
+}
+
 function switchTab(el, tab) {
   activeTab = tab;
   activeFilter = 'all';
@@ -439,7 +464,7 @@ function getItems() {
   const tech     = allData.tech || [];
   const trends   = allData.trends || [];
   if (activeTab === 'holdings') return holdings;
-  if (activeTab === 'trends') return trends;
+  if (activeTab === 'trends') return [...serenityItems, ...trends];
   if (activeTab === 'tech')
     return activeFilter === 'all' ? tech : tech.filter(n => n.category === activeFilter);
   return [...holdings, ...tech, ...trends];
@@ -491,7 +516,8 @@ function paragraphize(text) {
 }
 
 function cardHTML(item) {
-  if (item.category === '경제')   return trendsCardHTML(item);
+  if (item.category === '경제')     return trendsCardHTML(item);
+  if (item.category === 'serenity') return serenityCardHTML(item);
 
   const cat   = item.category || 'IT';
   const stock = item.stock ? `<span class="stock-tag">📌 ${item.stock}</span>` : '';
@@ -534,6 +560,24 @@ function trendsCardHTML(item) {
           ${paragraphize(bodyKo)}
         </div>` : ''}
       </div>
+      <div class="card-footer">
+        <span class="card-source">${item.source || ''}</span>
+        <span class="card-link-hint">탭하여 원문 ↗</span>
+      </div>
+    </a>`;
+}
+
+function serenityCardHTML(item) {
+  const date = item.date || '';
+  const tags = (item.cashtags || []).map(c => `<span class="cashtag">$${escapeHtml(c)}</span>`).join('');
+  return `
+    <a class="news-card cat-serenity" href="${item.url || '#'}" target="_blank" rel="noopener">
+      <div class="card-meta">
+        <span class="cat-badge serenity">🕊️ Serenity</span>
+        <span class="card-date">${date}</span>
+      </div>
+      <div class="card-summary">${paragraphize(item.content)}</div>
+      ${tags ? `<div class="cashtag-row">${tags}</div>` : ''}
       <div class="card-footer">
         <span class="card-source">${item.source || ''}</span>
         <span class="card-link-hint">탭하여 원문 ↗</span>
@@ -610,7 +654,9 @@ document.addEventListener('keydown', (e) => {
 
 observeScroll();
 loadNews();
+loadSerenity();
 setInterval(loadNews, 30 * 60 * 1000);
+setInterval(loadSerenity, 30 * 60 * 1000);
 </script>
 </body>
 </html>
