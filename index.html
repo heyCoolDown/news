@@ -427,13 +427,14 @@ async function loadSerenity() {
     if (!res.ok) return;
     const d = await res.json();
     serenityItems = (d.items || []).map(t => ({
-      category: 'serenity',
-      title:    (t.text || '').split('\n')[0].slice(0, 60),
-      content:  t.text,
-      url:      t.url,
-      date:     t.time,
-      source:   'Serenity (@aleabitoreddit)',
-      cashtags: t.cashtags || [],
+      category:  'serenity',
+      title:     (t.text || '').split('\n')[0].slice(0, 60),
+      content:   t.text,
+      contentKo: t.text_ko || '',
+      url:       t.url,
+      date:      t.time,
+      source:    'Serenity (@aleabitoreddit)',
+      cashtags:  t.cashtags || [],
     }));
     if (activeTab === 'trends') render();
   } catch(e) { /* GitHub Pages 등 엔드포인트 없는 환경에서는 무시 */ }
@@ -576,7 +577,14 @@ function serenityCardHTML(item) {
         <span class="cat-badge serenity">🕊️ Serenity</span>
         <span class="card-date">${date}</span>
       </div>
-      <div class="card-summary">${paragraphize(item.content)}</div>
+      <div class="card-summary">
+        ${paragraphize(item.content)}
+        ${item.contentKo ? `
+        <div class="jp-translation">
+          <div class="jp-translation-label">한국어 번역</div>
+          ${paragraphize(item.contentKo)}
+        </div>` : ''}
+      </div>
       ${tags ? `<div class="cashtag-row">${tags}</div>` : ''}
       <div class="card-footer">
         <span class="card-source">${item.source || ''}</span>

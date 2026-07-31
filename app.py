@@ -8,6 +8,22 @@ from datetime import timedelta
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+try:
+    from deep_translator import GoogleTranslator
+    _translator = GoogleTranslator(source='auto', target='ko')
+    TRANSLATION_AVAILABLE = True
+except ImportError:
+    TRANSLATION_AVAILABLE = False
+
+
+def translate(text):
+    if not TRANSLATION_AVAILABLE or not text:
+        return ''
+    try:
+        return _translator.translate(text[:4500]) or ''
+    except Exception:
+        return ''
+
 
 def _load_dotenv():
     env_path = os.path.join(BASE_DIR, ".env")
@@ -178,6 +194,7 @@ def _fetch_serenity():
         items = [{
             'id':         t.get('id'),
             'text':       t.get('text', ''),
+            'text_ko':    translate(t.get('text', '')),
             'url':        t.get('url', ''),
             'time':       t.get('displayTime', ''),
             'cashtags':   t.get('cashtags', []),
